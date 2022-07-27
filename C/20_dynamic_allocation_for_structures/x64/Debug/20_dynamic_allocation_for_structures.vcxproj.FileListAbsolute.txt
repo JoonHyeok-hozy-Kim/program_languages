@@ -1,0 +1,1 @@
+C:\Users\Hubris Ozymandias\PycharmProjects\c_learning\20_dynamic_allocation_for_structures\x64\Debug\20_dynamic_allocation_for_structures.exe

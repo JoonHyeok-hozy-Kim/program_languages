@@ -1,0 +1,1 @@
+C:\Users\Hubris Ozymandias\PycharmProjects\c_learning\21_macro_and_inline_function\x64\Debug\21_macro_and_inline_function.exe
