@@ -1,3 +1,4 @@
+#pragma once
 #include "01_02_namespace.h"
 
 // How to call elements in namespaces : namespaces are defined in "01_02_namespace.h"
@@ -18,7 +19,7 @@ void call_namespaces2() {
 // Function that can only be used within the file case!
 namespace {
 
-	int func_only_in_this_file() {};
+	int func_only_in_this_file() { return 0; };
 	int var_only_in_this_file = 0;
 
 }
