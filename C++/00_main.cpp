@@ -26,6 +26,9 @@ int main() {
 	//reference_as_output_test();		// Reference output only allowed when the function input is a reference. In order to prevent dangling reference.
 
 
+	/* 3. Introduction to the Objective Oriented Programming in C++ */
+	//new_delete_test();		// syntax for new and delete
+	array_allocation_with_new();	// 
 
 
 
