@@ -28,9 +28,12 @@ int main() {
 
 	/* 3. Introduction to the Objective Oriented Programming in C++ */
 	//new_delete_test();		// syntax for new and delete
-	array_allocation_with_new();	// 
+	//array_allocation_with_new();	// 
 
-
+	/* 4. Objective Oriented Programming */
+	/* 4-1. Class */
+	//animal_class_test();
+	date_class_test();
 
 
 	return 0;

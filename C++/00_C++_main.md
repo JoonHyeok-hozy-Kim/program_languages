@@ -6,4 +6,6 @@
 ---
 ### 2. [Reference](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/02_reference.cpp)
 ---
-### 3. [Introduction to the Objective Oriented Programming in C++](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/03_objective_oriented_programming_intro.cpp)
+### 3. [Introduction to the Objective Oriented Programming(OOP) in C++](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/03_objective_oriented_programming_intro.cpp)
+---
+### 4-1. [[OOP] Concept of private and public](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/04_01_oop_class.cpp)

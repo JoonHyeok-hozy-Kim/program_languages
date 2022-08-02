@@ -13,3 +13,6 @@ void call_namespaces2();
 
 /* 3 */
 #include "03_objective_oriented_programming_intro.h"
+
+/* 4-1 */
+#include "04_01_oop_class.h"
