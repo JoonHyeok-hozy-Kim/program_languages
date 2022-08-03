@@ -33,8 +33,12 @@ int main() {
 	/* 4. Objective Oriented Programming */
 	/* 4-1. Class */
 	//animal_class_test();
-	date_class_test();
+	//date_class_test();
 
+	/* 4-2. Function Overload */
+	//overload_variables_test();
+	//implicit_type_change_test();
+	date_test();
 
 	return 0;
 }

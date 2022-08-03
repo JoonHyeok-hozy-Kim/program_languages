@@ -16,3 +16,5 @@ void call_namespaces2();
 
 /* 4-1 */
 #include "04_01_oop_class.h"
+/* 4-2 */
+#include "04_02_function_overload.h"
