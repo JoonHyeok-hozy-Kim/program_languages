@@ -53,7 +53,7 @@
 ### 12-3. [Pointers 3]()
   * array pointer
   * pointer array
-  * double pointer ('*'*)
+  * double pointer (**)
 
 ### 13-1. [Function 1]()
   * function input parameter, return, local variables
@@ -125,61 +125,60 @@
         * constant, literals
       5. Code Segment
 
-### 18. [Modularization]()
+### 18-1. [Modularization 1]()
   * Modularization Programming
-  * '#include
+  * #include
 
-### []()
-  * 
+### 18-2. [Modularization 2]()
+  * preprocessing directives
+    * #define 
+    * #ifdef
+    * #endif
+    * #else
+  * header
+  * library
 
-### []()
-  * 
+### 19. [main Function and void]()
+  * void type, void function
+  * main function input parameters
+  * pointer array
 
-### []()
-  * 
+### 20-1. [Dynamic Memory Allocation 1]()
+  * malloc function
+  * dynamic allocations to arrays
 
-### []()
-  * 
+### 20-2. [Dynamic Memory Allocation 2]()
+  * dynamic allocations to struct
+  * node
+  * memory management functions
+    * memmove
+    * memcpy
+    * memcmp
 
-### []()
-  * 
+### 21. [Macro Function and Inline function]()
+  * macro function
+  * inline function
 
-### []()
-  * 
+### 22. [Keywords in C]()
+  * typedef
+  * volatile
+  * #pragma
+    * #pragma pack
+    * #pragma once
 
-### []()
-  * 
+### 23-1. [File Input and Output 1]()
+  * io
+  * stream
+  * fopen, fputs, fgets, fgetchar
 
-### []()
-  * 
+### 23-2. [File Input and Output 2]()
+  * file position indicator
+  * fseek
+  * "r+", "w+", "a", "a+"
+  * fprintf
+  * fscanf
 
-### []()
-  * 
+### 23-3. [File Input and Output 3]()
+  * application : Library program project 2
 
-### []()
-  * 
-
-### []()
-  * 
-
-### []()
-  * 
-
-### []()
-  * 
-
-### []()
-  * 
-
-### []()
-  * 
-
-### []()
-  * 
-
-### []()
-  * 
-
-### []()
-  * 
-
+### 24. [C Programming Optimization]()
