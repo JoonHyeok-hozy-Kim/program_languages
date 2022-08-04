@@ -38,7 +38,14 @@ int main() {
 	/* 4-2. Function Overload */
 	//overload_variables_test();
 	//implicit_type_change_test();
-	date_test();
+	//date_test();
+
+	/* 4-3. Copy Constructor and Destructor */
+	//destructor_test();		// Constructor and Destructor Test
+	copy_constructor_test();	// Copy Constructor Test
+
+
+
 
 	return 0;
 }
