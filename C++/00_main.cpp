@@ -48,7 +48,7 @@ int main() {
 	//initializer_list_and_const_test();
 	//this_test();
 	//ref_return_test();
-	const_function_test();
+	//const_function_test();
 
 
 	return 0;
