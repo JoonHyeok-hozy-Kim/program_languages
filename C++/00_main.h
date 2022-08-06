@@ -20,4 +20,5 @@ void call_namespaces2();
 #include "04_02_function_overload.h"
 /* 4-3 */
 #include "04_03_copy_costruuctor_and_destructor.h"
-
+/* 4-4 */
+#include "04_04_const_and_static.h"

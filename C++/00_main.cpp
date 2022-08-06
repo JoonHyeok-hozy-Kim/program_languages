@@ -42,9 +42,13 @@ int main() {
 
 	/* 4-3. Copy Constructor and Destructor */
 	//destructor_test();		// Constructor and Destructor Test
-	copy_constructor_test();	// Copy Constructor Test
+	//copy_constructor_test();	// Copy Constructor Test
 
-
+	/* 4-3. Constant and Static */
+	//initializer_list_and_const_test();
+	//this_test();
+	//ref_return_test();
+	const_function_test();
 
 
 	return 0;
