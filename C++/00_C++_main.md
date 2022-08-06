@@ -15,7 +15,7 @@
 * private and public
 * copy constructor
 * destructor
-### 4-4. [[OOP] Constant and Static](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/04_03_copy_costruuctor_and_destructor.cpp)
+### 4-4. [[OOP] Constant and Static](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/04_04_const_and_static.cpp)
 * initializer list
 * const variable in Class
 * static variable
