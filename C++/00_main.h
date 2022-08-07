@@ -22,3 +22,5 @@ void call_namespaces2();
 #include "04_03_copy_costruuctor_and_destructor.h"
 /* 4-4 */
 #include "04_04_const_and_static.h"
+/* 4-5 */
+#include "04_05_custom_string_class.h"
