@@ -142,6 +142,15 @@ public:
 	void show_status();
 };
 
+PhotonCannon::PhotonCannon(int x, int y) {
+	std::cout << "Normal Constructor called." << std::endl;
+	hp = shield = 100;
+	coord_x = x;
+	coord_y = y;
+	damage = 20;
+	name = NULL;
+}
+
 /* Copy Constructor starts */
 PhotonCannon::PhotonCannon(const PhotonCannon& pc) {		// constant reference of a class
 	std::cout << "Copy Constructor called." << std::endl;
@@ -156,15 +165,6 @@ PhotonCannon::PhotonCannon(const PhotonCannon& pc) {		// constant reference of a
 	strcpy(name, pc.name);
 }
 /* Copy Constructor ends */
-
-PhotonCannon::PhotonCannon(int x, int y) {
-	std::cout << "Normal Constructor called." << std::endl;
-	hp = shield = 100;
-	coord_x = x;
-	coord_y = y;
-	damage = 20;
-	name = NULL;
-}
 
 PhotonCannon::PhotonCannon(int x, int y, const char* cannon_name) {
 	std::cout << "Normal Constructor called." << std::endl;
