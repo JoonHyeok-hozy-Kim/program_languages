@@ -24,3 +24,5 @@ void call_namespaces2();
 #include "04_04_const_and_static.h"
 /* 4-5 */
 #include "04_05_custom_string_class.h"
+/* 4-6 */
+#include "04_06_explicit_and_mutable.h"

@@ -50,8 +50,12 @@ int main() {
 	//ref_return_test();
 	//const_function_test();
 
-	/* 4-5. [Application] Custom String Class implementation : HozyString */
-	mystring_instance_test();
+	/* 4-5. [Application] Custom String Class implementation : MyString */
+	//mystring_instance_test();
+
+	/* 4-6. Explicit and Mutable */
+	//explict_test();
+	mutable_test();
 
 	return 0;
 }

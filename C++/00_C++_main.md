@@ -22,6 +22,9 @@
 * this keyword
 * reference returning function
 * const function : AKA read-only function
-### 4-5. [[OOP] Application : Custom String Class Implementaion](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/04_05_custom_string_class.cpp)
+### 4-5. [[OOP] Application : Custom String Class Implementaion](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/04_05_custom_string_class.h)
+### 4-6. [[OOP] Explicit and Mutable](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/04_06_explicit_and_mutable.cpp)
+* explicit vs implicit
+* mutable
 ---
 ### 5. [](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/04_04_const_and_static.cpp)
