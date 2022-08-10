@@ -1,3 +1,3 @@
 
 
-void instance_test();
+void mystring_instance_test();

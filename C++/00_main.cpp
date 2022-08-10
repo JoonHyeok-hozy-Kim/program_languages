@@ -51,7 +51,7 @@ int main() {
 	//const_function_test();
 
 	/* 4-5. [Application] Custom String Class implementation : HozyString */
-	instance_test();
+	mystring_instance_test();
 
 	return 0;
 }
