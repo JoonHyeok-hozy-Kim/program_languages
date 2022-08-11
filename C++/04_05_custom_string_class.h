@@ -34,6 +34,8 @@ public:
 
 	int compare(const MyString& str) const;
 
+	/* Chapter 5. Operator Overloading */
+	bool operator==(MyString& str);
 };
 
 void mystring_instance_test();

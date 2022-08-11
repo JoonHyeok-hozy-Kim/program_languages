@@ -119,8 +119,8 @@ MyString& MyString::erase(int loc, int num) {
 	}
 	else {
 		std::cout << "Cannot erase [" << loc << ":" << loc + num << "]." << std::endl;
-		return *this;
 	}
+	return *this;
 }
 
 int MyString::find(int start, const MyString& str) const {
