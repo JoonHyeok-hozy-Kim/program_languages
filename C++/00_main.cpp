@@ -55,7 +55,12 @@ int main() {
 
 	/* 4-6. Explicit and Mutable */
 	//explict_test();
-	mutable_test();
+	//mutable_test();
+
+
+	/* 5-1. Operator Overloading */
+	//equality_operator_test();
+	arithmetic_and_assignment_operator_overloading_test();
 
 	return 0;
 }

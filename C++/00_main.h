@@ -26,3 +26,6 @@ void call_namespaces2();
 #include "04_05_custom_string_class.h"
 /* 4-6 */
 #include "04_06_explicit_and_mutable.h"
+
+/* 5-1 */
+#include "05_01_operator_overloading.h"

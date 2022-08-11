@@ -135,7 +135,7 @@ class PhotonCannon {
 
 public:
 	PhotonCannon(int x, int y);
-	PhotonCannon(const PhotonCannon& pc);
+	PhotonCannon(const PhotonCannon& pc);	// AKA copy constructor
 	PhotonCannon(int x, int y, const char* cannon_name);
 	~PhotonCannon();
 
