@@ -1,6 +1,7 @@
 #include "04_05_custom_string_class.h"
 #include "05_01_operator_overloading.h"
 #include <iostream>
+#include <string.h>
 
 bool MyString::operator==(MyString& str) {
 	return !compare(str);	// Why "!compare(str)"? Recall that compare returns 0 if equal. operator== should return true if equal.
@@ -14,6 +15,9 @@ void equality_operator_test() {
 	std::cout << (str1 == str2) << std::endl;
 	std::cout << (str1 == str3) << std::endl;
 }
+
+////////////////////////////////////////////////////////////////////////////////////
+
 
 void Complex::print() {
 	std::cout << real;

@@ -7,9 +7,10 @@ class Complex {
 	double real, img;
 
 public:
-	Complex() {}
+	//Complex() {}
 	Complex(double real, double img) : real(real), img(img) {}
 	//Complex(Complex& c) : real(c.real), img(c.img) {}
+	Complex(const char* str);
 
 	void print();
 	void println();
