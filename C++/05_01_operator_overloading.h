@@ -30,5 +30,7 @@ public:
 
 };
 
+double parse_number(const char* str, int start, int end);
 
 void arithmetic_and_assignment_operator_overloading_test();
+void complex_string_constructor_test();
