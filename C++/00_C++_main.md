@@ -27,6 +27,14 @@
 * explicit vs implicit
 * mutable
 ---
-### 5. [Operator Overloading](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/05_01_operator_overloading.cpp)
-* operator types : comparison, arithmetic, assignment, 
+### 5-1. [Operator Overloading](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/05_01_operator_overloading.cpp)
+* comparison operator : ==
+* arithmetic operator : +, -, *, /
+* assignment operator : =, +=, -=, *=, /=
+* Application : Complex class
+### 5-2. [Operator Overloading Advanced](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/05_02_operator_overloading_advanced.cpp)
+* friend keyword : friend class, friend function
+* binary operator
+* input/output operator
+* subscript operator : []
 

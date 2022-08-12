@@ -60,7 +60,13 @@ int main() {
 
 	/* 5-1. Operator Overloading */
 	//equality_operator_test();
-	arithmetic_and_assignment_operator_overloading_test();
+	//arithmetic_and_assignment_operator_overloading_test();
+	//complex_string_constructor_test();
+
+	/* 5-2. Operator Overloading Advanced */
+	//friend_class_and_function_test();
+	//binary_operator_overloading_test();
+	iostream_operator_overloading_test();
 
 	return 0;
 }

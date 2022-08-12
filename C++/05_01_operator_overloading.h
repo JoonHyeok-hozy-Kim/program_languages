@@ -16,7 +16,7 @@ public:
 	void println();
 
 	/* Arithmetic Operators */
-	Complex operator+(const Complex& c) const;
+	//Complex operator+(const Complex& c) const;	// another implementation with friend function.
 	Complex operator-(const Complex& c) const;
 	Complex operator*(const Complex& c) const;
 	Complex operator/(const Complex& c) const;
@@ -28,6 +28,9 @@ public:
 	Complex& operator*=(const Complex& c);
 	Complex& operator/=(const Complex& c);
 
+	/* 5-2 */
+	/* Binary Operators */
+	friend Complex operator+(const Complex& a, const Complex& b);
 };
 
 double parse_number(const char* str, int start, int end);
