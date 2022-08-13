@@ -2,6 +2,7 @@
 #include "05_01_operator_overloading.h"
 #include <iostream>
 #include <cstring>
+#include "04_05_custom_string_class.h"
 
 
 /* Friend Class and Friend Fuction */
@@ -94,4 +95,15 @@ std::ostream& operator<<(std::ostream& os, const IOStreamTestClass& i) {
 void iostream_operator_overloading_test() {
 	IOStreamTestClass i;
 	std::cout << i << std::endl;
+}
+
+
+/////////////////////////////////////////////////////
+/* Subscript Operator Overloading */
+char& MyString::operator[](const int index) { return string_content[index]; }
+
+void subscript_operator_overloading_test() {
+	MyString str("abc");
+	str.println();
+	std::cout << str[2] << std::endl;
 }

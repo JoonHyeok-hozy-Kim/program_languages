@@ -66,7 +66,8 @@ int main() {
 	/* 5-2. Operator Overloading Advanced */
 	//friend_class_and_function_test();
 	//binary_operator_overloading_test();
-	iostream_operator_overloading_test();
+	//iostream_operator_overloading_test();
+	subscript_operator_overloading_test();
 
 	return 0;
 }

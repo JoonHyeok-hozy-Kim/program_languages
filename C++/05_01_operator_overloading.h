@@ -29,8 +29,11 @@ public:
 	Complex& operator/=(const Complex& c);
 
 	/* 5-2 */
-	/* Binary Operators */
+	/* Binary Operator */
 	friend Complex operator+(const Complex& a, const Complex& b);
+
+	/* Subscript Operator */
+	char& operator[](const int index);
 };
 
 double parse_number(const char* str, int start, int end);
