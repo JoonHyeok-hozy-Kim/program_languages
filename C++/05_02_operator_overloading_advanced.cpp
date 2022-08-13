@@ -107,3 +107,24 @@ void subscript_operator_overloading_test() {
 	str.println();
 	std::cout << str[2] << std::endl;
 }
+
+
+/////////////////////////////////////////////////////
+/* Wrapper Class */
+/* - goal : the packaging, or to bound an object. */
+class Int {
+	int data;
+
+public:
+	Int(int num) : data(num) {}
+	Int(const Int& i) : data(i.data) {}
+
+	operator int() { return data; }		// This syntax allows the compliler to interpret Int class as int data type!
+};
+
+void wrapper_int_class_test() {
+	Int i1(12);
+	Int i2(13);
+
+	std::cout << i1 + i2 << std::endl;
+}
