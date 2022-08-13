@@ -68,7 +68,8 @@ int main() {
 	//binary_operator_overloading_test();
 	//iostream_operator_overloading_test();
 	//subscript_operator_overloading_test();
-	wrapper_int_class_test();
+	//wrapper_int_class_test();
+	increment_operators_overloading_test();
 
 	return 0;
 }

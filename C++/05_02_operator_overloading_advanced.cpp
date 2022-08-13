@@ -128,3 +128,43 @@ void wrapper_int_class_test() {
 
 	std::cout << i1 + i2 << std::endl;
 }
+
+
+/////////////////////////////////////////////////////
+/* Increment/Decrement operator */
+/* 1. pre-{ } operator should return it self. */
+/* 2. post-{ } operator should return the object before the incrementation/derementation. */
+
+class IncrementTestClass {
+	int data;
+
+public:
+	IncrementTestClass(int num) : data(num) {}
+	IncrementTestClass(const IncrementTestClass& i) : data(i.data) {}
+
+	// pre-increment operator overloading
+	IncrementTestClass& operator++() {
+		std::cout << "pre-increment : " << data;
+		data++;
+		std::cout << " -> " << data << std::endl;
+		return *this;
+	}
+
+	// post-increment operator overloading
+	IncrementTestClass operator++(int x) {
+		std::cout << "post-increment : (this) " << data;
+		IncrementTestClass temp(*this);
+		std::cout << " (temp) " << temp.data;
+		data++;
+		std::cout << " -> (this) " << data;
+		std::cout << " (temp) " << temp.data << std::endl;
+		return temp;
+	}
+};
+
+
+void increment_operators_overloading_test() {
+	IncrementTestClass i(13);
+	++i;
+	i++;
+}

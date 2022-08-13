@@ -5,3 +5,4 @@ void binary_operator_overloading_test();
 void iostream_operator_overloading_test();
 void subscript_operator_overloading_test();
 void wrapper_int_class_test();
+void increment_operators_overloading_test();
