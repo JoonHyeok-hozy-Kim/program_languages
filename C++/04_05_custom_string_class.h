@@ -36,6 +36,9 @@ public:
 
 	/* Chapter 5. Operator Overloading */
 	bool operator==(MyString& str);
+
+	/* 5-2. Subscript Operator Overloading */
+	char& operator[](const int index);	// Check 05_02_operator_overloading_advanced.cpp
 };
 
 void mystring_instance_test();
