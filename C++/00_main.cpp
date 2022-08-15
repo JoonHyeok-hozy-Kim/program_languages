@@ -72,7 +72,11 @@ int main() {
 	//increment_operators_overloading_test();
 
 	/* 5-3. Application : N-Dimensional-Array Implementation */
-	array_construction_test();
+	//array_construction_test();
+
+	/* 6-1. Inheritance */
+	//string_class_test();
+	inheritance_test();
 
 	return 0;
 }

@@ -46,4 +46,8 @@
   * dynamic_cast
   * reinterpret_cast
 ---
-### 6-1. [Inheritance]()
+### 6-1. [Inheritance](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/06_01_inheritance.cpp)
+* C++'s 'string' class
+* inheritance
+* method overriding
+* keyword : public / protected / private
