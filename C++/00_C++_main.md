@@ -45,3 +45,5 @@
   * const_cast
   * dynamic_cast
   * reinterpret_cast
+---
+### 6-1. [Inheritance]()
