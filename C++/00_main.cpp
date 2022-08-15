@@ -69,7 +69,10 @@ int main() {
 	//iostream_operator_overloading_test();
 	//subscript_operator_overloading_test();
 	//wrapper_int_class_test();
-	increment_operators_overloading_test();
+	//increment_operators_overloading_test();
+
+	/* 5-3. Application : N-Dimensional-Array Implementation */
+	array_construction_test();
 
 	return 0;
 }

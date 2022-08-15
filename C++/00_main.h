@@ -31,3 +31,5 @@ void call_namespaces2();
 #include "05_01_operator_overloading.h"
 /* 5-2 */
 #include "05_02_operator_overloading_advanced.h"
+/* 5-3 */
+#include "05_03_application_n_dimensional_array.h"

@@ -39,4 +39,9 @@
 * subscript operator : []
 * Wrapper Class
 * pre/post-increment/decrement operator : ++, --
-
+### 5-3. [Operator Overloading Application : N-Dimensional Array Implementation](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/05_03_application_n_dimensional_array.cpp)
+* casting
+  * static_cast : (syntax) static_cast<int>(float_variable);
+  * const_cast
+  * dynamic_cast
+  * reinterpret_cast
