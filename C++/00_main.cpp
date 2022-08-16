@@ -76,7 +76,12 @@ int main() {
 
 	/* 6-1. Inheritance */
 	//string_class_test();
-	inheritance_test();
+	//inheritance_test();
+
+	/* 6-2 */
+	//up_casting_test();
+	//down_casting_test();
+	dynamic_binding_test();
 
 	return 0;
 }
