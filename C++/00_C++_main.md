@@ -51,3 +51,4 @@
 * inheritance
 * method overriding
 * keyword : public / protected / private
+### 6-2. [Virtual Function and Polymorphism](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/06_02_virtual_function_and_polymorphism.cpp)

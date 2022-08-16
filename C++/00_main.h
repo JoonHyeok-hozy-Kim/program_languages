@@ -36,3 +36,5 @@ void call_namespaces2();
 
 /* 6-1 */
 #include "06_01_inheritance.h"
+/* 6-2 */
+#include "06_02_virtual_function_and_polymorphism.h"
