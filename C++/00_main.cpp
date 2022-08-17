@@ -81,7 +81,15 @@ int main() {
 	/* 6-2 */
 	//up_casting_test();
 	//down_casting_test();
-	dynamic_binding_test();
+	//dynamic_binding_test();
+
+	/* 6-3 */
+	//virtual_destructor_test();
+	//referece_input_virtual_function_test();
+	//abstract_class_instanciation_test();
+	//multiple_inheritance_test();
+	diamond_inheritance_test();
 
 	return 0;
 }
+

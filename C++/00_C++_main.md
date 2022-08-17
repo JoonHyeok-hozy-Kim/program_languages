@@ -57,3 +57,12 @@
 * dynamic-casting
 * dynamic binding : [keyword] virtual, override
 * polymorphism
+### 6-2. [More Topics for Virtual Function and Polymorphism](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/06_03_virtual_function_and_polymorphism_advanced.cpp)
+* virtual destructor
+* virtual function table
+* pure virtual function
+  * abstract class
+* multiple inheritance
+  * diamond inheritance
+
+
