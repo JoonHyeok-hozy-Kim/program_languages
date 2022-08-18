@@ -88,7 +88,13 @@ int main() {
 	//referece_input_virtual_function_test();
 	//abstract_class_instanciation_test();
 	//multiple_inheritance_test();
-	diamond_inheritance_test();
+	//diamond_inheritance_test();
+
+	/* 7-1 */
+	//istream_string_instance_test();
+	//initial_input_error_test();
+	solution_input_error_test();
+
 
 	return 0;
 }

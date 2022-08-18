@@ -66,5 +66,10 @@
   * diamond inheritance
 ---
 ### 7-1. [Input and Output in C++](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/07_01_io.cpp)
-* io related classes in C++ [image](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/images/07_01_01_io_classes_in_cpp.png)
-
+* io related classes in C++ [(See image)](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/images/07_01_01_io_classes_in_cpp.png)
+* istream
+	* status flags of streams
+		1. goodbit : io available
+		2. badbit : recovery unavailable
+		3. failbit : recovery available
+		4. eofbit : reached end of file
