@@ -92,8 +92,11 @@ int main() {
 
 	/* 7-1 */
 	//istream_string_instance_test();
-	//initial_input_error_test();
-	solution_input_error_test();
+	//wrong_initial_input_error_test();
+	//solution_input_error_test();
+	//hexadecimal_input_test_with_format_flag();
+	//hexadecimal_input_test_with_manipulator();
+	stream_buffer_class_manipulation();
 
 
 	return 0;

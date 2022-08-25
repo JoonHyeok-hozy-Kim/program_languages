@@ -73,3 +73,12 @@
 		2. badbit : recovery unavailable
 		3. failbit : recovery available
 		4. eofbit : reached end of file
+* format flag
+	* Used for std::cin.setf() function
+	* ex.) std::ios_base::hex
+* manipulator
+	* ex)
+		* std::endl
+		* std::hex
+* stream buffer
+	* streambuf class
