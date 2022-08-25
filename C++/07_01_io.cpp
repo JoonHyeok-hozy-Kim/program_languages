@@ -92,6 +92,12 @@ void stream_buffer_class_manipulation() {
 	std::cin >> s;
 
 	char peek = std::cin.rdbuf()->snextc();
+	/* 
+	1) rdbuf() returns the pointer of the stream object
+	2) snextc() peeks at the next word, not reading!
+	*/
+
+
 	if (std::cin.fail()) std::cout << "Failed!" << std::endl;
 	std::cout << "The first letter of the second word : " << peek << std::endl;
 	std::cout << s;
