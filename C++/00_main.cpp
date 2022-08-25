@@ -96,8 +96,12 @@ int main() {
 	//solution_input_error_test();
 	//hexadecimal_input_test_with_format_flag();
 	//hexadecimal_input_test_with_manipulator();
-	stream_buffer_class_manipulation();
+	//stream_buffer_class_manipulation();
 
+	/* 7-2 */
+	//ifstream_read_test();
+	//ifstream_close_test();
+	ifstream_binary_reading_test();
 
 	return 0;
 }

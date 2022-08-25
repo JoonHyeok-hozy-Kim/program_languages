@@ -43,3 +43,5 @@ void call_namespaces2();
 
 /* 7-1 */
 #include "07_01_io.h"
+/* 7-2 */
+#include "07_02_io_streams.h"

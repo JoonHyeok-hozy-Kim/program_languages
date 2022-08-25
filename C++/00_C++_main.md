@@ -82,3 +82,8 @@
 		* std::hex
 * stream buffer
 	* streambuf class
+### 7-2. [Stream Applications](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/07_02_io_streams.cpp)
+* file stream
+	* ifstream
+	* ofstream
+* string formatting using std::stringstream
