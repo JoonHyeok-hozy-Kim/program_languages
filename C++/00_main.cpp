@@ -113,7 +113,12 @@ int main() {
 	/* String Stream Test */
 	//istringstream_test();
 	//istringstream_str_to_double_test();
-	istringstream_int_to_str_test();
+	//istringstream_int_to_str_test();
+
+
+	/* 8-1 */
+	//vector_test();
+	stack_test();
 
 	return 0;
 }
