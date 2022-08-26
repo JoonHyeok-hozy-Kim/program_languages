@@ -86,4 +86,13 @@
 * file stream
 	* ifstream
 	* ofstream
-* string formatting using std::stringstream
+		* options
+			* std::ios::app : Append the new contents. Previous contents secured.
+			* std::ios::ate : Position at the end but can move forward, i.e., contents can be altered.
+			* std::ios::trunc : Truncate the file.
+		* operator overloading
+			* <<
+* sstream
+	* std::istringstream
+	* std::ostringstream
+		* string formatting 

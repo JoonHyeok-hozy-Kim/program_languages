@@ -99,9 +99,21 @@ int main() {
 	//stream_buffer_class_manipulation();
 
 	/* 7-2 */
+	/* Reading Tests */
 	//ifstream_read_test();
 	//ifstream_close_test();
-	ifstream_binary_reading_test();
+	//ifstream_binary_reading_test();
+	//ifstream_read_whole_test();
+	//ifstream_read_by_line_test();
+	//string_read_by_line_test();
+	/* Writing Tests */
+	//ostream_write_test();
+	//ostream_append_test();
+	//ofstream_operator_overloading_test();
+	/* String Stream Test */
+	//istringstream_test();
+	//istringstream_str_to_double_test();
+	istringstream_int_to_str_test();
 
 	return 0;
 }
