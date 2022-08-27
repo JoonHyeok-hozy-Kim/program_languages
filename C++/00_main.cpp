@@ -118,7 +118,9 @@ int main() {
 
 	/* 8-1 */
 	//vector_test();
-	stack_test();
+	//stack_test();
+	//num_stack_test();
+	string_related_test();
 
 	return 0;
 }
