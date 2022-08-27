@@ -40,4 +40,11 @@ public:
 	virtual std::string print_table() = 0;
 };
 
-void string_related_test();
+class TxtTable : public Table {
+	std::string repeat_char(int n, char c);
+	std::string col_num_to_char(int n);
+
+public:
+	TxtTable(int row, int col) : Table(row, col) {};
+	std::string print_table();
+};

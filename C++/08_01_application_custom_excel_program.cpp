@@ -77,69 +77,6 @@ void Table::reg_cell(Cell* c, int row, int col) {
 	data_table[row][col] = c;
 }
 
-void string_related_test() {
-	std::string address("Ax1");
-	const char* c = address.c_str();
-	char* d = (char*)c;
-	bool alpha_flag = true;
-	bool num_flag = false;
-	int alpha_cnt = 0;
-	for (int i = 0; i < (int)address.length(); i++) {
-		if (isalpha(*d) && alpha_flag) {
-			std::cout << "Alpha : " << *d << std::endl;
-			alpha_cnt++;
-		}
-		else if (!isalpha(*d) && isalnum(*d)) {
-			if (alpha_flag == num_flag) {
-				std::cout << "Address parsing error at : " << *d << std::endl;
-				return;
-			}
-
-			if (alpha_flag && !num_flag) {
-				alpha_flag = false;
-				num_flag = true;
-			}
-			std::cout << "Alnum : " << *d << std::endl;
-		}
-		else {
-			std::cout << "Wrong address format : " << address << std::endl;
-			return;
-		}
-		d++;
-	}
-
-	std::cout << "alpha_cnt : " << alpha_cnt << std::endl;
-	int row = -1;
-	//std::cout << "Row creation" << std::endl;
-	for (int i = (int)address.length(); i > alpha_cnt; i--) {
-		row += (int)std::pow(10, address.length() - i) * ((int)address[i - 1] - '0');
-		//std::cout << row << std::endl;
-	}
-
-	int col = 0;
-	std::cout << "Column creation" << std::endl;
-	for (int j = 0; j < alpha_cnt; j++) {
-		int digit = (int)std::pow(26, alpha_cnt-j-1);
-		int temp;
-		if (address[j] >= 'a' && address[alpha_cnt - 1] <= 'z') {
-			temp = address[alpha_cnt - 1] - 'a';
-		}
-		else {
-			temp = address[alpha_cnt - 1] - 'A';
-		}
-		if (j > 0) temp++;
-		col += (digit * temp);
-		std::cout << "digit : " << digit << " temp : " << temp << " col : " << col << std::endl;
-	}
-
-	int result[2];
-	result[0] = row;
-	result[1] = col;
-	std::cout << "row : " << result[0] << " col : " << result[1] << std::endl;
-
-
-}
-
 int* Table::address_parser(const std::string& address) {
 	//std::string address("A178");
 	const char* c = address.c_str();
@@ -179,20 +116,19 @@ int* Table::address_parser(const std::string& address) {
 		//std::cout << row << std::endl;
 	}
 
-	int col = 0;
-	std::cout << "Column creation" << std::endl;
+	int col = -1;
+	//std::cout << "Column creation" << std::endl;
 	for (int j = 0; j < alpha_cnt; j++) {
-		int digit = (int) std::pow(26, j);
+		int digit = (int)std::pow(26, alpha_cnt - j - 1);
 		int temp;
-		if (address[alpha_cnt - 1] >= 'a' && address[alpha_cnt - 1] <= 'z') {
-			temp = address[alpha_cnt - 1] - 'a';
+		if (address[j] >= 'a' && address[j] <= 'z') {
+			temp = address[j] - 'a' + 1;
 		}
 		else {
-			temp = address[alpha_cnt - 1] - 'A';
+			temp = address[j] - 'A' + 1;
 		}
-		if (j > 0) temp++;
 		col += (digit * temp);
-		std::cout << "digit : " << digit << " temp : " << temp << " col : " << col << std::endl;
+		std::cout << address[j] << " -> digit : " << digit << " temp : " << temp << " col : " << col << std::endl;
 	}
 
 	int* result = new int[2];
@@ -202,25 +138,67 @@ int* Table::address_parser(const std::string& address) {
 }
 
 int Table::to_numeric(const std::string& address) {
-	//int* num_address = address_parser(address);
-	//std::cout << "row : " << num_address[0] << " col : " << num_address[1] << std::endl;
-
+	int* num_address = address_parser(address);
+	int row = num_address[0];
+	int col = num_address[1];
+	if (row < max_row_num && col < max_col_num) {
+		if (data_table[row][col]) {
+			return data_table[row][col]->to_numeric();
+		}
+	}
 	return 0;
 }
 
 int Table::to_numeric(int row, int col) {
+	if (row < max_row_num && col < max_col_num) {
+		if (data_table[row][col]) {
+			return data_table[row][col]->to_numeric();
+		}
+	}
 	return 0;
 }
 
 
 std::string Table::stringify(const std::string& address) {
+	int* num_address = address_parser(address);
+	int row = num_address[0];
+	int col = num_address[1];
+	if (row < max_row_num && col < max_col_num) {
+		if (data_table[row][col]) {
+			return data_table[row][col]->stringify();
+		}
+	}
 	return "";
 }
 
 std::string Table::stringify(int row, int col) {
+	if (row < max_row_num && col < max_col_num) {
+		if (data_table[row][col]) {
+			return data_table[row][col]->stringify();
+		}
+	}
 	return "";
 }
-
-
-
 /* Table ends. */
+
+/* TxtTable starts. */
+std::string TxtTable::repeat_char(int n, char c) {
+	std::string s = "";
+	for (int i = 0; i < n; i++) s.push_back(c);
+	return s;
+}
+
+std::string TxtTable::col_num_to_char(int n) {
+	std::string s = "";
+	int target = n + 1;
+	while (target >= 26) {
+		s.push_back('A' + target % 26);
+		target /= 26;
+	}
+}
+
+std::string TxtTable::print_table() {
+
+}
+
+/* TxtTable ends. */
