@@ -48,3 +48,5 @@ void call_namespaces2();
 
 /* 8-1 */
 #include "08_01_application_custom_excel_program.h"
+/* 8-2 */
+#include "08_02_excel_advanced.h"

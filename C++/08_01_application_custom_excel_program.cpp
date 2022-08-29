@@ -44,8 +44,130 @@ void num_stack_test() {
 }
 
 /* Cell starts. */
-std::string Cell::stringify() { return data; }
-int Cell::to_numeric() { return 0; }
+//std::string Cell::stringify() { return data; }
+//int Cell::to_numeric() { return 0; }
+
+std::string StringCell::stringify() { return data; }
+int StringCell::to_numeric() { return 0; }
+
+std::string NumberCell::stringify() { return std::to_string(data); }
+int NumberCell::to_numeric() { return data; }
+
+std::string DateCell::stringify() {
+	char buf[50];
+	tm temp;
+	localtime_s(&temp, &data);
+	strftime(buf, 50, "%F", &temp);
+	return std::string(buf);
+}
+
+int DateCell::to_numeric() { return static_cast<int>(data); }
+
+DateCell::DateCell(std::string s, int x, int y, Table* t) : Cell(x, y, t) {
+	// s in format : yyyy-mm-dd
+	int year = std::atoi(s.c_str());
+	int month = std::atoi(s.c_str() + 5);
+	int date = std::atoi(s.c_str() + 8);
+
+	tm timeinfo;
+	timeinfo.tm_year = year - 1900;
+	timeinfo.tm_mon = month - 1;
+	timeinfo.tm_mday = date;
+	timeinfo.tm_hour = 0;
+	timeinfo.tm_min = 0;
+	timeinfo.tm_sec = 0;
+
+	data = mktime(&timeinfo);
+}
+
+int ExprCell::precedence(char c) {
+	switch (c) {
+	case '(':
+	case '[':
+	case '{':
+		return 0;
+	case '+':
+	case '-':
+		return 1;
+	case '*':
+	case '/':
+		return 2;
+	}
+	return 0;
+}
+
+void ExprCell::parse_expression() {
+	MyExcel::Stack stack;
+
+	data.insert(0, "(");
+	data.append(")");
+
+	for (int i = 0; i < data.length(); i++) {
+		if (isalpha(data[i])) {
+			// For the cell reference. TBD
+		}
+		else if (isdigit(data[i])) {
+			expression_vector.push_back(data.substr(i, 1));
+		}
+		else if (data[i] == '(' || data[i] == '{' || data[i] == '[') {
+			stack.push(data.substr(i, 1));
+		}
+		else if (data[i] == ')' || data[i] == '}' || data[i] == ']') {
+			std::string t = stack.pop();
+			while (t != "(" && t != "{" && t != "[") {
+				expression_vector.push_back(t);
+				t = stack.pop();
+			}
+		}
+		else if (data[i] == '+' || data[i] == '-' || data[i] == '*' ||
+			data[i] == '/') {
+			while (!stack.is_empty() &&
+				precedence(stack.peek()[0]) >= precedence(data[i])) {
+				expression_vector.push_back(stack.pop());
+			}
+			stack.push(data.substr(i, 1));
+		}
+	}
+}
+
+std::string ExprCell::stringify() {
+	return data;
+}
+
+int ExprCell::to_numeric() {
+	double result = 0;
+	MyExcel::NumStack stack;
+
+	for (int i = 0; i < expression_vector.size(); i++) {
+		std::string s = expression_vector[i];
+
+		if (isalpha(s[0])) {
+			// When reference to a cell. TBD
+		}
+		else if (isdigit(s[0])) {
+			stack.push(atoi(s.c_str()));
+		}
+		else {
+			double y = stack.pop();
+			double x = stack.pop();
+			switch (s[0]) {
+			case '+':
+				stack.push(x + y);
+				break;
+			case '-':
+				stack.push(x - y);
+				break;
+			case '*':
+				stack.push(x * y);
+				break;
+			case '/':
+				stack.push(x / y);
+				break;
+			}
+		}
+	}
+	return stack.pop();
+}
 /* Cell ends. */
 
 /* Table starts. */
@@ -295,12 +417,12 @@ void txttable_test() {
 	for (int i = 0; i < row; i++) {
 		for (int j = 0; j < col; j++) {
 			std::string s = std::to_string(i + j);
-			t.reg_cell(new Cell(s, i, j, &t), i, j);
+			t.reg_cell(new StringCell(s, i, j, &t), i, j);
 		}
 	}
 
-	t.reg_cell(new Cell("ABCccccc", 0, 0, &t), 0, 0);
+	t.reg_cell(new StringCell("ABCccccc", 0, 0, &t), 0, 0);
 
-	//t.print_table();
-	t.save_file("08_01_excel_test");
+	t.print_table();
+	//t.save_file("08_01_excel_test");
 }

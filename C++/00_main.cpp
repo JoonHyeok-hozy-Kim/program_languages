@@ -120,8 +120,11 @@ int main() {
 	//vector_test();
 	//stack_test();
 	//num_stack_test();
+	//txttable_test();
 
-	txttable_test();
+	/* 8-2 */
+	//time_t_test();
+	//substr_test();
 
 	return 0;
 }

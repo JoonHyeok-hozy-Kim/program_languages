@@ -1,26 +1,76 @@
 #include <string>
 #include <iostream>
 #include <fstream>
+#include "utilities.h"
 
 void vector_test();
 void stack_test();
 void num_stack_test();
 
 class Table;
+
+/* Cell definitions start */
 class Cell {
 protected:
 	int x, y;
 	Table* table;
+	//std::string data;
+
+public:
+	//Cell(std::string data, int x, int y, Table* table) : data(data), x(x), y(y), table(table) {};
+	//Cell(const Cell& c) : data(c.data), x(c.x), y(c.y), table(c.table) {};
+	Cell(int x, int y, Table* table) : x(x), y(y), table(table) {};
+	Cell(const Cell& c) : x(c.x), y(c.y), table(c.table) {};
+
+	virtual std::string stringify() = 0;
+	virtual int to_numeric() = 0;
+};
+
+class StringCell : public Cell {
 	std::string data;
 
 public:
-	Cell(std::string data, int x, int y, Table* table)
-		: data(data), x(x), y(y), table(table) {};
-	Cell(const Cell& c) : data(c.data), x(c.x), y(c.y), table(c.table) {};
-
-	virtual std::string stringify();
-	virtual int to_numeric();
+	std::string stringify();
+	int to_numeric();
+	StringCell(std::string data, int x, int y, Table* t) : data(data), Cell(x, y, t) {};
 };
+
+
+class NumberCell : public Cell {
+	int data;
+
+public:
+	std::string stringify();
+	int to_numeric();
+	NumberCell(int data, int x, int y, Table* t) : data(data), Cell(x, y, t) {};
+};
+
+
+class DateCell : public Cell {
+	time_t data;
+
+public:
+	std::string stringify();
+	int to_numeric();
+	DateCell(std::string s, int x, int y, Table* t);
+};
+
+class ExprCell : public Cell {
+	std::string data;
+	std::string* parsed_expression;
+	MyExcel::Vector expression_vector;
+
+	int precedence(char c);
+	void parse_expression();
+
+public:
+	ExprCell(std::string data, int x, int y, Table* t)
+		: data(data), Cell(x, y, t) {};
+	std::string stringify();
+	int to_numeric();
+};
+/* Cell definitions end */
+
 
 class Table {
 protected:
