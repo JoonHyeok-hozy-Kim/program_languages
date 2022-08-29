@@ -98,7 +98,7 @@
 		* string formatting 
 ---
 ### 8-1. [Application : Excel Implementation](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/08_01_application_custom_excel_program.cpp)
-* [time related data types]()(https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/08_02_excel_advanced.cpp)
+* [time related data types](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/08_02_excel_advanced.cpp)
 	* tm
 	* time_t
 	* mktime()
