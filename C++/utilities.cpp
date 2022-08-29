@@ -64,6 +64,7 @@ namespace MyExcel {
 	Stack::Stack() : current(NULL), length(0) {}
 
 	void Stack::push(std::string s) {
+		//std::cout << "Stack pushed : " << s << std::endl;
 		current = new Node(current, s);
 		length++;
 	}
@@ -140,6 +141,41 @@ namespace MyExcel {
 	}
 	/* NumStack ends. */
 
+	/* CharStack starts. */
+	void CharStack::push(char c) {
+		current = new Node(current, c);
+		length++;
+	}
+
+	int CharStack::pop() {
+		Node* top = current;
+		int result = top->c;
+		current = top->prev;
+		length--;
+		return result;
+	}
+
+	int CharStack::peek() {
+		if (length == 0) return NULL;
+		return current->c;
+	}
+
+	bool CharStack::is_empty() {
+		return (length == 0);
+	}
+
+	int CharStack::size() {
+		return length;
+	}
+
+	CharStack::~CharStack() {
+		while (current) {
+			Node* top = current;
+			current = top->prev;
+			delete top;
+		}
+	}
+	/* CharStack ends. */
 
 
 }

@@ -71,6 +71,28 @@ namespace MyExcel {
 		int size();
 		~NumStack();
 	};
+
+	class CharStack {
+
+		struct Node {
+			Node* prev;
+			char c;
+
+			Node(Node* prev, char c) : prev(prev), c(c) {};
+		};
+
+		Node* current;
+		int length;
+
+	public:
+		CharStack() : current(NULL), length(0) {}
+		void push(char c);
+		int pop();
+		int peek();
+		bool is_empty();
+		int size();
+		~CharStack();
+	};
 }
 
 

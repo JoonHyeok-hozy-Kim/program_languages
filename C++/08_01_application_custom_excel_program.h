@@ -1,5 +1,6 @@
 #include <string>
 #include <iostream>
+#include <fstream>
 
 void vector_test();
 void stack_test();
@@ -15,6 +16,7 @@ protected:
 public:
 	Cell(std::string data, int x, int y, Table* table)
 		: data(data), x(x), y(y), table(table) {};
+	Cell(const Cell& c) : data(c.data), x(c.x), y(c.y), table(c.table) {};
 
 	virtual std::string stringify();
 	virtual int to_numeric();
@@ -27,6 +29,7 @@ protected:
 
 public:
 	Table(int max_row_num, int max_col_num);
+	Table(const Table& t) : max_row_num(t.max_row_num), max_col_num(t.max_col_num), data_table(t.data_table) {};
 	~Table();
 
 	int* address_parser(const std::string& address);
@@ -47,4 +50,7 @@ class TxtTable : public Table {
 public:
 	TxtTable(int row, int col) : Table(row, col) {};
 	std::string print_table();
+	void save_file(std::string file_name);
 };
+
+void txttable_test();

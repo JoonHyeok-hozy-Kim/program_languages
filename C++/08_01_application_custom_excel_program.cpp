@@ -75,6 +75,7 @@ void Table::reg_cell(Cell* c, int row, int col) {
 	if (!(row < max_row_num && col < max_col_num)) return;
 	if (data_table[row][col]) delete data_table[row][col];
 	data_table[row][col] = c;
+	//std::cout << "reg_cell(" << row << "," << col << ") : " << data_table[row][col]->stringify() << std::endl;
 }
 
 int* Table::address_parser(const std::string& address) {
@@ -190,15 +191,116 @@ std::string TxtTable::repeat_char(int n, char c) {
 
 std::string TxtTable::col_num_to_char(int n) {
 	std::string s = "";
-	int target = n + 1;
-	while (target >= 26) {
-		s.push_back('A' + target % 26);
-		target /= 26;
+	n++;
+	int cnt = 0;
+	int powered = 1;
+	int char_num = 26;
+	while (true) {
+		if (n > char_num * (powered - 1) / (char_num - 1)) {
+			cnt++;
+			powered *= char_num;
+		}
+		else break;
 	}
+
+	powered /= char_num;
+	n -= char_num * (powered - 1) / (char_num - 1) + 1;
+
+	for (int i = 0; i < cnt; i++) {
+		char temp_char = 'A';
+		temp_char += n / powered;
+		s.push_back(temp_char);
+		n %= powered;
+		powered /= char_num;
+	}
+
+	return s;
 }
 
 std::string TxtTable::print_table() {
+	std::string table_text;
+	int first_col_size = 4;		// supports row number 1 ~ 10^4-1 (4 digits)
 
+	int* col_max_width_list = new int[max_col_num];
+	for (int j = 0; j < max_col_num; j++) {
+		unsigned int max_width = 2;		// Default width 2.
+		for (int i = 0; i < max_row_num; i++) {
+			if (data_table[i][j] && data_table[i][j]->stringify().length() > max_width) {
+				max_width = data_table[i][j]->stringify().length();
+			}
+		}
+		col_max_width_list[j] = max_width;
+	}
+
+	// First line with column names.
+	table_text.append(repeat_char(first_col_size, ' '));
+	int line_total_width = first_col_size;
+	for (int j = 0; j < max_col_num; j++) {
+		table_text.append(" | ");
+		line_total_width += 3;
+		std::string col_num = col_num_to_char(j);
+		table_text.append(col_num);
+		table_text.append(repeat_char(col_max_width_list[j] - col_num.length(), ' '));
+		line_total_width += col_max_width_list[j];
+	}
+	table_text.push_back('\n');
+
+	table_text.append(repeat_char(line_total_width, '-'));
+	table_text.push_back('\n');
+
+	for (int i = 0; i < max_row_num; i++) {
+		std::string row_num = std::to_string(i + 1);
+		table_text.append(row_num);
+		table_text.append(repeat_char(first_col_size - row_num.length(), ' '));
+
+		for (int j = 0; j < max_col_num; j++) {
+			table_text.append(" | ");
+			int content_length = 0;
+			if (data_table[i][j]) {
+				//std::cout << data_table[i][j]->stringify() << std::endl;
+				table_text.append(data_table[i][j]->stringify());
+				content_length += data_table[i][j]->stringify().length();
+			}
+			table_text.append(repeat_char(col_max_width_list[j] - content_length, ' '));
+		}
+		table_text.push_back('\n');
+	}
+
+	std::cout << table_text << std::endl;
+
+	return table_text;
+}
+
+void TxtTable::save_file(std::string file_name) {
+	std::string table_text = print_table();
+	file_name.append(".txt");
+	std::ofstream fout(file_name.c_str());
+
+	if (fout.is_open()) {
+		fout << table_text;
+		std::cout << "Saved successfully." << std::endl;
+	}
+	else {
+		std::cout << "[Error] file not saved." << std::endl;
+	}
+	return;
 }
 
 /* TxtTable ends. */
+
+void txttable_test() {
+	int row = 50;
+	int col = 15;
+	TxtTable t(row, col);
+	for (int i = 0; i < row; i++) {
+		for (int j = 0; j < col; j++) {
+			std::string s = std::to_string(i + j);
+			t.reg_cell(new Cell(s, i, j, &t), i, j);
+		}
+	}
+
+	t.reg_cell(new Cell("ABCccccc", 0, 0, &t), 0, 0);
+
+	//t.print_table();
+	t.save_file("08_01_excel_test");
+}

@@ -121,6 +121,8 @@ int main() {
 	//stack_test();
 	//num_stack_test();
 
+	txttable_test();
+
 	return 0;
 }
 
