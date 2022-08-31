@@ -126,6 +126,9 @@ int main() {
 	//time_t_test();
 	//substr_test();
 
+	/* 9-1 */
+	template_vector_test();
+
 	return 0;
 }
 
