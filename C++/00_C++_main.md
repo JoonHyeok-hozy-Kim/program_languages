@@ -107,3 +107,6 @@
 * template
 * class template instantiation
 * template specialization
+* function template
+* function object (a.k.a. functor)
+* non-type template arguments

@@ -127,7 +127,18 @@ int main() {
 	//substr_test();
 
 	/* 9-1 */
-	template_vector_test();
+	//template_vector_test();
+	//bool_vector_test();
+	//function_template_max_test();
+	//swap_function_test();
+	//bubble_sort_test();
+	//bubble_sort_reverse_test();
+	//non_type_template_argument_test();
+	//non_type_template_argument_default_test();
+	//non_type_template_argument_array_test();
+	print_array_test();
+
+
 
 	return 0;
 }
