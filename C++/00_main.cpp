@@ -140,8 +140,10 @@ int main() {
 	//test_space_test();
 
 	/* 9-2 */
-
-
+	//variadic_template_print_test();
+	//variadic_template_str_concat_test();
+	//variadic_template_size_of_test();
+	fold_expression_test();
 
 
 
