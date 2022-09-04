@@ -136,7 +136,12 @@ int main() {
 	//non_type_template_argument_test();
 	//non_type_template_argument_default_test();
 	//non_type_template_argument_array_test();
-	print_array_test();
+	//print_array_test();
+	//test_space_test();
+
+	/* 9-2 */
+
+
 
 
 

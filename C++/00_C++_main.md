@@ -103,10 +103,14 @@
 	* time_t
 	* mktime()
 ---
-### 9-1. [Templates](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/09_01_templates.cpp)
+### 9-1. [Templates](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/09_01_templates.h)
 * template
 * class template instantiation
 * template specialization
 * function template
 * function object (a.k.a. functor)
 * non-type template arguments
+### 9-2. [Variadic Templates](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/09_02_variadic_template.h)
+* variadic template
+* parameter pack
+* fold expression
