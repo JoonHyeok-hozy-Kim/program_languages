@@ -4,196 +4,202 @@
 
 
 /* Class Template Case */
-template <typename T>	// Define the template for the class below.
-class TemplateVector {
-	T* data;
-	int capacity;
-	int length;
+namespace TemplateClasses {
+	template <typename T>	// Define the template for the class below.
+	class Vector {
+		T* data;
+		int capacity;
+		int length;
 
-public:
-	typedef T value_type;
+	public:
+		typedef T value_type;
 
-	TemplateVector(int n = 1) : data(new T[n]), capacity(n), length(0) {};
+		Vector(int n = 1) : data(new T[n]), capacity(n), length(0) {};
 
-	std::string str() {
-		std::string s("[");
-		for (int i = 0; i < length; i++) {
-			if (typeid(std::string) == typeid(data[i])) s += data[i];
-			else {
-				//s.push_back(std::to_string(data[i]));
+		std::string str() {
+			std::string s("[");
+			for (int i = 0; i < length; i++) {
+				if (typeid(std::string) == typeid(data[i])) s += data[i];
+				else {
+					//s.push_back(std::to_string(data[i]));
+				}
+				if (i < length - 1) s += ", ";
 			}
-			if (i < length - 1) s += ", ";
+			s += "]";
+			return s;
 		}
-		s += "]";
-		return s;
-	}
 
-	void print() {
-		std::cout << "[";
-		for (int i = 0; i < length; i++) {
-			std::cout << data[i];
-			if (i < length - 1) std::cout << ", ";
+		void print() {
+			std::cout << "[";
+			for (int i = 0; i < length; i++) {
+				std::cout << data[i];
+				if (i < length - 1) std::cout << ", ";
+			}
+			std::cout << "]";
 		}
-		std::cout << "]" << std::endl;
-	}
 
-	void capacity_change(double times) {
-		T* prev_data = data;
-		capacity = (int)((double)capacity * times);
-		//std::cout << "New capa : " << capacity << std::endl;
-		if (capacity < length) {
-			std::cout << "[Error] In Vector::capacity_change, capacity < length" << std::endl;
-			return;
+		void println() {
+			print();
+			std::cout << std::endl;
 		}
-		data = new T[capacity];
-		for (int i = 0; i < length; i++) data[i] = prev_data[i];
-		return;
-	}
 
-	void push_back(T s) {
-		if (capacity == length) capacity_change(2);
-		data[length] = s;
-		length++;
-	}
-
-	T operator[](int i) { return data[i]; }
-
-	void remove(int x) {
-		if (length <= x) {
-			std::cout << "[Error] In Vector::remove, length <= x" << std::endl;
-			return;
-		}
-		if (x < length - 1) {
-			for (int i = x; i < length - 1; i++) { data[i] = data[i + 1]; }
-		}
-		length--;
-		if (length < capacity / 2) capacity_change(.5);
-	}
-
-	int size() { return length; }
-
-	void swap(int x, int y) {
-		if (!(x < length && y < length)) {
-			std::cout << "[Error] Index out of range." << std::endl;
+		void capacity_change(double times) {
+			T* prev_data = data;
+			capacity = (int)((double)capacity * times);
+			//std::cout << "New capa : " << capacity << std::endl;
+			if (capacity < length) {
+				std::cout << "[Error] In Vector::capacity_change, capacity < length" << std::endl;
+				return;
+			}
+			data = new T[capacity];
+			for (int i = 0; i < length; i++) data[i] = prev_data[i];
 			return;
 		}
 
-		T temp = data[x];
-		data[x] = data[y];
-		data[y] = temp;
-	}
-
-	~TemplateVector() { delete[] data; }
-};
-
-void template_vector_test();
-
-
-
-/* Template Specialization */
-/* Customization for specific type of instance */
-/* Ex.) special TemplateVector class for bool data type */
-template <>
-class TemplateVector<bool> {
-	unsigned int* data;		// total 32(=4*8) bools will be assinged to each 4-Byte unsigned int data type.
-	int capacity;
-	int length;
-
-public:
-	typedef bool value_type;
-
-	TemplateVector(int n = 1)
-		: data(new unsigned int[n / 32 + 1]), capacity(n / 32 + 1), length(0) { 	// Recall that 32 bools for each unsigned int.
-		for (int i = 0; i < capacity; i++) {
-			data[i] = 0;
+		void push_back(T s) {
+			if (capacity == length) capacity_change(2);
+			data[length] = s;
+			length++;
 		}
+
+		T operator[](int i) { return data[i]; }
+
+		void remove(int x) {
+			if (length <= x) {
+				std::cout << "[Error] In Vector::remove, length <= x" << std::endl;
+				return;
+			}
+			if (x < length - 1) {
+				for (int i = x; i < length - 1; i++) { data[i] = data[i + 1]; }
+			}
+			length--;
+			if (length < capacity / 2) capacity_change(.5);
+		}
+
+		int size() { return length; }
+
+		void swap(int x, int y) {
+			if (!(x < length && y < length)) {
+				std::cout << "[Error] Index out of range." << std::endl;
+				return;
+			}
+
+			T temp = data[x];
+			data[x] = data[y];
+			data[y] = temp;
+		}
+
+		~Vector() { delete[] data; }
 	};
 
-	std::string str() {
-		std::string s("[");
-		for (int i = 0; i < length; i++) {
-			bool temp = ((data[i / 32] & (1 << (i % 32))) != 0);
-			s.append(std::to_string(temp));
-			if (i < length - 1) s.append(", ");
-		}
-		s += "]";
-		return s;
-	}
 
-	void print() {
-		std::cout << str() << std::endl;
-	}
+	/* Template Specialization */
+	/* Customization for specific type of instance */
+	/* Ex.) special TemplateVector class for bool data type */
+	template <>
+	class Vector<bool> {
+		unsigned int* data;		// total 32(=4*8) bools will be assinged to each 4-Byte unsigned int data type.
+		int capacity;
+		int length;
 
-	void capacity_change(double times) {
-		unsigned int* prev_data = data;
-		int prev_capacity = capacity;
-		capacity = (int)((double)capacity * times);
-		//std::cout << "New capa : " << capacity << std::endl;
-		if (capacity < length/32) {
-			std::cout << "[Error] In Vector::capacity_change, capacity < length" << std::endl;
-			return;
-		}
-		data = new unsigned int[capacity];
-		for (int i = 0; i < capacity; i++) {
-			if (i < prev_capacity) data[i] = prev_data[i];
-			else data[i] = 0;			
-		}
-		delete prev_data;
-		return;
-	}
+	public:
+		typedef bool value_type;
 
-	void push_back(bool s) {
-		if (capacity == length/32) capacity_change(2);
-		//std::cout << "prev : " << data[length / 32] << " / d : " << (1 << (length % 32)) << std::endl;
-		if (s) {
-			data[length / 32] |= (1 << (length % 32));	// Make specific digit into 1 if true. ( 1|0 == 1|1 == 1 )
-		}
-		//std::cout << " -> " << data[length / 32] << std::endl;
-		length++;
-	}
-
-	bool operator[](int i) {
-		return ((data[i / 32] & (1 << (i % 32))) != 0);
-	}
-
-	void remove(int x) {
-		if (length <= x) {
-			std::cout << "[Error] In Vector::remove, length <= x" << std::endl;
-			return;
-		}
-		
-		int last = length - 1;
-		if (x < last) {
-			for (int i = x; i < last; i++) {
-				int j = i + 1;
-				// When next digit is 1
-				if (data[j / 32] & (1 << (j % 32))) data[i / 32] |= (1 << (i % 32));
-				// When next digit is 0
-				else {
-					// When current digit is 1
-					if (data[i / 32] & (1 << i % 32)) {
-						data[i / 32] ^= (1 << (i % 32));	// Use XOR operator : 1 ^ 1 = 0
-					}
-				}
-				//std::cout << "In loop, " << str() << std::endl;
+		Vector(int n = 1)
+			: data(new unsigned int[n / 32 + 1]), capacity(n / 32 + 1), length(0) { 	// Recall that 32 bools for each unsigned int.
+			for (int i = 0; i < capacity; i++) {
+				data[i] = 0;
 			}
+		};
+
+		std::string str() {
+			std::string s("[");
+			for (int i = 0; i < length; i++) {
+				bool temp = ((data[i / 32] & (1 << (i % 32))) != 0);
+				s.append(std::to_string(temp));
+				if (i < length - 1) s.append(", ");
+			}
+			s += "]";
+			return s;
 		}
 
-		// If prev last digit is 1,
-		if (data[last / 32] & (1 << last % 32)) {
-			data[last / 32] ^= (1 << (last % 32));	// Use XOR operator : 1 ^ 1 = 0
-			//std::cout << "Out loop, " << str() << std::endl;
+		void print() {
+			std::cout << str() << std::endl;
 		}
-		length--;
-		//std::cout << "Final, " << str() << std::endl;
-		if (length < capacity / 2) capacity_change(.5);
-	}
 
-	int size() { return length; }
+		void capacity_change(double times) {
+			unsigned int* prev_data = data;
+			int prev_capacity = capacity;
+			capacity = (int)((double)capacity * times);
+			//std::cout << "New capa : " << capacity << std::endl;
+			if (capacity < length / 32) {
+				std::cout << "[Error] In Vector::capacity_change, capacity < length" << std::endl;
+				return;
+			}
+			data = new unsigned int[capacity];
+			for (int i = 0; i < capacity; i++) {
+				if (i < prev_capacity) data[i] = prev_data[i];
+				else data[i] = 0;
+			}
+			delete prev_data;
+			return;
+		}
 
-	~TemplateVector() { delete[] data; }
-};
+		void push_back(bool s) {
+			if (capacity == length / 32) capacity_change(2);
+			//std::cout << "prev : " << data[length / 32] << " / d : " << (1 << (length % 32)) << std::endl;
+			if (s) {
+				data[length / 32] |= (1 << (length % 32));	// Make specific digit into 1 if true. ( 1|0 == 1|1 == 1 )
+			}
+			//std::cout << " -> " << data[length / 32] << std::endl;
+			length++;
+		}
 
+		bool operator[](int i) {
+			return ((data[i / 32] & (1 << (i % 32))) != 0);
+		}
+
+		void remove(int x) {
+			if (length <= x) {
+				std::cout << "[Error] In Vector::remove, length <= x" << std::endl;
+				return;
+			}
+
+			int last = length - 1;
+			if (x < last) {
+				for (int i = x; i < last; i++) {
+					int j = i + 1;
+					// When next digit is 1
+					if (data[j / 32] & (1 << (j % 32))) data[i / 32] |= (1 << (i % 32));
+					// When next digit is 0
+					else {
+						// When current digit is 1
+						if (data[i / 32] & (1 << i % 32)) {
+							data[i / 32] ^= (1 << (i % 32));	// Use XOR operator : 1 ^ 1 = 0
+						}
+					}
+					//std::cout << "In loop, " << str() << std::endl;
+				}
+			}
+
+			// If prev last digit is 1,
+			if (data[last / 32] & (1 << last % 32)) {
+				data[last / 32] ^= (1 << (last % 32));	// Use XOR operator : 1 ^ 1 = 0
+				//std::cout << "Out loop, " << str() << std::endl;
+			}
+			length--;
+			//std::cout << "Final, " << str() << std::endl;
+			if (length < capacity / 2) capacity_change(.5);
+		}
+
+		int size() { return length; }
+
+		~Vector() { delete[] data; }
+	};
+}
+
+
+void template_vector_test();
 void bool_vector_test();
 
 
@@ -292,3 +298,15 @@ void print_array(const ARRAY_TYPE& arr) {
 }
 
 void print_array_test();
+
+namespace TestSpace {
+	class Vector {
+		int a;
+
+	public:
+		Vector(int a) : a(a) {};
+		void print() { std::cout << a << std::endl; }
+	};
+}
+
+void test_space_test();

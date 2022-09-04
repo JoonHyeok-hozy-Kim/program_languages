@@ -1,15 +1,15 @@
 #include "09_01_templates.h"
 
 void template_vector_test() {
-
-	TemplateVector<int> ti;
+	
+	TemplateClasses::Vector<int> ti;
 	for (int i = 0; i < 10; i++) {
 		ti.push_back(i);
 		//ti.print();
 		std::cout << ti[i] << std::endl;
 	}
 
-	TemplateVector<std::string> ts;
+	TemplateClasses::Vector<std::string> ts;
 	for (int i = 0; i < 10; i++) {
 		std::string s = "";
 		s.push_back((char)(i + 65));
@@ -21,7 +21,7 @@ void template_vector_test() {
 
 void bool_vector_test() {
 
-	TemplateVector<bool> tb;
+	TemplateClasses::Vector<bool> tb;
 	for (int i = 0; i < 10; i++) {
 		tb.push_back(i % 2);
 		tb.print();
@@ -58,13 +58,13 @@ void function_template_max_test() {
 }
 
 void swap_function_test() {
-	TemplateVector<int> ti;
+	TemplateClasses::Vector<int> ti;
 	for (int i = 0; i < 5; i++) ti.push_back(i);
 	//ti.print();
 	ti.swap(0, 3);
 	ti.print();
 
-	TemplateVector<std::string> ts;
+	TemplateClasses::Vector<std::string> ts;
 	for (int i = 0; i < 5; i++) {
 		std::string temp_str = "";
 		temp_str.push_back('A' + i);
@@ -76,7 +76,7 @@ void swap_function_test() {
 }
 
 void bubble_sort_test() {
-	TemplateVector<std::string> ti;
+	TemplateClasses::Vector<std::string> ti;
 	ti.push_back("B");
 	ti.push_back("A");
 	ti.push_back("D");
@@ -87,7 +87,7 @@ void bubble_sort_test() {
 }
 
 void bubble_sort_reverse_test() {
-	TemplateVector<std::string> ti;
+	TemplateClasses::Vector<std::string> ti;
 	ti.push_back("B");
 	ti.push_back("A");
 	ti.push_back("K");
@@ -103,7 +103,7 @@ void bubble_sort_reverse_test() {
 	ti.print();
 
 
-	TemplateVector<double> tii;
+	TemplateClasses::Vector<double> tii;
 	tii.push_back(1.2);
 	tii.push_back(3.8);
 	tii.push_back(0.2);
@@ -140,4 +140,10 @@ void print_array_test() {
 
 	print_array(a);
 	print_array(b);
+}
+
+
+void test_space_test() {
+	TestSpace::Vector v(10);
+	v.print();
 }
