@@ -143,7 +143,14 @@ int main() {
 	//variadic_template_print_test();
 	//variadic_template_str_concat_test();
 	//variadic_template_size_of_test();
-	fold_expression_test();
+	//fold_expression_test();
+
+	/* 9-3 */
+	//custom_array_test();
+	//custom_int_test();
+	//custom_factorial_test();
+	//gcd_test();
+	tmp_gcd_test();
 
 
 

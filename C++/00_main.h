@@ -55,3 +55,5 @@ void call_namespaces2();
 #include "09_01_templates.h"
 /* 9-2 */
 #include "09_02_variadic_template.h"
+/* 9-3 */
+#include "09_03_template_meta_programming.h"
