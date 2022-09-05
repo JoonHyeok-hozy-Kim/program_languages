@@ -150,9 +150,10 @@ int main() {
 	//custom_int_test();
 	//custom_factorial_test();
 	//gcd_test();
-	tmp_gcd_test();
-
-
+	//tmp_gcd_test();
+	//tmp_ratio_test();
+	//tmp_using_test();
+	tmp_fibo_test();
 
 	return 0;
 }

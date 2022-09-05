@@ -43,3 +43,32 @@ void gcd_test() {
 void tmp_gcd_test() {
 	std::cout << MetaProgramming::GCD<126, 84>::result << std::endl;
 }
+
+void tmp_ratio_test() {
+	typedef MetaProgramming::Ratio<2, 3> r1;
+	typedef MetaProgramming::Ratio<4, 7> r2;
+	typedef MetaProgramming::add_ratio<r1, r2> r3;
+	
+	std::cout << r3::numerator << " / " << r3::denominator << std::endl;
+}
+
+void tmp_using_test() {
+	typedef MetaProgramming::Ratio<2, 3> r1;
+	typedef MetaProgramming::Ratio<4, 7> r2;
+	
+	// "using"
+	using r3 = MetaProgramming::add_ratio<r1, r2>;
+
+	std::cout << r3::numerator << " / " << r3::denominator << std::endl;
+
+}
+
+void tmp_fibo_test() {
+	std::cout << MetaProgramming::Fibonacci<1>::num << std::endl;
+	std::cout << MetaProgramming::Fibonacci<2>::num << std::endl;
+	std::cout << MetaProgramming::Fibonacci<3>::num << std::endl;
+	std::cout << MetaProgramming::Fibonacci<4>::num << std::endl;
+	std::cout << MetaProgramming::Fibonacci<5>::num << std::endl;
+	std::cout << MetaProgramming::Fibonacci<6>::num << std::endl;
+	std::cout << MetaProgramming::Fibonacci<7>::num << std::endl;
+}
