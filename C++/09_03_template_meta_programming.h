@@ -106,6 +106,15 @@ namespace MetaProgramming {
 	struct Fibonacci<1> {
 		static const int num = 1;
 	};
+
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Prime Number Validator using Template Meta Programming
+	template <int N>
+	bool PrimeNumberValidator{
+
+	}
 }
 
 void custom_array_test();
