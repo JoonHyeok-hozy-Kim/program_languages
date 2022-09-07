@@ -19,7 +19,7 @@
 * initializer list
 * const variable in Class
 * static variable
-* this keyword
+* "this" keyword
 * reference returning function
 * const function : AKA read-only function
 ### 4-5. [[OOP] Application : Custom String Class Implementaion](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/04_05_custom_string_class.h)
@@ -33,7 +33,7 @@
 * assignment operator : =, +=, -=, *=, /=
 * Application : Complex class
 ### 5-2. [Operator Overloading Advanced](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/05_02_operator_overloading_advanced.cpp)
-* friend keyword : friend class, friend function
+* "friend" keyword : friend class, friend function
 * binary operator
 * input/output operator
 * subscript operator : []
@@ -50,12 +50,12 @@
 * C++'s 'string' class
 * inheritance
 * method overriding
-* keyword : public / protected / private
+* keyword : "public" / "protected" / "private"
 ### 6-2. [Virtual Function and Polymorphism](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/06_02_virtual_function_and_polymorphism.cpp)
 * up-casting
 * down-casting
 * dynamic-casting
-* dynamic binding : [keyword] virtual, override
+* dynamic binding : [keyword] "virtual", "override"
 * polymorphism
 ### 6-2. [More Topics for Virtual Function and Polymorphism](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/06_03_virtual_function_and_polymorphism_advanced.cpp)
 * virtual destructor
@@ -116,3 +116,7 @@
 * fold expression
 ### 9-3. [Template Meta Programming](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/09_03_template_meta_programming.h)
 * meta programming : programming with the compile time codes
+### 9-4. [TMP advanced](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/09_04_tmp_advanced.h)
+* dependent type
+* unit library
+* "auto" keyword

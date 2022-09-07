@@ -153,7 +153,12 @@ int main() {
 	//tmp_gcd_test();
 	//tmp_ratio_test();
 	//tmp_using_test();
-	tmp_fibo_test();
+	//tmp_fibo_test();
+
+	/* 9-4 */
+	//tmp_is_prime_test();
+	//tmp_new_ratio_test();
+	temp_unit_test();
 
 	return 0;
 }
