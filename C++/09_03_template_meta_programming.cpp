@@ -47,9 +47,22 @@ void tmp_gcd_test() {
 void tmp_ratio_test() {
 	typedef MetaProgramming::Ratio<2, 3> r1;
 	typedef MetaProgramming::Ratio<4, 7> r2;
+
 	typedef MetaProgramming::add_ratio<r1, r2> r3;
-	
+	std::cout << "Addition : ";
 	std::cout << r3::numerator << " / " << r3::denominator << std::endl;
+
+	typedef MetaProgramming::deduct_ratio<r1, r2> r4;
+	std::cout << "Deduction : ";
+	std::cout << r4::numerator << " / " << r4::denominator << std::endl;
+
+	typedef MetaProgramming::multiply_ratio<r1, r2> r5;
+	std::cout << "Multiplication : ";
+	std::cout << r5::numerator << " / " << r5::denominator << std::endl;
+
+	typedef MetaProgramming::divide_ratio<r1, r2> r6;
+	std::cout << "Division : ";
+	std::cout << r6::numerator << " / " << r6::denominator << std::endl;
 }
 
 void tmp_using_test() {

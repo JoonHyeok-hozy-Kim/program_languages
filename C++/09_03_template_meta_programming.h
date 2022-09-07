@@ -42,6 +42,11 @@ namespace MetaProgramming {
 		typedef Int<T::num + U::num> result;	// add structure's member, result, another Int struct!
 	};
 
+	template <typename T, typename U>
+	struct divide {
+		typedef Int<T::num / U::num> result;
+	};
+
 	////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	// Custom Factorial
@@ -75,18 +80,42 @@ namespace MetaProgramming {
 	// Ratio implementation using Template Meta Programming
 	template <int Numerator, int Denominator>
 	struct Ratio {
-		typedef Ratio<Numerator, Denominator> type;		// Indicating the type of itself. Just like "this" keyword of a class.
+		typedef Ratio<Numerator, Denominator> type;		// Indicating the type of itself. Just like "this" keyword of a class. (using syntax can be used as a substitue)
 		static const int numerator = Numerator;
 		static const int denominator = Denominator;
 	};
 
+	// Addition
 	template <class R1, class R2>
 	struct _add_ratio {
-		typedef Ratio<R1::numerator* R2::denominator + R1::denominator * R2::numerator, R1::denominator* R2::denominator> type;
+		typedef Ratio<R1::numerator* R2::denominator + R2::numerator * R1::denominator, R1::denominator* R2::denominator> type;
 	};
-
 	template <class R1, class R2>
 	struct add_ratio : _add_ratio<R1, R2>::type {};
+
+	// Deduction
+	template <class R1, class R2>
+	struct _deduct_ratio {
+		typedef Ratio<R1::numerator* R2::denominator - R2::numerator * R1::denominator, R1::denominator* R2::denominator> type;
+	};
+	template <class R1, class R2>
+	struct deduct_ratio : _deduct_ratio<R1, R2>::type {};
+
+	// Multiplication
+	template <class R1, class R2>
+	struct _multiply_ratio {
+		typedef Ratio<R1::numerator* R2::numerator, R1::denominator* R2::denominator> type;
+	};
+	template <class R1, class R2>
+	struct multiply_ratio : _multiply_ratio<R1, R2>::type {};
+
+	// Division
+	template <class R1, class R2>
+	struct _divide_ratio {
+		typedef Ratio<R1::numerator* R2::denominator, R1::denominator* R2::numerator> type;
+	};
+	template <class R1, class R2>
+	struct divide_ratio : _divide_ratio<R1, R2>::type {};
 
 
 	////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -106,15 +135,6 @@ namespace MetaProgramming {
 	struct Fibonacci<1> {
 		static const int num = 1;
 	};
-
-
-	////////////////////////////////////////////////////////////////////////////////////////////////////
-
-	// Prime Number Validator using Template Meta Programming
-	template <int N>
-	bool PrimeNumberValidator{
-
-	}
 }
 
 void custom_array_test();
