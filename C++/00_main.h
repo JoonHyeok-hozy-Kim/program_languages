@@ -59,3 +59,6 @@ void call_namespaces2();
 //#include "09_03_template_meta_programming.h"	// This is referred in "09_04_tmp_advanced.h"
 /* 9-4 */
 #include "09_04_tmp_advanced.h"
+
+/* 10-1 */
+#include "10_01_stl_vector_list_deque.h"
