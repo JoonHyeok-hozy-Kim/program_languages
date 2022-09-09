@@ -1,4 +1,4 @@
-#pragma once
+//#pragma once
 #include <iostream>
 #include <string>
 #include "09_03_template_meta_programming.h"
@@ -126,14 +126,14 @@ namespace TMP {
 		/* Multiplication and Division implementation */
 		/* 1. Multiplication : addition for the unit and multiplication for the quantity q */
 		template <typename D2>
-		quantity<T, typename add_dim<D, D2>::type> operator*(quantity<T, D2> other_quantity) {
+		quantity<T, typename add_dim_<D, D2>::type> operator*(quantity<T, D2> other_quantity) {
 			return quantity<T, typename add_dim_<D, D2>::type>(q * other_quantity.q);
 		}
 
 		/* 2. Division : subtraction for the unit and multiplicatio for the quantity q */
 		template <typename D2>
-		quantity<T, typename subtract_dim<D, D2>::type> operator/(quantity<T, D2> other_quantity) {
-			return quantity < T, typename subtract_dim_<D, D2>::type(q / other_quantity.q);
+		quantity<T, typename subtract_dim_<D, D2>::type> operator/(quantity<T, D2> other_quantity) {
+			return quantity < T, typename subtract_dim_<D, D2>::type>(q / other_quantity.q);
 		}
 
 		/* 3. Scalar Multiplication and Division */
@@ -147,7 +147,7 @@ namespace TMP {
 	/* The compiler analyses the variable's data type by looking at its initialization. */
 
 	// Example
-	int sum(int a, int b) { return a + b; }
+	int int_sum_for_auto(int a, int b);
 
 	class SomeClass {
 		int data;

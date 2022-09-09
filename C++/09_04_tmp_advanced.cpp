@@ -38,12 +38,14 @@ void temp_unit_test() {
 	quantity<double, Dim<zero, zero, one>> second(1);
 
 	std::cout << kg.q << std::endl;
-	std::cout << (kg + kg).q << std::endl;
+	//std::cout << (kg + kg).q << std::endl;
 	//std::cout << (kg + second).q << std::endl;	// Won't work!
 }
 
+int TMP::int_sum_for_auto(int a, int b) { return a + b; }
+
 void auto_keyword_test() {
-	auto c = sum(1, 2);
+	auto c = int_sum_for_auto(1, 2);
 	auto num = 1.0 + 2.0;
 
 	SomeClass some(10);
