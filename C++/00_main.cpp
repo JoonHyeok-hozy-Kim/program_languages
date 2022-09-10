@@ -161,7 +161,10 @@ int main() {
 	//temp_unit_test();
 
 	/* 10-1 */
-	stl_vector_test();
+	//stl_vector_test();
+	//range_based_for_loop_test();
+	//stl_list_test();
+	stl_deque_test();
 
 	return 0;
 }

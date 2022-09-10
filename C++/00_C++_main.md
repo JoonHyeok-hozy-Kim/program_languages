@@ -121,7 +121,7 @@
 * unit library
 * "auto" keyword
 ---
-### 10-1. [Standard Template Library (STL)](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/10_01_stl_vector_list_deque.h)
+### 10-1. [Standard Template Library (STL)](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/10_01_stl_vector_list_deque.cpp)
 * C++ standard template library overview
   1. container : vector, list, deque
   2. iterator
