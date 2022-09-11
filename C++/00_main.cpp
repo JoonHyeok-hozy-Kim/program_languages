@@ -164,7 +164,16 @@ int main() {
 	//stl_vector_test();
 	//range_based_for_loop_test();
 	//stl_list_test();
-	stl_deque_test();
+	//stl_deque_test();
+
+	/* 10-2 */
+	//stl_set_test();
+	//stl_set_custom_object_insertion_test();
+	//stl_map_insertion_test();
+	//stl_map_search_test();
+	//stl_multset_multimap_test();
+	//unordered_set_unordered_map_test();
+	custom_hash_test();
 
 	return 0;
 }
