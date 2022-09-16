@@ -173,7 +173,13 @@ int main() {
 	//stl_map_search_test();
 	//stl_multset_multimap_test();
 	//unordered_set_unordered_map_test();
-	custom_hash_test();
+	//custom_hash_test();
+
+	/* 10-3 */
+	//vector_sort_test();
+	//vector_reverse_sort_test();
+	//partial_sort_test();
+	stable_sort_test();
 
 	return 0;
 }
