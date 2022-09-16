@@ -64,3 +64,5 @@ void call_namespaces2();
 #include "10_01_stl_vector_list_deque.h"
 /* 10-2 */
 #include "10_02_stl_associative_containers.h"
+/* 10-3 */
+#include "10_03_stl_algorithms.h"
