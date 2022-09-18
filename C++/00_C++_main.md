@@ -138,3 +138,13 @@
 	* sort
 	* partial_sort
 	* stable_sort
+* remove functions for iterables
+	* remove
+	* remove_if
+* lambda function
+* transform function for iterables
+* search functions for iterables
+	* find
+	* find_if
+	* any_of
+	* all_of
