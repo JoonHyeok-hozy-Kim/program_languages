@@ -186,10 +186,14 @@ int main() {
 	//stl_custom_lambda_remove_first_two_num_less_than_5();
 	//stl_transform_add_one_test();
 	//stl_find_function_test();
-	stl_find_if_function_test();
+	//stl_find_if_function_test();
 
 	/* 10-4 */
-
+	//stl_string_trait_compare_test();
+	//stl_string_sso_check_test();
+	//stl_string_literal_operator_test();
+	//stl_string_raw_string_literal_test();
+	stl_string_raw_string_literal_exception();
 
 
 	return 0;

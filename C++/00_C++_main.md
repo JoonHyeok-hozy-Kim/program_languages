@@ -149,4 +149,8 @@
 	* any_of
 	* all_of
 ### 10-4. [STL string](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/10_04_stl_string.cpp)
-* 
+* basic_string class
+	* customizing traits
+* short string optimization (SSO)
+* literal operator : operator "" s
+* raw string literal
