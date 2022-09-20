@@ -66,3 +66,5 @@ void call_namespaces2();
 #include "10_02_stl_associative_containers.h"
 /* 10-3 */
 #include "10_03_stl_algorithms.h"
+/* 10-4 */
+#include "10_04_stl_string.h"

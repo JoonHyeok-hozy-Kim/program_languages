@@ -188,6 +188,9 @@ int main() {
 	//stl_find_function_test();
 	stl_find_if_function_test();
 
+	/* 10-4 */
+
+
+
 	return 0;
 }
-
