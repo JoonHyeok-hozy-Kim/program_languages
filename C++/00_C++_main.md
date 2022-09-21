@@ -154,3 +154,7 @@
 * short string optimization (SSO)
 * literal operator : operator "" s
 * raw string literal
+* unicode
+	* UTF-32
+	* UTF-8
+	* UTF-16

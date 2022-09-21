@@ -193,7 +193,12 @@ int main() {
 	//stl_string_sso_check_test();
 	//stl_string_literal_operator_test();
 	//stl_string_raw_string_literal_test();
-	stl_string_raw_string_literal_exception();
+	//stl_string_raw_string_literal_exception();
+	//stl_string_utf_32_test();
+	//stl_string_utf_8_test();
+	//stl_string_utf_8_parsing_test();
+	//stl_string_utf_16_test();
+	stl_string_utf_16_korean_jaum_test();
 
 
 	return 0;

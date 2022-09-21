@@ -67,10 +67,10 @@ void stl_string_trait_compare_test() {
 /////////////////////////////////////////////////////////////////////
 /* Short String Optimization (SSO) : For short strings, basic_string save them in the object rather than allocating memories.
 */
-void* operator new(std::size_t count) {
-	std::cout << count << " bytes allocated. " << std::endl;	// Debug text added for checking the memory allocation!
-	return malloc(count);
-}
+//void* operator new(std::size_t count) {
+//	std::cout << count << " bytes allocated. " << std::endl;	// Debug text added for checking the memory allocation!
+//	return malloc(count);
+//}
 
 void stl_string_sso_check_test() {
 	std::cout << "s1 created." << std::endl;
@@ -107,4 +107,96 @@ void stl_string_raw_string_literal_exception() {
 	// I you need to put them into a literal, use the syntax : R"_any_delimeter_( _text_comes_here_ )_any_delimeter_"
 	std::string str = R"hozy( )";  )hozy";
 	std::cout << str << std::endl;
+}
+
+
+/////////////////////////////////////////////////////////////////////
+/* Unicode
+*/
+
+/* UTF-32 */
+void stl_string_utf_32_test() {
+
+	/* In case of UTF-8,
+		Every character is in 4-byte length.
+	*/
+	std::u32string u32_str = U"이건 UTF-32 문자열";		// Syntax U"" : UTF-32 encoding
+	std::cout << u32_str.size() << std::endl;
+}
+
+/* UTF-8 */
+void stl_string_utf_8_test() {
+
+	/* In case of UTF-8,
+		1. 0       ~ 0x7F     : 1 byte
+		2. 0x80    ~ 0x7FF    : 2 byte
+		3. 0x800   ~ 0xFFFF   : 3 byte
+		4. 0x10000 ~ 0x10FFFF : 4 byte
+
+		Enghlish alphabets : 0 ~ 127          -> all 1 bytes.
+		Korean Characters  : 0xAC00 ~ 0xD7AF  -> all 3 bytes
+	*/
+
+	std::string u8_str = u8"이건 UTF-8 문자열";		// Syntax u8"" : UTF-8 encoding
+	std::cout << u8_str.size() << std::endl;	
+}
+
+void stl_string_utf_8_parsing_test() {
+	std::string u8_str = u8"이건 UTF-8 문자열";
+	size_t i = 0;
+	size_t len = 0;
+
+	while (i < u8_str.size()) {
+		int char_size = 0;
+
+		if ((u8_str[i] & 0b11111000) == 0b11110000) {
+			char_size = 4;
+		}
+		else if ((u8_str[i] & 0b11110000) == 0b11100000) {
+			char_size = 3;
+		}
+		else if ((u8_str[i] & 0b11100000) == 0b11000000) {
+			char_size = 2;
+		}
+		else if ((u8_str[i] & 0b10000000) == 0b00000000) {
+			char_size = 1;
+		}
+		else {
+			std::cout << "Unexpected character found!" << std::endl;
+			char_size = 1;
+		}
+
+		std::cout << char_size << " -> " << u8_str.substr(i, char_size) << std::endl;
+
+		i += char_size;
+		len++;
+	}
+	std::cout << "True length of the string : " << len << std::endl;
+}
+
+
+/* UTF-16 */
+void stl_string_utf_16_test() {
+
+	/* In case of UTF-16,
+		Most characters are in 2-byte length.
+	*/
+
+	std::u16string u16_str = u"이건 UTF-16 문자열";		// Syntax u"" : UTF-8 encoding
+	std::cout << u16_str.size() << std::endl;
+}
+
+void stl_string_utf_16_korean_jaum_test() {
+	std::u16string u16_str = u"나는 짱이다";
+	std::string jaum[] = { "ㄱ", "ㄲ", "ㄴ", "ㄷ", "ㄸ", "ㄹ", "ㅁ",
+						   "ㅂ", "ㅃ", "ㅅ", "ㅆ", "ㅇ", "ㅈ", "ㅉ",
+						   "ㅊ", "ㅋ", "ㅌ", "ㅍ", "ㅎ" };
+	for (char16_t c : u16_str) {
+		if (!(0xAC00 <= c && c <= 0xD7A3)){		// lower and upper bound of Korean characters
+			continue;
+		}
+		int offset = c - 0xAC00;
+		int jaum_offset = offset / 0x24C;	// Every jaum has 0x24C set of characters. ex) (ㄱ) : 가, 각, 갂, 간, ...
+		std::cout << jaum[jaum_offset];
+	}
 }
