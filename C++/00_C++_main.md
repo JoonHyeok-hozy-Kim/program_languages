@@ -158,3 +158,4 @@
 	* UTF-32
 	* UTF-8
 	* UTF-16
+* string_view

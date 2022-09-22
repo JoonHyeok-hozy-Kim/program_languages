@@ -200,3 +200,50 @@ void stl_string_utf_16_korean_jaum_test() {
 		std::cout << jaum[jaum_offset];
 	}
 }
+
+
+///////////////////////////////////////////////////////////
+/* Concept) string_view
+
+	- Consider the case that we only READ a string.
+		- We may use "const std::string& str" as a input parameter.
+			-> However, it creates unnecessary object -> wasting memory!
+
+*/
+
+void* operator new(std::size_t count) {
+	std::cout << count << " bytes allocated. " << std::endl;	// Debug text added for checking the memory allocation!
+	return malloc(count);
+}
+
+bool stl_string_contains_very(const std::string& str) {
+	return str.find("very") != std::string::npos;
+}
+
+void stl_string_string_view_redundant_memory_test() {
+	std::cout << std::boolalpha << stl_string_contains_very("C++ is very hard")
+		<< std::endl;
+
+	std::cout << std::boolalpha << stl_string_contains_very("C++ is not easy at all")
+		<< std::endl;
+}
+
+bool stl_string_view_contains_very(std::string_view str) {
+	return str.find("very") != std::string_view::npos;
+}
+
+void stl_string_string_view_find_test() {
+	std::cout << std::boolalpha << stl_string_view_contains_very("C++ is very hard")
+		<< std::endl;
+
+	std::cout << std::boolalpha << stl_string_view_contains_very("C++ is not easy at all")
+		<< std::endl;
+}
+
+void stl_string_string_view_substr_test() {
+	std::string s = "C++ is not easy at all";
+	std::cout << s.substr(0, 5) << std::endl << std::endl;
+
+	std::string_view sv = "C++ is not easy at all";
+	std::cout << sv.substr(0, 5) << std::endl << std::endl;
+}
