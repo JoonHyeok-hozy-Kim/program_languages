@@ -201,7 +201,15 @@ int main() {
 	//stl_string_utf_16_korean_jaum_test();
 	//stl_string_string_view_redundant_memory_test();
 	//stl_string_string_view_find_test();
-	stl_string_string_view_substr_test();
+	//stl_string_string_view_substr_test();
+
+	/* 11 */
+	//exception_simple_exception_test();
+	//exception_stack_unwinding_test();
+	//exception_throw_various_test();
+	//exception_inheritance_test();
+	//exception_catch_every_thing_test();
+	exception_noexcept_test();
 
 	return 0;
 }

@@ -68,3 +68,6 @@ void call_namespaces2();
 #include "10_03_stl_algorithms.h"
 /* 10-4 */
 #include "10_04_stl_string.h"
+
+/* 11 */
+#include "11_01_exception.h"
