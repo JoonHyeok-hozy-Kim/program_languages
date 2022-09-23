@@ -211,10 +211,10 @@ void stl_string_utf_16_korean_jaum_test() {
 
 */
 
-void* operator new(std::size_t count) {
-	std::cout << count << " bytes allocated. " << std::endl;	// Debug text added for checking the memory allocation!
-	return malloc(count);
-}
+//void* operator new(std::size_t count) {
+//	std::cout << count << " bytes allocated. " << std::endl;	// Debug text added for checking the memory allocation!
+//	return malloc(count);
+//}
 
 bool stl_string_contains_very(const std::string& str) {
 	return str.find("very") != std::string::npos;
