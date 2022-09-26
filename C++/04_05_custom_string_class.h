@@ -6,6 +6,7 @@ class MyString {
 	int capacity;
 
 public:
+	MyString() {};
 	MyString(char c);
 	MyString(const char* str);
 	MyString(const MyString& str);
@@ -39,6 +40,9 @@ public:
 
 	/* 5-2. Subscript Operator Overloading */
 	char& operator[](const int index);	// Check 05_02_operator_overloading_advanced.cpp
+
+	/* 12-1 */
+	MyString operator+(const MyString& s);
 };
 
 void mystring_instance_test();

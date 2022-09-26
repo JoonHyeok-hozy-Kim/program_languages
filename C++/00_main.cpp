@@ -209,7 +209,11 @@ int main() {
 	//exception_throw_various_test();
 	//exception_inheritance_test();
 	//exception_catch_every_thing_test();
-	exception_noexcept_test();
+	//exception_noexcept_test();
+
+	/* 12 */
+	//rvalue_copy_elision_test();
+	rvalue_reference_test();
 
 	return 0;
 }

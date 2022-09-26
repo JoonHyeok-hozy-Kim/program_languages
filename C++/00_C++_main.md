@@ -168,4 +168,6 @@
 		* catch all kinds of exceptions syntax : try{} catch(...){}
 * stack unwinding
 * exception and interitance : child exception class should come first in the "try ~ catch" syntax.
-* noexcept
+---
+### 12-1. [rvalue reference](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/12_01_rvalue_reference.cpp)
+* copy elision

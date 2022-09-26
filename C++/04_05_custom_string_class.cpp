@@ -3,6 +3,7 @@
 #include <iostream>
 
 MyString::MyString(char c){
+	std::cout << "Regular Constructor" << std::endl;
 	string_length = 1;
 	capacity = 1;
 	string_content = new char[1];
@@ -10,6 +11,7 @@ MyString::MyString(char c){
 }
 
 MyString::MyString(const char* str) {
+	std::cout << "Regular Constructor" << std::endl;
 	string_length = (int)strlen(str);
 	capacity = string_length;
 	string_content = new char[string_length];
@@ -17,6 +19,7 @@ MyString::MyString(const char* str) {
 }
 
 MyString::MyString(const MyString& str) {
+	std::cout << "Copy Constructor" << std::endl;
 	string_length = str.string_length;
 	capacity = string_length;
 	string_content = new char[string_length];
@@ -205,6 +208,19 @@ int MyString::compare(const MyString& str) const {
 	if (string_length > str.string_length) return 1;
 	else if (string_length < str.string_length) return -1;
 	else return 0;
+}
+
+/* 12-1 */
+MyString MyString::operator+(const MyString& s) {
+	MyString str;
+	str.capacity_change(string_length + s.string_length, str.string_length);
+	for (int i = 0; i < string_length; i++) {
+		str.string_content[i] = string_content[i];
+	}
+	for (int i = 0; i < s.string_length; i++) {
+		str.string_content[string_length + i] = s.string_content[i];
+	}
+
 }
 
 
