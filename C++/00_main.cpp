@@ -213,7 +213,9 @@ int main() {
 
 	/* 12 */
 	//rvalue_copy_elision_test();
-	rvalue_reference_test();
+	//rvalue_reference_test();
+	//rvalue_moving_constructor_test();
+	rvalue_moving_constructor_noexcept_container_test();
 
 	return 0;
 }

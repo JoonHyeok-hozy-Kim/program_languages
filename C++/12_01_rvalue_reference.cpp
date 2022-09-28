@@ -48,7 +48,51 @@ void rvalue_copy_elision_test() {
 #include "04_05_custom_string_class.h"
 void rvalue_reference_test() {
 	MyString a("abc");
+	a.println();
 	MyString b("cde");
+	b.println();
 
 	MyString c = a + b;
+	c.println();
+}
+
+
+/////////////////////////////////////////////////////////
+/* Concept) Moving Constructor
+*/
+
+MyString::MyString(MyString &&str) noexcept {	// For "noexcept" keyword, check below!
+	std::cout << "Moving Constructor" << std::endl;
+	string_length = str.string_length;
+	string_content = str.string_content;
+	capacity = str.capacity;
+
+	// KEY POINT : Prevent complier from deleting memory when destructing temporary object!!!
+	str.string_content = nullptr;
+}
+
+void rvalue_moving_constructor_test() {
+	MyString a("abc");
+	a.println();
+	MyString b("cde");
+	b.println();
+
+	MyString c = a + b;
+	c.println();
+}
+
+
+////////////////////////////////
+/* Tech.) When adding an object using "moving constructor", you must add "noexcept" option
+*/
+
+#include <vector>
+void rvalue_moving_constructor_noexcept_container_test() {
+	MyString a("abc");
+	std::vector<MyString> v;
+	for (int i = 0; i < 5; i++) {
+		std::cout << i << "-th push back" << std::endl;
+		v.push_back(a);
+	}
+
 }

@@ -2,6 +2,12 @@
 #include <stdlib.h>
 #include <iostream>
 
+MyString::MyString() {
+	string_length = 0;
+	capacity = 0;
+	string_content = nullptr;
+}
+
 MyString::MyString(char c){
 	std::cout << "Regular Constructor" << std::endl;
 	string_length = 1;
@@ -220,7 +226,8 @@ MyString MyString::operator+(const MyString& s) {
 	for (int i = 0; i < s.string_length; i++) {
 		str.string_content[string_length + i] = s.string_content[i];
 	}
-
+	str.string_length = string_length + s.string_length;
+	return str;
 }
 
 

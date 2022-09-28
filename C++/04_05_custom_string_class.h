@@ -6,11 +6,12 @@ class MyString {
 	int capacity;
 
 public:
-	MyString() {};
+	MyString();
 	MyString(char c);
 	MyString(const char* str);
 	MyString(const MyString& str);
-	~MyString() { delete[] string_content; }
+	MyString(MyString&& str) noexcept;	// moving constructor (check "12_01_rvalue_reference.cpp")
+	~MyString() { if(string_content) delete[] string_content; }	// condition added for moving constructor : Delete only when string content is not nullptr! 
 	int length() const { return string_length; }
 	int show_capacity() const { return capacity; }
 	void print() const;

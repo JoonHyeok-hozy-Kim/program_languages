@@ -53,3 +53,4 @@ void call_namespaces2();
 
 /* 12 */
 #include "12_01_rvalue_reference.h"
+#include "12_02_move_semantics.h"

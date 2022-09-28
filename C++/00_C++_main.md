@@ -171,3 +171,8 @@
 ---
 ### 12-1. [rvalue reference](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/12_01_rvalue_reference.cpp)
 * copy elision
+* rvalue reference
+* moving constructor
+	* keword when pushing back to containers : noexcept
+### 12-2. [move semantics](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/12_02_move_semantics.cpp)
+* 
