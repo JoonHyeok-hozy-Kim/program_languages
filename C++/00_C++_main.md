@@ -175,4 +175,5 @@
 * moving constructor
 	* keword when pushing back to containers : noexcept
 ### 12-2. [move semantics](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/12_02_move_semantics.cpp)
-* 
+* move semantics
+* perfect forwarding

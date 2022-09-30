@@ -44,6 +44,10 @@ public:
 
 	/* 12-1 */
 	MyString operator+(const MyString& s);
+
+	/* 12-2. move semantics */
+	MyString operator=(const MyString& s);	// regular assignment operator
+	MyString operator=(MyString&& s);		// move assignment operator
 };
 
 void mystring_instance_test();

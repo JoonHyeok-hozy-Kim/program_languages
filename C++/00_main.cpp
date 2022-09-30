@@ -215,7 +215,11 @@ int main() {
 	//rvalue_copy_elision_test();
 	//rvalue_reference_test();
 	//rvalue_moving_constructor_test();
-	rvalue_moving_constructor_noexcept_container_test();
+	//rvalue_moving_constructor_noexcept_container_test();
+	//move_semantics_copy_swap_test();
+	//move_semantics_simple_test();
+	//move_semantics_MyString_test();
+	move_semantics_class_in_class_test();
 
 	return 0;
 }
