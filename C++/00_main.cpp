@@ -219,7 +219,9 @@ int main() {
 	//move_semantics_copy_swap_test();
 	//move_semantics_simple_test();
 	//move_semantics_MyString_test();
-	move_semantics_class_in_class_test();
+	//move_semantics_class_in_class_test();
+	//perfect_forwarding_wrapper_function_test();
+	perfect_forwarding_wrapper_universal_ref_test();
 
 	return 0;
 }
