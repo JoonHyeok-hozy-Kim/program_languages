@@ -178,3 +178,11 @@
 * move semantics
 * perfect forwarding
 * universal reference
+---
+### 13-1 [smart pointer](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/13_01_smart_pointer.cpp)
+* RAII : Resource Acquisition Is Initialization
+* unique_ptr
+	* move() : give away the object
+	* perfect forwarding
+	* std::make_unique
+	* vector container and emplace_back() meothod

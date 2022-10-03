@@ -221,7 +221,14 @@ int main() {
 	//move_semantics_MyString_test();
 	//move_semantics_class_in_class_test();
 	//perfect_forwarding_wrapper_function_test();
-	perfect_forwarding_wrapper_universal_ref_test();
+	//perfect_forwarding_wrapper_universal_ref_test();
+
+	/* 13 */
+	//smart_pointer_memory_leak_test();
+	//smart_pointer_unique_ptr_test();
+	//smart_pointer_unique_ptr_forwarding_test();
+	//smart_pointer_unique_ptr_make_unique();
+	smart_pointer_unique_ptr_vector_test();
 
 	return 0;
 }
