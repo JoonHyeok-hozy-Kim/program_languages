@@ -57,3 +57,4 @@ void call_namespaces2();
 
 /* 13 */
 #include "13_01_smart_pointer.h"
+#include "13_02_sharing_resources.h"

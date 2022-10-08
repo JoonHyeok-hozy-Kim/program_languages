@@ -186,3 +186,9 @@
 	* perfect forwarding
 	* std::make_unique
 	* vector container and emplace_back() meothod
+### 13-2 [sharing resources](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/13_02_sharing_resources.cpp)
+* share_ptr
+	* How to create : make_shared
+	* enable_shared_from_this
+	* possibility of circular reference of share_ptrs -> Sol.) weak_ptr
+* weak_ptr

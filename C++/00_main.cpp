@@ -228,7 +228,11 @@ int main() {
 	//smart_pointer_unique_ptr_test();
 	//smart_pointer_unique_ptr_forwarding_test();
 	//smart_pointer_unique_ptr_make_unique();
-	smart_pointer_unique_ptr_vector_test();
+	//smart_pointer_unique_ptr_vector_test();
+	//shared_ptr_initial_test();
+	//shared_ptr_enable_shared_from_this_test();
+	//share_ptr_circular_referece_test();
+	sharing_resources_weak_ptr_test();
 
 	return 0;
 }
