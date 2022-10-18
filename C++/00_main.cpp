@@ -232,7 +232,15 @@ int main() {
 	//shared_ptr_initial_test();
 	//shared_ptr_enable_shared_from_this_test();
 	//share_ptr_circular_referece_test();
-	sharing_resources_weak_ptr_test();
+	//sharing_resources_weak_ptr_test();
+
+	/* 14 */
+	//callables_function_test();
+	//callables_member_function_test();
+	//callables_mem_fn_vector_test();
+	//callables_simple_bind_test();
+	callables_ref_bind_test();
+
 
 	return 0;
 }
