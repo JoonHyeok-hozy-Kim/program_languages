@@ -198,7 +198,10 @@
 * std::function : an object that can contain any callable
 * std::mem_fn : returns a function object of the input member fucntion
 * std::bind : binds certain input to a function
+	* std::ref : returns reference of an object. Must be used when using std::bind!
 * weak_ptr
 ---
 ### 15-1 [thread](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/15_01_thread.cpp)
-* callables
+* thread
+	* join
+	* detach

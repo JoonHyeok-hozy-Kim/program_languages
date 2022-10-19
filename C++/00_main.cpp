@@ -239,7 +239,13 @@ int main() {
 	//callables_member_function_test();
 	//callables_mem_fn_vector_test();
 	//callables_simple_bind_test();
-	callables_ref_bind_test();
+	//callables_ref_bind_test();
+
+	/* 15 */
+	//thread_basic_test();
+	//thread_detach_test();
+	//thread_distributed_sum_test();
+	thread_increasing_counter();
 
 
 	return 0;
