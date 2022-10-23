@@ -245,7 +245,12 @@ int main() {
 	//thread_basic_test();
 	//thread_detach_test();
 	//thread_distributed_sum_test();
-	thread_increasing_counter();
+	//thread_increasing_counter();
+	//mutex_simple_test();
+	//mutex_deadlock_test();
+	//mutex_deadlock_prevention_implementation();
+	//mutex_producer_consumer_pattern_test();
+	mutex_condition_variable_test();
 
 
 	return 0;

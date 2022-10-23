@@ -205,3 +205,12 @@
 * thread
 	* join
 	* detach
+### 15-2 [mutex and condition variable](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/15_02_mutex_condition_variable.cpp)
+* race condition
+* mutex
+	* critical section
+	* lock(), unlock()
+	* std::lock_guard, std::unique_lock
+	* deadlock
+* Producer and Consumer Pattern
+* condition_variable
