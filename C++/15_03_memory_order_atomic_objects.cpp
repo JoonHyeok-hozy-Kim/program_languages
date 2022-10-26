@@ -55,3 +55,13 @@ namespace AtomicityTest {
 void atomic_basic_test() {
 	AtomicityTest::basic_test();
 }
+
+
+/* Tech.) memory order
+	- An atomic object's memory access order determination
+	- types
+		1) memory_order_relaxed
+			- Does not matter if the order is mixed with other memory accesses
+		2) memory_order_acquire
+		3) memory_order_release
+*/

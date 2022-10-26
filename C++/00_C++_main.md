@@ -217,3 +217,11 @@
 ### 15-3 [memory order and atomic objects](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/15_03_memory_order_atomic_objects.cpp)
 * modification order
 * atomicity and atomic operations
+	* atomic : std::atomic
+		* memory_order
+			* memory_order_relaxed
+			* memory_order_acquire
+			* memory_order_release
+			* memory_order_acq_rel
+			* memory_order_seq_cst
+			[(Check rest of the types)](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/images/15_03_01_memory_order_types.png)
