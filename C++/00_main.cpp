@@ -251,7 +251,10 @@ int main() {
 	//mutex_deadlock_prevention_implementation();
 	//mutex_producer_consumer_pattern_test();
 	//mutex_condition_variable_test();
-	atomic_basic_test();
+	//atomic_basic_test();
+	//atomic_memory_order_relaxed_test();
+	//atomic_memory_order_release_acquire_test();
+	atomic_seq_std_comparison_test();
 
 
 	return 0;

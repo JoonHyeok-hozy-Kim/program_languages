@@ -218,10 +218,13 @@
 * modification order
 * atomicity and atomic operations
 	* atomic : std::atomic
+		* methods
+			* store() : write
+			* load()  : read
+			* fetch_add() : += 
 		* memory_order
 			* memory_order_relaxed
-			* memory_order_acquire
-			* memory_order_release
+			* memory_order_release / memory_order_acquire
 			* memory_order_acq_rel
-			* memory_order_seq_cst
+			* memory_order_seq_cst (Default for AMD x86)
 			[(Check rest of the types)](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/images/15_03_01_memory_order_types.png)
