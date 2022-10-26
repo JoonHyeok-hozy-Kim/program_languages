@@ -214,3 +214,6 @@
 	* deadlock
 * Producer and Consumer Pattern
 * condition_variable
+### 15-3 [memory order and atomic objects](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/15_03_memory_order_atomic_objects.cpp)
+* modification order
+* atomicity and atomic operations

@@ -250,7 +250,8 @@ int main() {
 	//mutex_deadlock_test();
 	//mutex_deadlock_prevention_implementation();
 	//mutex_producer_consumer_pattern_test();
-	mutex_condition_variable_test();
+	//mutex_condition_variable_test();
+	atomic_basic_test();
 
 
 	return 0;
