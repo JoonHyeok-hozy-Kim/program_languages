@@ -254,7 +254,10 @@ int main() {
 	//atomic_basic_test();
 	//atomic_memory_order_relaxed_test();
 	//atomic_memory_order_release_acquire_test();
-	atomic_seq_std_comparison_test();
+	//atomic_seq_std_comparison_test();
+	//asynchornous_promise_future_test();
+	//asynchornous_promise_future_mimic();
+	asynchronous_future_wait_for_test();
 
 
 	return 0;

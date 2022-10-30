@@ -228,3 +228,14 @@
 			* memory_order_acq_rel
 			* memory_order_seq_cst (Default for AMD x86)
 			[(Check rest of the types)](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/images/15_03_01_memory_order_types.png)
+### 15-4 [asynchronous operation](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/15_04_asynchronous.cpp)
+* synchronous 
+* asynchronous
+	* std::promise
+		* set_value()
+		* set_exception()
+	* std::future
+		* get_future()
+		* get_value()
+		* wait()
+		* wait_for()

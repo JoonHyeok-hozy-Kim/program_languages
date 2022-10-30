@@ -66,3 +66,4 @@ void call_namespaces2();
 #include "15_01_thread.h"
 #include "15_02_mutex_condition_variable.h"
 #include "15_03_memory_order_atomic_objects.h"
+#include "15_04_asynchronous.h"
