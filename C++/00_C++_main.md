@@ -239,3 +239,6 @@
 		* get_value()
 		* wait()
 		* wait_for()
+	* std::shared_future
+	* std::packaged_task
+	* std::async

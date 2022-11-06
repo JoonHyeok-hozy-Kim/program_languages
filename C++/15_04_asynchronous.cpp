@@ -196,3 +196,104 @@ namespace FutureWaitForTest {
 void asynchronous_future_wait_for_test() {
 	FutureWaitForTest::test();
 }
+
+
+/* Concept) shared_future
+	- A future that multiple threads can get()!
+*/
+
+namespace SharedFutureTest {
+	void runner(std::shared_future<void> start, int num) {
+		start.get();
+		std::cout << "#" << num << ". Start!" << std::endl;
+	}
+
+	void test() {
+		std::promise<void> p;
+		std::shared_future<void> start = p.get_future();
+		std::vector<std::thread> v;
+
+		for (int i = 1; i <= 4; i++) {
+			v.push_back(std::thread(runner, start, i));
+		}
+
+		std::cerr << "Ready...";
+		std::this_thread::sleep_for(std::chrono::seconds(1));
+		std::cerr << "Set, Go!" << std::endl;
+
+		p.set_value();
+
+		for (int i = 0; i < 4; i++) {
+			v[i].join();
+		}
+	}
+}
+
+void asynchronous_shared_future_test() {
+	SharedFutureTest::test();
+}
+
+
+
+/* Tech.) packaged_task
+	- What is this?
+		- A tool that applies promise-future pattern to an asynchronous function (precisely callable that includes functor and lambda function)
+		- When a function returns value to the packaged_task, it set_value() to promise or set_exception().
+*/
+
+namespace PackagedTaskTest {
+	int some_task(int x) { return 10 + x; }
+
+	void test() {
+		//        returns int   gets int
+		//                 бщ   бщ
+		std::packaged_task<int(int)> task(some_task);
+		std::future<int> start = task.get_future();
+		std::thread t(std::move(task), 5);
+		std::cout << "Result : " << start.get() << std::endl;
+		t.join();
+	}
+}
+
+void asynchronous_packaged_task_test() {
+	PackagedTaskTest::test();
+}
+
+
+/* Tech.) async
+	- Not like packaged_task, async automatically creates std::thread!
+	- More convenient!!!
+*/
+
+namespace AsyncTest{
+	int sum(const std::vector<int>& v, int start, int end) {
+		int total = 0;
+		for (int i = start; i < end; i++) {
+			total += v[i];
+		}
+		return total;
+	}
+
+	int parallel_sum(const std::vector<int>& v) {
+		std::future<int> lower_half_future = std::async(std::launch::async, sum, cref(v), 0, v.size()/2);
+
+		int upper_half = sum(v, v.size() / 2, v.size());
+
+		return lower_half_future.get() + upper_half;
+	}
+
+	void parallel_summation_test() {
+		std::vector<int> v;
+		v.reserve(1000);
+
+		for (int i = 0; i < 1000; i++) {
+			v.push_back(i + 1);
+		}
+
+		std::cout << "Sum v : " << parallel_sum(v) << std::endl;
+	}
+}
+
+void asynchronous_async_test() {
+	AsyncTest::parallel_summation_test();
+}

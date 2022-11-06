@@ -257,7 +257,10 @@ int main() {
 	//atomic_seq_std_comparison_test();
 	//asynchornous_promise_future_test();
 	//asynchornous_promise_future_mimic();
-	asynchronous_future_wait_for_test();
+	//asynchronous_future_wait_for_test();
+	//asynchronous_shared_future_test();
+	//asynchronous_packaged_task_test();
+	asynchronous_async_test();
 
 
 	return 0;
