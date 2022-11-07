@@ -260,7 +260,10 @@ int main() {
 	//asynchronous_future_wait_for_test();
 	//asynchronous_shared_future_test();
 	//asynchronous_packaged_task_test();
-	asynchronous_async_test();
+	//asynchronous_async_test();
+	//threadpool_mk1_test();
+	//threadpool_mk2_test();
+	threadpool_mk3_test();
 
 
 	return 0;
