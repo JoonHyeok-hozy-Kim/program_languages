@@ -263,7 +263,15 @@ int main() {
 	//asynchronous_async_test();
 	//threadpool_mk1_test();
 	//threadpool_mk2_test();
-	threadpool_mk3_test();
+	//threadpool_mk3_test();
+
+	/* 16 */
+	//uniform_initialization_simple_test();
+	//uniform_initialization_narrow_conversion_test();
+	//uniform_initialization_function_omit_test();
+	//initializer_list_simple_test();
+	//initializer_list_vector_map_test();
+	initializer_list_and_auto();
 
 
 	return 0;

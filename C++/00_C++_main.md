@@ -244,3 +244,8 @@
 	* std::async
 ### 15-5 [ThreadPool](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/15_05_threadpool.cpp)
 * Application : Make ThreadPool using concepts above!
+---
+### 16-1 [Uniform Initialization](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/16_01_uniform_initialization.cpp)
+* uniform initialization
+	* syntax : {}
+* initializer list
