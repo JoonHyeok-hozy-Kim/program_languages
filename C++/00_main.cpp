@@ -271,7 +271,10 @@ int main() {
 	//uniform_initialization_function_omit_test();
 	//initializer_list_simple_test();
 	//initializer_list_vector_map_test();
-	initializer_list_and_auto();
+	//initializer_list_and_auto();
+	//constant_expression_simple_test();
+	//constant_expression_function_test();
+	constant_expression_constructor_test();
 
 
 	return 0;

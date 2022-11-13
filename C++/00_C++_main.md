@@ -249,3 +249,6 @@
 * uniform initialization
 	* syntax : {}
 * initializer list
+### 16-1 [Constant Expression](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/16_02_constant_expression.cpp)
+* keyword : constexpr
+	* literal types
