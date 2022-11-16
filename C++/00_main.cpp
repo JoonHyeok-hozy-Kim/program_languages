@@ -274,7 +274,9 @@ int main() {
 	//initializer_list_and_auto();
 	//constant_expression_simple_test();
 	//constant_expression_function_test();
-	constant_expression_constructor_test();
+	//constant_expression_constructor_test();
+	//decltype_id_expression_test();
+	decltype_auto_comparison();
 
 
 	return 0;

@@ -249,6 +249,13 @@
 * uniform initialization
 	* syntax : {}
 * initializer list
-### 16-1 [Constant Expression](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/16_02_constant_expression.cpp)
+### 16-2 [Constant Expression](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/16_02_constant_expression.cpp)
 * keyword : constexpr
 	* literal types
+	* syntax : "if constexpr"
+		* <type_traits> 
+### 16-3 [decltype](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/16_03_decltype.cpp)
+* keyword : decltype
+	* id-expression
+	* xvalue / lvalue / prvalue [See image](https://modoocode.com/img/cpp/16.3.1.png)
+	* auto vs. decltype

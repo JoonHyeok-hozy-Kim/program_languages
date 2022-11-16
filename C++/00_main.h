@@ -72,3 +72,4 @@ void call_namespaces2();
 /* 16 */
 #include "16_01_uniform_initialization.h"
 #include "16_02_constant_expression.h"
+#include "16_03_decltype.h"

@@ -156,3 +156,8 @@ namespace ConstExprConstructor {
 void constant_expression_constructor_test() {
 	ConstExprConstructor::test();
 }
+
+
+/* Concept) if constexpr
+	- Goal) 
+*/
