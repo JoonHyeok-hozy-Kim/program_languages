@@ -122,3 +122,54 @@ namespace DecltypeAutoComparison {
 void decltype_auto_comparison() {
 	DecltypeAutoComparison::test();
 }
+
+
+
+//////////////////////////////////////////////////////////
+/* Tech.) std::declval function in <utility>
+	- Why needed?
+		- In case structures do not share the identical structure, especially with the shape of constructor, above decltype may not work.
+			- ex.) Suppose struct A has a default constructor while struct B does not.
+		- In that case, std::declval can be the solution!
+			- why?) It returns the object type of the target struct
+	- Caution) It cannot be used during the running time!
+*/
+
+#include <utility>
+namespace DeclValTest {
+
+	// 1. A struct with the default constructor
+	struct A {
+		int f() { return 0; }
+	};
+
+	// 2. A struct without a default constructor
+	struct B {
+		B(int x) {};	// Only custom constructor exists!
+		int f() { return 0; }
+	};
+
+	// Error : (why?) B does not have a default constructor
+	template <typename T>
+	decltype(T().f()) wrong_call_f_and_return(T& t){
+		return t.f();
+	}
+
+	// Correct way of using std::declval
+	template <typename T>
+	decltype(std::declval<T>().f()) correct_call_f_and_return(T& t) {
+		return t.f();
+	}
+}
+
+void decltype_declval_comparison_test() {
+	DeclValTest::A a;
+	DeclValTest::B b(1);
+
+	std::cout << DeclValTest::wrong_call_f_and_return(a) << std::endl;;
+	//DeclValTest::wrong_call_f_and_return(b);	// Wrong!
+
+	std::cout << DeclValTest::correct_call_f_and_return(a) << std::endl;;
+	std::cout << DeclValTest::correct_call_f_and_return(b) << std::endl;;
+
+}

@@ -276,7 +276,8 @@ int main() {
 	//constant_expression_function_test();
 	//constant_expression_constructor_test();
 	//decltype_id_expression_test();
-	decltype_auto_comparison();
+	//decltype_auto_comparison();
+	decltype_declval_comparison_test();
 
 
 	return 0;

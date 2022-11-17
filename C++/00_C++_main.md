@@ -259,3 +259,5 @@
 	* id-expression
 	* xvalue / lvalue / prvalue [See image](https://modoocode.com/img/cpp/16.3.1.png)
 	* auto vs. decltype
+	* std::declval
+		* <utility>
