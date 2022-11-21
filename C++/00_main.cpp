@@ -277,7 +277,13 @@ int main() {
 	//constant_expression_constructor_test();
 	//decltype_id_expression_test();
 	//decltype_auto_comparison();
-	decltype_declval_comparison_test();
+	//decltype_declval_comparison_test();
+
+	/* 17 */
+	//template_meta_function_simple_test();
+	//template_meta_function_static_assert_test();
+	//pointer_to_data_member_test();
+	SFINAE_test();
 
 
 	return 0;

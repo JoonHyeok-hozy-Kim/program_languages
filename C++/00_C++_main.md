@@ -261,3 +261,15 @@
 	* auto vs. decltype
 	* std::declval
 		* <utility>
+---
+### 17-1 [type_traits Library](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/17_01_type_traits.cpp)
+* type_traits Library
+	* is_void()
+	* is_integral()
+		* std::is_integral
+	* is_class()
+		* Pointer to Data Member
+		* std::integral_constant
+		* SFINAE : Substitution Failure is not an Error.
+* keyword : static_assert
+	
