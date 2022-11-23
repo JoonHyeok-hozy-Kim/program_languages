@@ -283,7 +283,11 @@ int main() {
 	//template_meta_function_simple_test();
 	//template_meta_function_static_assert_test();
 	//pointer_to_data_member_test();
-	SFINAE_test();
+	//SFINAE_test();
+	//SFINAE_enable_if_test();
+	//SFINAE_enable_if_forcing_type_test();
+	//SFINAE_enable_if_forcing_members_test();
+	SFINAE_container_print_all_elements_test();
 
 
 	return 0;

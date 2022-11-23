@@ -176,3 +176,146 @@ namespace TemplateMetaFunctionIsClassImplementation {
 
 }
 
+
+/* Concept) enable_if
+	- A Template Meta Function that excludes functions that do not qualify SFINAE from the overloading cadidates.
+	- Syntax
+		1) Put the target expression as input
+		2) Return result type if the expression is true
+	- Check the example below.
+*/
+
+namespace SFINAEEnableIfTest {
+
+	// Example 1) Simple enable_if test for int
+	template <typename T,
+		typename = typename std::enable_if<std::is_integral<T>::value>::type>
+	void int_check(const T& t) {
+		std::cout << "t : " << t << std::endl;
+	}
+
+	struct A {
+		int a;
+	};
+
+	void test() {
+		std::cout << "Integer Data Types" << std::endl;
+		int_check(1);		// int
+		int_check(false);
+		int_check('c');
+
+		std::cout << "Non-Integer Data Types" << std::endl;
+		//int_check(A{});		// NOT allowed!!!
+	}
+
+
+	// Example 2) Force specific datatype for enable_if
+	// How to force Iterator type input for vector class implementation.
+	// -> What is the difference btwn, vector_mk1 and vector_mk2?
+	//	-> Recall that size_t is NOT int, an int without sign! On the other hand Iterator is an int type. Thus, the latter is chosen in mk1.
+	//	  -> We can prevent this by forcing specific data type.
+	template <typename T>
+	class vector_mk1 {
+	public:
+		vector_mk1(size_t num, const T& element) {
+			std::cout << "Create a vector that contains " << num << " number of " << element << std::endl;
+		}
+
+		template <typename Iterator>
+		vector_mk1(Iterator start, Iterator end) {
+			std::cout << "Create a vector with Iterators." << std::endl;
+		}
+	};
+
+
+	template <typename T>
+	class vector_mk2 {
+	public:
+		vector_mk2(size_t num, const T& element) {
+			std::cout << "Create a vector that contains " << num << " number of " << element << std::endl;
+		}
+
+		template <typename Iterator,
+			typename = typename std::enable_if<is_iterator<Iterator>::value>::type>
+		vector_mk2(Iterator start, Iterator end) {
+			std::cout << "Create a vector with Iterators." << std::endl;
+		}
+	};
+
+	void vector_creation_test() {
+		vector_mk1<int> v1(10, 3);
+		vector_mk2<int> v2(10, 3);
+	}
+
+
+	// Example 3) Force certain class that contains certain member
+	// We can actually accomplish this with decltype and std::declval.
+	// However, if we want to force the return type of the member function, we can use enable if.
+
+	// declval, std::decltype solution
+	template <typename T, typename = decltype(std::declval<T>().func())>
+	void contains_func(const T& t) {
+		std::cout << "t.func() : " << t.func() << std::endl;
+	}
+
+	struct B {
+		int func() const { return 1; }
+	};
+
+	void decltype_declval_test() {
+		contains_func(B{});
+		//contains_func(A{});		// Compile ERROR!
+	}
+
+	template <typename T,
+		typename = typename std::enable_if<std::is_integral<decltype(std::declval<T>().func())>::value>::type>
+	void contains_func_returns_int(const T& t) {
+		std::cout << "t.func() : " << t.func() << std::endl;
+	}
+
+	struct C {
+		B func() { return B{}; }
+	};
+
+	void forcing_return_test() {
+		contains_func_returns_int(B{});
+		//contains_func_returns_int(C{});		// Compile ERROR
+
+		//contains_func(C{});	// NOT a compile error.	Cannot force the return type with this.
+	}
+
+
+	// Additional Example) How to call all the members of a container
+	// print_all_elements() will be applied only for classes that have begin() and end().
+	template <typename Cont, typename = decltype(std::declval<Cont>().begin()),
+		typename = decltype(std::declval<Cont>().end())>
+	void print_all_elements(const Cont& container) {
+		std::cout << "[ ";
+		for (auto it = container.begin(); it != container.end(); it++) {
+			std::cout << *it << " ";
+		}
+		std::cout << "]\n";
+	}
+}
+
+void SFINAE_enable_if_test() {
+	SFINAEEnableIfTest::test();
+}
+
+void SFINAE_enable_if_forcing_type_test() {
+	SFINAEEnableIfTest::vector_creation_test();
+}
+
+void SFINAE_enable_if_forcing_members_test() {
+	SFINAEEnableIfTest::decltype_declval_test();
+}
+
+
+#include <vector>
+
+void SFINAE_container_print_all_elements_test() {
+	std::vector<int> a = { 1,2,3,4,5 };
+	std::vector<char> c = { 'a','b','c','d' };
+	SFINAEEnableIfTest::print_all_elements(a);
+	SFINAEEnableIfTest::print_all_elements(c);
+}
