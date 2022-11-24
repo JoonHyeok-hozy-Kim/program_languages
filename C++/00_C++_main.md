@@ -272,5 +272,6 @@
 		* std::integral_constant
 		* SFINAE : Substitution Failure is not an Error.
 			* std::enable_if<>
+			* void_t
 * keyword : static_assert
 	

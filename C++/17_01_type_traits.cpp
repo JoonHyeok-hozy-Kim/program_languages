@@ -319,3 +319,36 @@ void SFINAE_container_print_all_elements_test() {
 	SFINAEEnableIfTest::print_all_elements(a);
 	SFINAEEnableIfTest::print_all_elements(c);
 }
+
+
+/* Tech.) void_t
+	- Template input using variadic template
+	- If the input template is valid, void_t becomes void, else excluded from overloading list (SFINAE)
+	- Check the simplifying example of the container below.
+*/
+namespace SFINAEVoidTTest {
+	// Simpler Version using void_t
+	template <typename Cont>
+	std::void_t<decltype(std::declval<Cont>().begin()), decltype(std::declval<Cont>().end())>
+	print_all(const Cont& container) {
+		std::cout << "[ ";
+		for (auto it = container.begin(); it != container.end(); it++) {
+			std::cout << *it << " ";
+		}
+		std::cout << "]\n";
+	}
+
+	struct B{};
+
+	void print_all_test() {
+		std::vector<int> v1 = { 1,2,3 };
+
+		print_all(v1);
+		//print_all<B, void>(B{});	// Again, excluded!
+
+	}
+}
+
+void SFINAE_void_t_test() {
+	SFINAEVoidTTest::print_all_test();
+}

@@ -8,3 +8,4 @@ void SFINAE_enable_if_test();
 void SFINAE_enable_if_forcing_type_test();
 void SFINAE_enable_if_forcing_members_test();
 void SFINAE_container_print_all_elements_test();
+void SFINAE_void_t_test();
