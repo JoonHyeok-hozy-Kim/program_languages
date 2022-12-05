@@ -292,7 +292,10 @@ int main() {
 	//regex_pattern_match_test();
 	//regex_partial_pattern_match_test();
 	//regex_partial_extraction_test();
-	regex_search_test();
+	//regex_search_test();
+	//regex_iterator_search_test();
+	//regex_replacing_test();
+	regex_advancec_replacing_test();
 
 
 	return 0;

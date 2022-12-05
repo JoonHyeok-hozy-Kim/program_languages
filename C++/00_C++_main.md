@@ -285,3 +285,6 @@
 	* std::regex_search()
 		* std::sub_match object
 			* [suffix()](https://modoocode.com/img/cpp/17.2.1.png)
+	* std::sregex_iterator()
+	* std::regex_replace
+		* back reference : () -> $n

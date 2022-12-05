@@ -79,8 +79,7 @@ void regex_partial_extraction_test() {
 
 /* Tech.) Pattern Searching test using Regular Expression */
 namespace RegExpSearchingTest {
-	void test() {
-		std::string html = R"(
+	std::string html = R"(
         <div class="social-login">
           <div class="small-comment">다음으로 로그인 </div>
           <div>
@@ -105,6 +104,8 @@ namespace RegExpSearchingTest {
           <div class="sk-circle7 sk-circle">sxz</div>
         </div>)";
 
+
+	void simple_search_test() {	
 		std::regex re(R"(<div class="sk[\w -]*">\w*</div>)");
 		std::smatch match;
 		while (std::regex_search(html, match, re)) {
@@ -112,8 +113,54 @@ namespace RegExpSearchingTest {
 			html = match.suffix();	// Returns std::sub_match object.
 		}
 	}
+
+	void iterator_search_test() {
+		std::regex re(R"(<div class="sk[\w -]*">\w*</div>)");
+		std::smatch match;
+
+		auto start = std::sregex_iterator(html.begin(), html.end(), re);
+		auto end = std::sregex_iterator();
+
+		while (start != end) {
+			std::cout << start->str() << std::endl;
+			++start;
+		}
+	}
+
+	void replacing_test() {
+		std::regex re(R"r(sk-circle(\d))r");
+		std::smatch match;
+
+		std::string modified_html = std::regex_replace(html, re, "$1-sk-circle");	// Back reference for the parenthesized part of the original text!
+		std::cout << modified_html << std::endl;
+
+		std::cout << "-------------------------\n\n" << std::endl;
+		// Direct output without objectification
+		std::regex_replace(std::ostreambuf_iterator<char>(std::cout), html.begin(),
+			html.end(), re, "$1-sk-circle");
+	}
+
+	void advanced_replacing_test() {
+		std::regex re(R"r((sk-circle(\d) sk-circle))r");
+		std::smatch match;
+
+		std::string modified_html = std::regex_replace(html, re, "$2-sk-circle");	// Outer parenthesis has priority! Thus, $2 for the inner parenthesis.
+		std::cout << modified_html << std::endl;
+	}
 }
 
 void regex_search_test() {
-	RegExpSearchingTest::test();
+	RegExpSearchingTest::simple_search_test();
+}
+
+void regex_iterator_search_test() {
+	RegExpSearchingTest::iterator_search_test();
+}
+
+void regex_replacing_test() {
+	RegExpSearchingTest::replacing_test();
+}
+
+void regex_advancec_replacing_test() {
+	RegExpSearchingTest::advanced_replacing_test();
 }
