@@ -288,7 +288,11 @@ int main() {
 	//SFINAE_enable_if_forcing_type_test();
 	//SFINAE_enable_if_forcing_members_test();
 	//SFINAE_container_print_all_elements_test();
-	SFINAE_void_t_test();
+	//SFINAE_void_t_test();
+	//regex_pattern_match_test();
+	//regex_partial_pattern_match_test();
+	//regex_partial_extraction_test();
+	regex_search_test();
 
 
 	return 0;

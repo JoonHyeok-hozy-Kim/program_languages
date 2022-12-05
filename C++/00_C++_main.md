@@ -274,4 +274,14 @@
 			* std::enable_if<>
 			* void_t
 * keyword : static_assert
-	
+### 17-2 [Regular Expressions](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/17_02_regex.cpp)
+* std::regex
+	* syntax options
+		* std::regex::grep
+		* std::regex::icase
+	* extraction tool
+		* std::smatch  -> Returns std::string object
+		* std::cmatch  -> Returns const char* object
+	* std::regex_search()
+		* std::sub_match object
+			* [suffix()](https://modoocode.com/img/cpp/17.2.1.png)
