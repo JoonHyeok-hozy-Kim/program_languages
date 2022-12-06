@@ -295,7 +295,13 @@ int main() {
 	//regex_search_test();
 	//regex_iterator_search_test();
 	//regex_replacing_test();
-	regex_advancec_replacing_test();
+	//regex_advancec_replacing_test();
+	//pseudo_random_number_test();
+	//random_uniform_distribution_test();
+	//random_normal_distribution_test();
+	//chrono_random_generator_time_cnt();
+	//chrono_random_generator_time_cnt_duration_cast();
+	time_output_simple_test();
 
 
 	return 0;

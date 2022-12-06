@@ -288,3 +288,19 @@
 	* std::sregex_iterator()
 	* std::regex_replace
 		* back reference : () -> $n
+### 17-3 [Random / Chrono Library](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/17_03_random.cpp)
+* Random
+	* Pseudo Random Number : rand() in stdlib.h
+	* <random> module
+		* std::random_device
+		* std::mt19937
+		* std::uniform_distribution
+		* std::normal_distribution
+* <chrono> module
+	* std::chrono::system_clock
+	* std::chrono::high_resolution_clock
+	* std::chrono::time_point
+	* std::chrono::time_stamp
+	* std::chrono::duration
+		* count() : Returns tick!
+	* std::chrono::duration_cast

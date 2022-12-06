@@ -77,3 +77,4 @@ void call_namespaces2();
 /* 17 */
 #include "17_01_type_traits.h"
 #include "17_02_regex.h"
+#include "17_03_random.h"
