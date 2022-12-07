@@ -304,3 +304,30 @@
 	* std::chrono::duration
 		* count() : Returns tick!
 	* std::chrono::duration_cast
+### 17-4 [Filesystem Library](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/17_04_filesystem.cpp)
+* <filesystem> (Since C++17)
+	* Comparison <filesystem> vs <fstream>
+		* When searching a specific file, use <filesystem>
+		* When reading a specific file, use <fstream>
+	* Classes
+		* std::filesystem::path
+			* std::filesystem::current_path()
+			* std::filesystem::absolute()
+			* std::filesystem::canonical()
+		* Tech.) Iteration
+			* std::filesystem::directory_iterator
+			* std::filesystem::directory_entry
+			* std::filesystem::recursive_directory_iterator
+		* Tech.) Creation
+			* std::filesystem::create_directory
+				* std::filesystem::create_directories
+		* Tech.) Copy
+			* std::filesystem::copy
+				* Options
+					* std::filesystem::copy_options::recursive
+					* std::filesystem::copy_options::skip_existing
+					* std::filesystem::copy_options::overwrite_existing
+					* std::filesystem::copy_options::update_existing
+		* Tech.) Remove
+			* std::filesystem::remove
+			* std::filesystem::remove_all

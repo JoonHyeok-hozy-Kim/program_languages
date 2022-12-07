@@ -301,7 +301,15 @@ int main() {
 	//random_normal_distribution_test();
 	//chrono_random_generator_time_cnt();
 	//chrono_random_generator_time_cnt_duration_cast();
-	time_output_simple_test();
+	//time_output_simple_test();
+	//filesystem_simple_test();
+	//filesystem_path_related_functions();
+	//filesystem_directory_iteration_test();
+	//filesystem_recursive_directory_iteration_test();
+	//filesystem_directory_creation_test();
+	//filesystem_directories_creation_test();
+	//filesystem_copy_test();
+	filesystem_remove_test();
 
 
 	return 0;
