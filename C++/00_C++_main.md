@@ -331,3 +331,15 @@
 		* Tech.) Remove
 			* std::filesystem::remove
 			* std::filesystem::remove_all
+### 17-5 [Useful Tools in STL](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C%2B%2B/17_05_stl_tools_additional.cpp)
+* std::optional in <optional> module
+	* value()
+	* For references, use std::reference_wrapper.
+		* std::ref()
+* std::variant in <variant> module
+	* std::get<T>()
+	* index()
+	* std::monostate
+* std::tuple
+	* Tech.) Structured Binding (since C++17)
+		* syntax : "auto [t1, t2, t3] = _tuple_instance_"

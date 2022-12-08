@@ -79,3 +79,4 @@ void call_namespaces2();
 #include "17_02_regex.h"
 #include "17_03_random.h"
 #include "17_04_filesystem.h"
+#include "17_05_stl_tools_additional.h"

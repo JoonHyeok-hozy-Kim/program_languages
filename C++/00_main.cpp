@@ -309,7 +309,13 @@ int main() {
 	//filesystem_directory_creation_test();
 	//filesystem_directories_creation_test();
 	//filesystem_copy_test();
-	filesystem_remove_test();
+	//filesystem_remove_test();
+	//optional_comparison_test();
+	//optional_reference_test();
+	//variant_simple_test();
+	//variant_vs_polymorphism();
+	//tuple_simple_test();
+	tuple_structured_binding_test();
 
 
 	return 0;
