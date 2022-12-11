@@ -1,4 +1,6 @@
-* Back to [Program Languages Main](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/README.md)
+* Back to [C Main](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/c_main.md)
+
+## Study Record following [모두의 코드](https://modoocode.com/231)
 
 ### 3. [Variables](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/modu/03_variables/variables.c)
   * integer and float type variables
@@ -183,3 +185,6 @@
   * application : Library program project 3
 
 ### 24. [C Programming Optimization](https://github.com/JoonHyeok-hozy-Kim/program_languages/tree/main/C/24_skills_for_efficient_c_programming)
+
+
+* Back to [C Main](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/c_main.md)
