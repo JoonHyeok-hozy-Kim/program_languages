@@ -5,8 +5,8 @@
 ### Basics
 1. [Hello, World!](https://www.learn-c.org/en/Hello%2C_World%21) -> [Practice 221211](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221211_basic_01.c)
 2. [Variables and Types](https://www.learn-c.org/en/Variables_and_Types) -> [Practice 221211](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221211_basic_02.c)
-3. [Arrays](https://www.learn-c.org/en/Arrays) -> [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221211_basic_03.c)
-4. [Multidimensional Arrays](https://www.learn-c.org/en/Multidimensional_Arrays) -> [Practice]()
+3. [Arrays](https://www.learn-c.org/en/Arrays) -> [Practice 221211](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221211_basic_03.c)
+4. [Multidimensional Arrays](https://www.learn-c.org/en/Multidimensional_Arrays) -> [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221211_basic_04.c)
 5. [Conditions](https://www.learn-c.org/en/Conditions) -> [Practice]()
 6. [Strings](https://www.learn-c.org/en/Strings) -> [Practice]()
 7. [For loops](https://www.learn-c.org/en/For_loops) -> [Practice]()
