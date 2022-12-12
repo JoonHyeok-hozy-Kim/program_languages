@@ -7,12 +7,12 @@
 2. [Variables and Types](https://www.learn-c.org/en/Variables_and_Types) -> [Practice 221211](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221211_basic_02.c)
 3. [Arrays](https://www.learn-c.org/en/Arrays) -> [Practice 221211](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221211_basic_03.c)
 4. [Multidimensional Arrays](https://www.learn-c.org/en/Multidimensional_Arrays) -> [Practice 221211](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221211_basic_04.c)
-5. [Conditions](https://www.learn-c.org/en/Conditions) -> [Practice]()
-6. [Strings](https://www.learn-c.org/en/Strings) -> [Practice]()
-7. [For loops](https://www.learn-c.org/en/For_loops) -> [Practice]()
-8. [While loops](https://www.learn-c.org/en/While_loops) -> [Practice]()
-9. [Functions](https://www.learn-c.org/en/Functions) -> [Practice]()
-10. [Static](https://www.learn-c.org/en/Static) -> [Practice]()
+5. [Conditions](https://www.learn-c.org/en/Conditions) -> [Practice 221212](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221212_basic_05.c)
+6. [Strings](https://www.learn-c.org/en/Strings) -> [Practice 221212](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221212_basic_06.c)
+7. [For loops](https://www.learn-c.org/en/For_loops) -> [Practice 221212](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221212_basic_07.c)
+8. [While loops](https://www.learn-c.org/en/While_loops) -> [Practice 221212](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221212_basic_08.c)
+9. [Functions](https://www.learn-c.org/en/Functions) -> [Practice 221212](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221212_basic_09.c)
+10. [Static](https://www.learn-c.org/en/Static) -> [Practice 221212](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221212_basic_10.c)
 
 ---
 
