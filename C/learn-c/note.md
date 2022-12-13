@@ -17,7 +17,7 @@
 ---
 
 ### Advanced
-1. [Pointers](https://www.learn-c.org/en/Pointers) -> [Practice]()
+1. [Pointers](https://www.learn-c.org/en/Pointers) -> [Practice 221213](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221213_advanced_11.c)
 2. [Structures](https://www.learn-c.org/en/Structures) -> [Practice]()
 3. [Function arguments by reference](https://www.learn-c.org/en/Function_arguments_by_reference) -> [Practice]()
 4. [Dynamic allocation](https://www.learn-c.org/en/Dynamic_allocation) -> [Practice]()
