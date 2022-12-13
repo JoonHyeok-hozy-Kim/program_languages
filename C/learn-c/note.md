@@ -18,14 +18,14 @@
 
 ### Advanced
 1. [Pointers](https://www.learn-c.org/en/Pointers) -> [Practice 221213](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221213_advanced_11.c)
-2. [Structures](https://www.learn-c.org/en/Structures) -> [Practice]()
-3. [Function arguments by reference](https://www.learn-c.org/en/Function_arguments_by_reference) -> [Practice]()
-4. [Dynamic allocation](https://www.learn-c.org/en/Dynamic_allocation) -> [Practice]()
-5. [Arrays and Pointers](https://www.learn-c.org/en/Arrays_and_Pointers) -> [Practice]()
-6. [Recursion](https://www.learn-c.org/en/Recursion) -> [Practice]()
-7. [Linked lists](https://www.learn-c.org/en/Linked_lists) -> [Practice]()
-8. [Binary trees](https://www.learn-c.org/en/Binary_trees) -> [Practice]()
-9. [Unions](https://www.learn-c.org/en/Unions) -> [Practice]()
-10. [Pointer Arithmetics](https://www.learn-c.org/en/Pointer_Arithmetics) -> [Practice]()
-11. [Function Pointers](https://www.learn-c.org/en/Function_Pointers) -> [Practice]()
-12. [Bitmasks](https://www.learn-c.org/en/Bitmasks) -> [Practice]()
+2. [Structures](https://www.learn-c.org/en/Structures) -> [Practice 221213](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221213_advanced_12.c)
+3. [Function arguments by reference](https://www.learn-c.org/en/Function_arguments_by_reference) -> [Practice 221213](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221213_advanced_13.c)
+4. [Dynamic allocation](https://www.learn-c.org/en/Dynamic_allocation) -> 
+5. [Arrays and Pointers](https://www.learn-c.org/en/Arrays_and_Pointers) -> 
+6. [Recursion](https://www.learn-c.org/en/Recursion) -> 
+7. [Linked lists](https://www.learn-c.org/en/Linked_lists) -> 
+8. [Binary trees](https://www.learn-c.org/en/Binary_trees) -> 
+9. [Unions](https://www.learn-c.org/en/Unions) -> 
+10. [Pointer Arithmetics](https://www.learn-c.org/en/Pointer_Arithmetics) -> 
+11. [Function Pointers](https://www.learn-c.org/en/Function_Pointers) -> 
+12. [Bitmasks](https://www.learn-c.org/en/Bitmasks) -> 
