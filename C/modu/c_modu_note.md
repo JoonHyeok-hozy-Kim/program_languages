@@ -127,12 +127,12 @@
         * constant, literals
       5. Code Segment
 
-### 18-1. [Modularization 1](https://github.com/JoonHyeok-hozy-Kim/program_languages/tree/main/C/18_01_header_and_include)
+### 18-1. [Modularization 1](https://github.com/JoonHyeok-hozy-Kim/program_languages/tree/main/C/modu/18_01_header_and_include)
   * Modularization Programming
   * #include
   * [application : Library program project 2](https://github.com/JoonHyeok-hozy-Kim/program_languages/tree/main/C/18_01_ZZZ_application_library_revisited)
 
-### 18-2. [Modularization 2](https://github.com/JoonHyeok-hozy-Kim/program_languages/tree/main/C/18_02_libraries)
+### 18-2. [Modularization 2](https://github.com/JoonHyeok-hozy-Kim/program_languages/tree/main/C/modu/18_02_libraries)
   * preprocessing directives
     * #define 
     * #ifdef
@@ -141,16 +141,16 @@
   * header
   * library
 
-### 19. [main Function and void](https://github.com/JoonHyeok-hozy-Kim/program_languages/tree/main/C/19_void_and_main_func)
+### 19. [main Function and void](https://github.com/JoonHyeok-hozy-Kim/program_languages/tree/main/C/modu/19_void_and_main_func)
   * void type, void function
   * main function input parameters
   * pointer array
 
-### 20-1. [Dynamic Memory Allocation 1](https://github.com/JoonHyeok-hozy-Kim/program_languages/tree/main/C/20_01_dynamic_allocation)
+### 20-1. [Dynamic Memory Allocation 1](https://github.com/JoonHyeok-hozy-Kim/program_languages/tree/main/C/modu/20_01_dynamic_allocation)
   * malloc function
   * dynamic allocations to arrays
 
-### 20-2. [Dynamic Memory Allocation 2](https://github.com/JoonHyeok-hozy-Kim/program_languages/tree/main/C/20_dynamic_allocation_for_structures)
+### 20-2. [Dynamic Memory Allocation 2](https://github.com/JoonHyeok-hozy-Kim/program_languages/tree/main/C/modu/20_dynamic_allocation_for_structures)
   * dynamic allocations to struct
   * node
   * memory management functions
@@ -158,33 +158,33 @@
     * memcpy
     * memcmp
 
-### 21. [Macro Function and Inline function](https://github.com/JoonHyeok-hozy-Kim/program_languages/tree/main/C/21_macro_and_inline_function)
+### 21. [Macro Function and Inline function](https://github.com/JoonHyeok-hozy-Kim/program_languages/tree/main/C/modu/21_macro_and_inline_function)
   * macro function
   * inline function
 
-### 22. [Keywords in C](https://github.com/JoonHyeok-hozy-Kim/program_languages/tree/main/C/22_keywords)
+### 22. [Keywords in C](https://github.com/JoonHyeok-hozy-Kim/program_languages/tree/main/C/modu/22_keywords)
   * typedef
   * volatile
   * #pragma
     * #pragma pack
     * #pragma once
 
-### 23-1. [File Input and Output 1](https://github.com/JoonHyeok-hozy-Kim/program_languages/tree/main/C/23_01_file_input_output_intro)
+### 23-1. [File Input and Output 1](https://github.com/JoonHyeok-hozy-Kim/program_languages/tree/main/C/modu/23_01_file_input_output_intro)
   * io
   * stream
   * fopen, fputs, fgets, fgetchar
 
-### 23-2. [File Input and Output 2](https://github.com/JoonHyeok-hozy-Kim/program_languages/tree/main/C/23_02_file_position_indicator)
+### 23-2. [File Input and Output 2](https://github.com/JoonHyeok-hozy-Kim/program_languages/tree/main/C/modu/23_02_file_position_indicator)
   * file position indicator
   * fseek
   * "r+", "w+", "a", "a+"
   * fprintf
   * fscanf
 
-### 23-3. [File Input and Output 3](https://github.com/JoonHyeok-hozy-Kim/program_languages/tree/main/C/23_03_library_program_revisited)
+### 23-3. [File Input and Output 3](https://github.com/JoonHyeok-hozy-Kim/program_languages/tree/main/C/modu/23_03_library_program_revisited)
   * application : Library program project 3
 
-### 24. [C Programming Optimization](https://github.com/JoonHyeok-hozy-Kim/program_languages/tree/main/C/24_skills_for_efficient_c_programming)
+### 24. [C Programming Optimization](https://github.com/JoonHyeok-hozy-Kim/program_languages/tree/main/C/modu/24_skills_for_efficient_c_programming)
 
 
 * Back to [C Main](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/c_main.md)
