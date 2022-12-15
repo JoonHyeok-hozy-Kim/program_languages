@@ -23,7 +23,7 @@
 4. [Dynamic allocation](https://www.learn-c.org/en/Dynamic_allocation) -> [Practice 221214](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221214_advanced_14.c)
 5. [Arrays and Pointers](https://www.learn-c.org/en/Arrays_and_Pointers) -> [Practice 221214](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221214_advanced_15.c)
 6. [Recursion](https://www.learn-c.org/en/Recursion) -> [Practice 221214](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221214_advanced_16.c)
-7. [Linked lists](https://www.learn-c.org/en/Linked_lists) -> 
+7. [Linked lists](https://www.learn-c.org/en/Linked_lists) -> [Practice 221215](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221215_advanced_17.c)
 8. [Binary trees](https://www.learn-c.org/en/Binary_trees) -> 
 9. [Unions](https://www.learn-c.org/en/Unions) -> 
 10. [Pointer Arithmetics](https://www.learn-c.org/en/Pointer_Arithmetics) -> 
