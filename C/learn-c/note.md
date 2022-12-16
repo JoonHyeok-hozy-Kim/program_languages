@@ -19,17 +19,17 @@
 ---
 
 ### Advanced
-|No.|Content|Trial|
-|:-:|:------|:---:|
-|1  |[Pointers](https://www.learn-c.org/en/Pointers) | [Practice 221213](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221213_advanced_11.c) |
-|2  |[Structures](https://www.learn-c.org/en/Structures) | [Practice 221213](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221213_advanced_12.c) |
-|3  |[Function arguments by reference](https://www.learn-c.org/en/Function_arguments_by_reference) | [Practice 221213](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221213_advanced_13.c) |
-|4  |[Dynamic allocation](https://www.learn-c.org/en/Dynamic_allocation) | [Practice 221214](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221214_advanced_14.c) |
-|5  |[Arrays and Pointers](https://www.learn-c.org/en/Arrays_and_Pointers) | [Practice 221214](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221214_advanced_15.c) |
-|6  |[Recursion](https://www.learn-c.org/en/Recursion) | [Practice 221214](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221214_advanced_16.c) |
-|7  |[Linked lists](https://www.learn-c.org/en/Linked_lists) | [Practice 221215](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221215_advanced_17.c) |
-|8  |[Binary trees](https://www.learn-c.org/en/Binary_trees) | [Practice 221215](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221215_advanced_18.c) |
-|9  |[Unions](https://www.learn-c.org/en/Unions) |  |
+|No.|Content|Trial 1|
+|:-:|:------|:-----:|
+|1  |[Pointers](https://www.learn-c.org/en/Pointers) | [Practice 221213](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221213_advanced_01.c) |
+|2  |[Structures](https://www.learn-c.org/en/Structures) | [Practice 221213](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221213_advanced_02.c) |
+|3  |[Function arguments by reference](https://www.learn-c.org/en/Function_arguments_by_reference) | [Practice 221213](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221213_advanced_03.c) |
+|4  |[Dynamic allocation](https://www.learn-c.org/en/Dynamic_allocation) | [Practice 221214](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221214_advanced_04.c) |
+|5  |[Arrays and Pointers](https://www.learn-c.org/en/Arrays_and_Pointers) | [Practice 221214](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221214_advanced_05.c) |
+|6  |[Recursion](https://www.learn-c.org/en/Recursion) | [Practice 221214](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221214_advanced_06.c) |
+|7  |[Linked lists](https://www.learn-c.org/en/Linked_lists) | [Practice 221215](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221215_advanced_07.c) |
+|8  |[Binary trees](https://www.learn-c.org/en/Binary_trees) | [Practice 221215](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221215_advanced_08.c) |
+|9  |[Unions](https://www.learn-c.org/en/Unions) | [Practice 221216](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221216_advanced_09.c) |
 |10 |[Pointer Arithmetics](https://www.learn-c.org/en/Pointer_Arithmetics) |  |
 |11 |[Function Pointers](https://www.learn-c.org/en/Function_Pointers) |  |
 |12 |[Bitmasks](https://www.learn-c.org/en/Bitmasks) |  |
