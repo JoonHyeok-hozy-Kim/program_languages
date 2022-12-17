@@ -30,6 +30,6 @@
 |7  |[Linked lists](https://www.learn-c.org/en/Linked_lists) | [Practice 221215](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221215_advanced_07.c) |
 |8  |[Binary trees](https://www.learn-c.org/en/Binary_trees) | [Practice 221215](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221215_advanced_08.c) |
 |9  |[Unions](https://www.learn-c.org/en/Unions) | [Practice 221216](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221216_advanced_09.c) |
-|10 |[Pointer Arithmetics](https://www.learn-c.org/en/Pointer_Arithmetics) |  |
+|10 |[Pointer Arithmetics](https://www.learn-c.org/en/Pointer_Arithmetics) | [Practice 221217](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221217_advanced_10.c) |
 |11 |[Function Pointers](https://www.learn-c.org/en/Function_Pointers) |  |
 |12 |[Bitmasks](https://www.learn-c.org/en/Bitmasks) |  |
