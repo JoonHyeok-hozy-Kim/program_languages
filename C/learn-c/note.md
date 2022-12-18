@@ -32,4 +32,4 @@
 |9  |[Unions](https://www.learn-c.org/en/Unions) | [Practice 221216](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221216_advanced_09.c) |
 |10 |[Pointer Arithmetics](https://www.learn-c.org/en/Pointer_Arithmetics) | [Practice 221217](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221217_advanced_10.c) |
 |11 |[Function Pointers](https://www.learn-c.org/en/Function_Pointers) | [Practice 221217](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221217_advanced_11.c) |
-|12 |[Bitmasks](https://www.learn-c.org/en/Bitmasks) |  |
+|12 |[Bitmasks](https://www.learn-c.org/en/Bitmasks) | [Practice 221218](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/C/learn-c/practices/221217_advanced_11.c) |
