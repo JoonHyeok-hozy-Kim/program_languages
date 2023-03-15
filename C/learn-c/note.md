@@ -1,4 +1,4 @@
-* Back to [Main](https://github.com/JoonHyeok-hozy-Kim/program_languages/README.md)
+* Back to [Main](https://github.com/JoonHyeok-hozy-Kim/program_languages#readme)
 
 ## Study Record following [learn-c.org](https://www.learn-c.org/)
 
