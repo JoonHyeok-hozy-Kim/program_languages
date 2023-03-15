@@ -1,4 +1,4 @@
-* Back to [Main](https://github.com/JoonHyeok-hozy-Kim/program_languages/README.md)
+* Back to [Main](https://github.com/JoonHyeok-hozy-Kim/program_languages#readme)
 
 ## Study Record following [모두의 코드](https://modoocode.com/231)
 
@@ -187,4 +187,4 @@
 ### 24. [C Programming Optimization](https://github.com/JoonHyeok-hozy-Kim/program_languages/tree/main/C/modu/24_skills_for_efficient_c_programming)
 
 
-* Back to [Main](https://github.com/JoonHyeok-hozy-Kim/program_languages/README.md)
+* Back to [Main](https://github.com/JoonHyeok-hozy-Kim/program_languages#readme)
