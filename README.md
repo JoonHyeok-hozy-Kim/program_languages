@@ -20,5 +20,6 @@ Learning and reviewing various programming languages
   <summary>JavaScript</summary>
 
   1. [**Learn-JS** Study Record](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/learn_js/note.md)
+  2. [**Programiz** Study Record](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/note.md)
 
 </details>

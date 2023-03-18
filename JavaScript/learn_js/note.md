@@ -27,4 +27,4 @@
 |3  |[Object Oriented JavaScript](https://www.learn-js.org/en/Object_Oriented_JavaScript) | [Practice 230317](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/learn_js/practices/advanced/03.js) |*function*; *new*;|
 |4  |[Function Context](https://www.learn-js.org/en/Function_Context) | [Practice 230318](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/learn_js/practices/advanced/04.js) |*this*; bind(); call(); apply();|
 |5  |[Inheritance](https://www.learn-js.org/en/Inheritance) | [Practice 230318](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/learn_js/practices/advanced/05.js) |prototype; |
-|6  |[](https://www.learn-js.org/en/) | [Practice 230318](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/learn_js/practices/advanced/06.js) ||
+|6  |[Destructuring](https://www.learn-js.org/en/Destructuring) | [Practice 230318](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/learn_js/practices/advanced/06.js) ||
