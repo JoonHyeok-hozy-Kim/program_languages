@@ -22,4 +22,6 @@
 ### Advanced
 |No.|Content|Trial|Keywords|
 |:-:|:------|:---:|:---|
-|1  |[Hello, World!](https://www.learn-js.org/en/Hello%2C_World%21) | [Practice 230315](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/learn_js/practices/basic/01.js) ||
+|1  |[Promises](https://www.learn-js.org/en/Promises) | [Practice 230317](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/learn_js/practices/advanced/01.js) |promise; *then*;|
+|2  |[Async and Await](https://www.learn-js.org/en/Async_and_Await) | [Practice 230317](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/learn_js/practices/advanced/02.js) |*async*; *await*; |
+|3  |[Object Oriented JavaScript](https://www.learn-js.org/en/Async_and_Await) | [Practice 230317](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/learn_js/practices/advanced/03.js) |*function*; *new*;|
