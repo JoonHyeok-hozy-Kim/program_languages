@@ -8,9 +8,12 @@
 
 |Content|Trial|Keywords|
 |:------|:---:|:---|
-|[Getting Started With JavaScript](https://www.programiz.com/javascript/get-started) | N/A |Web Browser; Node.js; Web Page(html)|
+|[Getting Started With JavaScript](https://www.programiz.com/javascript/get-started) | N/A |*Web Browser*; *Node.js*; *Web Page(html)*|
 |[JavaScript Variables and Constants](https://www.programiz.com/javascript/variables-constants) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/02.js) |var; let; const;|
-|[console.log()](https://www.programiz.com/javascript/console) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/03.js) |console.log()|
+|[console.log()](https://www.programiz.com/javascript/console) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/03.js) |console.log();|
+|[Data Types](https://www.programiz.com/javascript/data-types) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/02.js) |*number*; *string*; *BigInt*; NaN; null; Symbol; *Object*; typeof();|
+|[Operators](https://www.programiz.com/javascript/operators) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/02.js) ||
+|[]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/02.js) ||
 |[]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/02.js) ||
 
 </details>
