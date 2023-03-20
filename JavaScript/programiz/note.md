@@ -13,7 +13,10 @@
 |[console.log()](https://www.programiz.com/javascript/console) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/03.js) |console.log();|
 |[Data Types](https://www.programiz.com/javascript/data-types) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/04.js) |*number*; *string*; *BigInt*; NaN; null; Symbol; *Object*; typeof();|
 |[Operators](https://www.programiz.com/javascript/operators) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/05.js) | === |
-|[Comments](https://www.programiz.com/javascript/comments) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/06.js) | // /**/ |
+|[Comments](https://www.programiz.com/javascript/comments) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/06.js) | // *Single Line*; /* *Multi Lines* */; |
+|[Type Conversions](https://www.programiz.com/javascript/type-conversion) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/07.js) | Number(); parseInt(); parseFloat(); Math.floor(); String(); Boolean(); |
+|[Comparison and Logical Operators](https://www.programiz.com/javascript/comparison-logical) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/08.js) ||
+|[if...else Statement](https://www.programiz.com/javascript/if-else) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/09.js) ||
 |[]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/02.js) ||
 
 </details>
@@ -33,6 +36,10 @@
 |6  |[Convert Kilometers to Miles](https://www.programiz.com/javascript/examples/km-mile) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/006.js) ||
 |7  |[Convert Celsius to Fahrenheit](https://www.programiz.com/javascript/examples/celsius-fahrenheit) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/007.js) ||
 |8  |[Work With Constants](https://www.programiz.com/javascript/examples/constants) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/008.js) |*block-scoped(const)*;|
-|  |[]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/03.js) ||
+|9  |[Generate a Random Number]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/009.js) | Math.random(); |
+|10  |[Check if a number is Positive, Negative, or Zero](https://www.programiz.com/javascript/examples/positive-negative-zero) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/010.js) ||
+|11  |[Check if a Number is Odd or Even](https://www.programiz.com/javascript/examples/even-odd) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/011.js) ||
+|12  |[Find the Largest Among Three Numbers](https://www.programiz.com/javascript/examples/largest-number-three) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/012.js) |Math.max();|
+|  |[]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/001.js) ||
 
 </details>
