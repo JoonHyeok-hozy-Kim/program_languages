@@ -47,3 +47,9 @@ function f4(){
 }
 
 f4();
+
+
+/* Cf.) var vs let
+ - var : function scoped
+ - let : block scoped
+*/
