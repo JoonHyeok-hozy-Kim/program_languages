@@ -22,6 +22,10 @@
 |[break Statement](https://www.programiz.com/javascript/break-statement) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/12.js) ||
 |[continue Statement](https://www.programiz.com/javascript/continue-statement) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/13.js) | isNaN(); |
 |[switch Statement](https://www.programiz.com/javascript/switch-statement) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/14.js) ||
+|[Function and Function Expressions](https://www.programiz.com/javascript/function) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/15.js) | function; *Function Expression*; |
+|[Variable Scope](https://www.programiz.com/javascript/variable-scope) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/16.js) | *global scope*; *local scope*;  var*(function scoped)*; let*(block scoped)*;|
+|[]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/17.js) ||
+
 |[]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/02.js) ||
 
 </details>
