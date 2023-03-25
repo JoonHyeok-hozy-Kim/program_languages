@@ -60,6 +60,11 @@
 |18  |[Check Armstrong Number](https://www.programiz.com/javascript/examples/armstrong-number) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/018.js) ||
 |19  |[Find Armstrong Number in an Interval](https://www.programiz.com/javascript/examples/armstrong-number-interval) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/019.js) | n.toString(); |
 |20  |[Make a Simple Calculator](https://www.programiz.com/javascript/examples/simple-calculator) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/020.js) ||
+|21  |[Find the Sum of Natural Numbers](https://www.programiz.com/javascript/examples/sum-natural-number) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/021.js) ||
+|22  |[Check if the Numbers Have Same Last Digit](https://www.programiz.com/javascript/examples/last-digit) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/022.js) ||
+|23  |[Find HCF or GCD](https://www.programiz.com/javascript/examples/hcf) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/023.js) ||
+|24  |[Find LCM](https://www.programiz.com/javascript/examples/lcm) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/024.js) ||
+
 |  |[]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/000.js) ||
 
 </details>
