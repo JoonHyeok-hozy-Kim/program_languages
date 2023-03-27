@@ -26,6 +26,11 @@
 |[Variable Scope](https://www.programiz.com/javascript/variable-scope) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/16.js) | *global scope*; *local scope*;  var(*function scoped*); let(*block scoped*);|
 |[Hoisting](https://www.programiz.com/javascript/hoisting) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/17.js) |*hoisting*; var; *function hoisting*;|
 |[Recursion](https://www.programiz.com/javascript/recursion) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/18.js) ||
+|[Objects](https://www.programiz.com/javascript/object) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/19.js) | *Nested Objects*; *Object Methods*; |
+|[Methods and this Keyword](https://www.programiz.com/javascript/methods) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/20.js) | this |
+|[Constructor Function](https://www.programiz.com/javascript/constructor-function) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/21.js) | *constructor function*; new; prototype; |
+|[]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/22.js) ||
+|[]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/23.js) ||
 
 |[]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/02.js) ||
 
