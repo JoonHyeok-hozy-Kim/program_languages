@@ -29,8 +29,9 @@
 |[Objects](https://www.programiz.com/javascript/object) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/19.js) | *Nested Objects*; *Object Methods*; |
 |[Methods and this Keyword](https://www.programiz.com/javascript/methods) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/20.js) | this |
 |[Constructor Function](https://www.programiz.com/javascript/constructor-function) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/21.js) | *constructor function*; new; prototype; |
-|[]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/22.js) ||
-|[]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/23.js) ||
+|[Getter and Setter](https://www.programiz.com/javascript/getter-setter) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/22.js) | *data property*; *access property*; get; set; Object.defineProperty(); |
+|[Prototype](https://www.programiz.com/javascript/prototype) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/23.js) | *Prototype Chaining*; __proto__; |
+|[Arrays](https://www.programiz.com/javascript/array) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/24.js) | push(); unshift(); pop(); shift(); |
 
 |[]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/02.js) ||
 
@@ -69,6 +70,10 @@
 |22  |[Check if the Numbers Have Same Last Digit](https://www.programiz.com/javascript/examples/last-digit) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/022.js) ||
 |23  |[Find HCF or GCD](https://www.programiz.com/javascript/examples/hcf) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/023.js) ||
 |24  |[Find LCM](https://www.programiz.com/javascript/examples/lcm) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/024.js) ||
+|25  |[Find the Factors of a Number](https://www.programiz.com/javascript/examples/factors-number) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/025.js) ||
+|26  |[Find Sum of Natural Numbers Using Recursion](https://www.programiz.com/javascript/examples/number-sum-recursion) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/026.js) ||
+|27  |[Guess a Random Number](https://www.programiz.com/javascript/examples/guess-number) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/027.js) ||
+|28  |[Shuffle Deck of Cards](https://www.programiz.com/javascript/examples/shuffle-card) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/028.js) ||
 
 |  |[]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/000.js) ||
 
