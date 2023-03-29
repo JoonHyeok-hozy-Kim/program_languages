@@ -32,6 +32,11 @@
 |[Getter and Setter](https://www.programiz.com/javascript/getter-setter) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/22.js) | *data property*; *access property*; get; set; Object.defineProperty(); |
 |[Prototype](https://www.programiz.com/javascript/prototype) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/23.js) | *Prototype Chaining*; __proto__; |
 |[Arrays](https://www.programiz.com/javascript/array) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/24.js) | push(); unshift(); pop(); shift(); |
+|[Multidimensional Array](https://www.programiz.com/javascript/multidimensional-array) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/25.js) | forEach(); of; |
+|[JavaScript String](https://www.programiz.com/javascript/string) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/26.js) ||
+|[for...in loop](https://www.programiz.com/javascript/for-in) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/27.js) ||
+|[Number](https://www.programiz.com/javascript/numbers) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/28.js) | NaN; isNaN(); Infinity; BigInt; Precision Problems; |
+|[Symbol](https://www.programiz.com/javascript/symbol) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/29.js) | Symbol(); []; |
 
 |[]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/02.js) ||
 
@@ -74,6 +79,10 @@
 |26  |[Find Sum of Natural Numbers Using Recursion](https://www.programiz.com/javascript/examples/number-sum-recursion) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/026.js) ||
 |27  |[Guess a Random Number](https://www.programiz.com/javascript/examples/guess-number) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/027.js) ||
 |28  |[Shuffle Deck of Cards](https://www.programiz.com/javascript/examples/shuffle-card) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/028.js) ||
+|29  |[Display Fibonacci Sequence Using Recursion](https://www.programiz.com/javascript/examples/fibonacci-recursion) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/029.js) ||
+|30  |[Find Factorial of Number Using Recursion](https://www.programiz.com/javascript/examples/factorial-recursion) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/030.js) ||
+|31  |[Convert Decimal to Binary](https://www.programiz.com/javascript/examples/decimal-binary) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/031.js) ||
+|32  |[Find ASCII Value of Character](https://www.programiz.com/javascript/examples/ascii-value-character) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/032.js) | charCodeAt(); codePointAt(); |
 
 |  |[]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/000.js) ||
 
