@@ -37,8 +37,14 @@
 |[for...in loop](https://www.programiz.com/javascript/for-in) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/27.js) ||
 |[Number](https://www.programiz.com/javascript/numbers) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/28.js) | NaN; isNaN(); Infinity; BigInt; Precision Problems; |
 |[Symbol](https://www.programiz.com/javascript/symbol) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/29.js) | Symbol(); []; |
+|[try...catch...finally Statement](https://www.programiz.com/javascript/try-catch-finally) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/30.js) | try; catch; finally; |
+|[throw Statement](https://www.programiz.com/javascript/throw) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/31.js) | throw; |
+|[Modules](https://www.programiz.com/javascript/modules) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/32.js) | export; import ... from; default; |
+|[JavaScript ES6](https://www.programiz.com/javascript/ES6) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/33.js) | let; const; ...*(Rest Prameter)*; |
+|[Arrow Function (ES6)](https://www.programiz.com/javascript/arrow-function) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/34.js) | =>; this *with arrow function*; argument *(arguments binding)*; *spread syntax*; |
+|[Default Parameters (ES6)](https://www.programiz.com/javascript/default-parameters) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/35.js) ||
 
-|[]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/02.js) ||
+|[]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/00.js) ||
 
 </details>
 
@@ -83,6 +89,10 @@
 |30  |[Find Factorial of Number Using Recursion](https://www.programiz.com/javascript/examples/factorial-recursion) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/030.js) ||
 |31  |[Convert Decimal to Binary](https://www.programiz.com/javascript/examples/decimal-binary) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/031.js) ||
 |32  |[Find ASCII Value of Character](https://www.programiz.com/javascript/examples/ascii-value-character) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/032.js) | charCodeAt(); codePointAt(); |
+|33  |[]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/033.js) ||
+|34  |[]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/034.js) ||
+|35  |[]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/035.js) ||
+|36  |[]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/036.js) ||
 
 |  |[]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/000.js) ||
 
