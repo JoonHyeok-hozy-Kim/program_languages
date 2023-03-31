@@ -89,10 +89,10 @@
 |30  |[Find Factorial of Number Using Recursion](https://www.programiz.com/javascript/examples/factorial-recursion) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/030.js) ||
 |31  |[Convert Decimal to Binary](https://www.programiz.com/javascript/examples/decimal-binary) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/031.js) ||
 |32  |[Find ASCII Value of Character](https://www.programiz.com/javascript/examples/ascii-value-character) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/032.js) | charCodeAt(); codePointAt(); |
-|33  |[]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/033.js) ||
-|34  |[]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/034.js) ||
-|35  |[]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/035.js) ||
-|36  |[]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/036.js) ||
+|33  |[Check Whether a String is Palindrome or Not](https://www.programiz.com/javascript/examples/palindrome) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/033.js) ||
+|34  |[Sort Words in Alphabetical Order](https://www.programiz.com/javascript/examples/alphabetical-order) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/034.js) ||
+|35  |[Replace Characters of a String](https://www.programiz.com/javascript/examples/replace-character) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/035.js) | *regular expression* /g; |
+|36  |[Reverse a String](https://www.programiz.com/javascript/examples/reverse-string) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/036.js) ||
 
 |  |[]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/000.js) ||
 
