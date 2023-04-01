@@ -44,8 +44,8 @@
 |[Arrow Function (ES6)](https://www.programiz.com/javascript/arrow-function) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/34.js) | =>; this *with arrow function*; argument *(arguments binding)*; *spread syntax*; |
 |[Default Parameters (ES6)](https://www.programiz.com/javascript/default-parameters) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/35.js) ||
 |[Template Literals (ES6)](https://www.programiz.com/javascript/template-literal) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/36.js) | \`${}\`; *Expression Interpolation*; *Tagged Templates*;  |
-|[Spread Operator (ES6)](https://www.programiz.com/javascript/spread-operator) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/37.js) ||
-|[ (ES6)]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/38.js) ||
+|[Spread Operator (ES6)](https://www.programiz.com/javascript/spread-operator) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/37.js) | ...; |
+|[Map (ES6)]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/38.js) | Map(); WeakMap(); |
 
 |[]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/00.js) ||
 
