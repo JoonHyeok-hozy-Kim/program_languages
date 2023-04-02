@@ -45,7 +45,10 @@
 |[Default Parameters (ES6)](https://www.programiz.com/javascript/default-parameters) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/35.js) ||
 |[Template Literals (ES6)](https://www.programiz.com/javascript/template-literal) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/36.js) | \`${}\`; *Expression Interpolation*; *Tagged Templates*;  |
 |[Spread Operator (ES6)](https://www.programiz.com/javascript/spread-operator) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/37.js) | ...; |
-|[Map (ES6)]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/38.js) | Map(); WeakMap(); |
+|[Map and WeakMap (ES6)](https://www.programiz.com/javascript/map-weakmap) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/38.js) | Map(); WeakMap(); |
+|[Set and WeakSet (ES6)]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/39.js) ||
+|[Destructuring Assignment (ES6)](https://www.programiz.com/javascript/destructuring-assignment) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/40.js) ||
+|[Classes (ES6)](https://www.programiz.com/javascript/classes) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/41.js) ||
 
 |[]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/00.js) ||
 
@@ -96,6 +99,11 @@
 |34  |[Sort Words in Alphabetical Order](https://www.programiz.com/javascript/examples/alphabetical-order) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/034.js) ||
 |35  |[Replace Characters of a String](https://www.programiz.com/javascript/examples/replace-character) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/035.js) | *regular expression* /g; |
 |36  |[Reverse a String](https://www.programiz.com/javascript/examples/reverse-string) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/036.js) ||
+|37  |[Create Objects in Different Ways](https://www.programiz.com/javascript/examples/create-object) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/037.js) ||
+|38  |[Check the Number of Occurrences of a Character in the String](https://www.programiz.com/javascript/examples/check-occurrence-string) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/038.js) ||
+|39  |[Convert the First Letter of a String into UpperCase](https://www.programiz.com/javascript/examples/first-letter-uppercase) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/039.js) ||
+|40  |[Count the Number of Vowels in a String](https://www.programiz.com/javascript/examples/count-vowels) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/040.js) ||
+|41  |[Remove a Property from an Object](https://www.programiz.com/javascript/examples/remove-property) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/041.js) | delete; |
 
 |  |[]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/000.js) ||
 
