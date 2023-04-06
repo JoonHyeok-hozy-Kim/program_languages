@@ -48,7 +48,11 @@
 |[Map and WeakMap (ES6)](https://www.programiz.com/javascript/map-weakmap) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/38.js) | Map(); WeakMap(); |
 |[Set and WeakSet (ES6)]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/39.js) ||
 |[Destructuring Assignment (ES6)](https://www.programiz.com/javascript/destructuring-assignment) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/40.js) ||
-|[Classes (ES6)](https://www.programiz.com/javascript/classes) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/41.js) ||
+|[Classes (ES6)](https://www.programiz.com/javascript/classes) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/41.js) | class; constructor(); |
+|[Class Inheritance (ES6)](https://www.programiz.com/javascript/inheritance) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/42.js) | extends; super(); |
+|[for... of Loop (ES6)](https://www.programiz.com/javascript/for-of) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/43.js) | *User Defined Iterator*; [Symbol.iterator](); *Generator*; function*; |
+|[Proxies (ES6)](https://www.programiz.com/javascript/proxies) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/44.js) ||
+|[setTimeout()](https://www.programiz.com/javascript/setTimeout) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/45.js) | *interval id*; clearTimeout(); |
 
 |[]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/00.js) ||
 
@@ -104,6 +108,10 @@
 |39  |[Convert the First Letter of a String into UpperCase](https://www.programiz.com/javascript/examples/first-letter-uppercase) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/039.js) ||
 |40  |[Count the Number of Vowels in a String](https://www.programiz.com/javascript/examples/count-vowels) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/040.js) ||
 |41  |[Remove a Property from an Object](https://www.programiz.com/javascript/examples/remove-property) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/041.js) | delete; |
+|42  |[Check Whether a String Starts and Ends With Certain Characters](https://www.programiz.com/javascript/examples/string-start-end) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/042.js) | str.startsWith('a'); str.endsWith('a'); |
+|43  |[Check if a Key Exists in an Object](https://www.programiz.com/javascript/examples/key-exists) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/043.js) | in; hasOwnProperty(); |
+|44  |[Clone a JS Object](https://www.programiz.com/javascript/examples/clone-object) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/044.js) | *deepcopy*; Object.assign({}, target); {... target} *(Spread Syntax)*; JSON.parse(JSON.stringify(target)); |
+|45  |[Loop Through an Object](https://www.programiz.com/javascript/examples/loop-through-object) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/045.js) | for ... in; for ... of Object.entries(target); |
 
 |  |[]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/000.js) ||
 
