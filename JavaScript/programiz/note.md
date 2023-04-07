@@ -53,6 +53,10 @@
 |[for... of Loop (ES6)](https://www.programiz.com/javascript/for-of) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/43.js) | *User Defined Iterator*; [Symbol.iterator](); *Generator*; function*; |
 |[Proxies (ES6)](https://www.programiz.com/javascript/proxies) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/44.js) ||
 |[setTimeout()](https://www.programiz.com/javascript/setTimeout) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/45.js) | *interval id*; clearTimeout(); |
+|[CallBack Function](https://www.programiz.com/javascript/callback) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/46.js) | Promise(); |
+|[Promise and Promise Chaining](https://www.programiz.com/javascript/promise) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/47.js) | then(); catch(); finally(); |
+|[async/await](https://www.programiz.com/javascript/async-await) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/48.js) | async; await; |
+|[]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/49.js) ||
 
 |[]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/00.js) ||
 
