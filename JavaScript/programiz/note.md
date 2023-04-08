@@ -56,9 +56,10 @@
 |[CallBack Function](https://www.programiz.com/javascript/callback) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/46.js) | Promise(); |
 |[Promise and Promise Chaining](https://www.programiz.com/javascript/promise) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/47.js) | then(); catch(); finally(); |
 |[async/await](https://www.programiz.com/javascript/async-await) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/48.js) | async; await; |
-|[]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/49.js) ||
-
-|[]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/00.js) ||
+|[setInterval()](https://www.programiz.com/javascript/setInterval) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/49.js) | *timing events*; clearInterval(); |
+|[JSON](https://www.programiz.com/javascript/json) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/50.js) | JSON.parse(data); JSON.stringify(data); |
+|[Date and Time](https://www.programiz.com/javascript/date-time) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/51.js) | Date(); |
+|[Closures](https://www.programiz.com/javascript/closure) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/tutorials/52.js) | *nested function*; *returning a function*; |
 
 </details>
 
