@@ -118,6 +118,4 @@
 |44  |[Clone a JS Object](https://www.programiz.com/javascript/examples/clone-object) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/044.js) | *deepcopy*; Object.assign({}, target); {... target} *(Spread Syntax)*; JSON.parse(JSON.stringify(target)); |
 |45  |[Loop Through an Object](https://www.programiz.com/javascript/examples/loop-through-object) | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/045.js) | for ... in; for ... of Object.entries(target); |
 
-|  |[]() | [Practice](https://github.com/JoonHyeok-hozy-Kim/program_languages/blob/main/JavaScript/programiz/examples/000.js) ||
-
 </details>
