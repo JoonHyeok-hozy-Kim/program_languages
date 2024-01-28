@@ -1,4 +1,4 @@
-[Back to Big Java main](../main.md)
+[Back to Big Java main](../../main.md)
 
 # 1.3 The Java Programming Language
 ### Concept) The Java Language
@@ -14,4 +14,4 @@
 
 <br>
 
-[Back to Big Java main](../main.md)
+[Back to Big Java main](../../main.md)
