@@ -27,6 +27,6 @@ Learning and reviewing various programming languages
 <details>
   <summary>Java</summary>
 
-  1. [**Programiz** Study Record](JavaScript/programiz/note.md)
+  1. [**Big Java, Early Objects**](Java/BigJava/main.md)
 
 </details>
