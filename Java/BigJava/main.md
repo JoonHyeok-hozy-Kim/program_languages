@@ -11,6 +11,11 @@ Cay Horstmann
 |1.3|[The Java Programming Language](ch_01/03/note.md)||
 |1.4|Becoming Familiar with Your Programming Environment||
 |1.5|[Analyzing Your First Program](ch_01/05/note.md)||
+|1.6|[Errors](ch_01/06/note.md)|Compile-Time Error (Syntax Error), Run-Time Error (Logic Error)|
+|1.7|[Problem Solving: Algorithm Design](ch_01/07/note.md)|Algorithm|
+
+
+
 
 <br>
 
