@@ -14,6 +14,12 @@ Cay Horstmann
 |1.6|[Errors](ch_01/06/note.md)|Compile-Time Error (Syntax Error), Run-Time Error (Logic Error)|
 |1.7|[Problem Solving: Algorithm Design](ch_01/07/note.md)|Algorithm|
 
+## 2. Using Objects
+|No.|Chapter|Kewords|
+|:-:|-|-|
+|2.1|Objects and Classes|Object, Class|
+|2.2|Variables||
+
 
 
 
