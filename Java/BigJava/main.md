@@ -24,6 +24,7 @@ Cay Horstmann
 |2.3|[Calling Methods](ch_02/03/note.md)|Public Interface, Method Overloading|
 |2.4|[Constructing Objects](ch_02/04/note.md)|Construction|
 |2.5|[Accessor and Mutator Methods](ch_02/05/note.md)|Accessor/Mutator Method|
+|2.6|[The API Documentation](ch_02/06/note.md)||
 
 
 
