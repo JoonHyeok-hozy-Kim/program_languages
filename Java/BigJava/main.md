@@ -24,9 +24,11 @@ Cay Horstmann
 |2.3|[Calling Methods](ch_02/03/note.md)|Public Interface, Method Overloading|
 |2.4|[Constructing Objects](ch_02/04/note.md)|Construction|
 |2.5|[Accessor and Mutator Methods](ch_02/05/note.md)|Accessor/Mutator Method|
-|2.6|[The API Documentation](ch_02/06/note.md)||
-
-
+|2.6|[The API Documentation](ch_02/06/note.md)|Package|
+|2.7|[Implementing a Test Program](ch_02/07/note.md)|Test Program|
+|2.8|[Object References](ch_02/08/note.md)|Object Reference, ```new```|
+|2.9|[Graphical Applications](ch_02/09/note.md)|Frame( ```javax.swing.JFrame```), Component(```javax.swing.JComponent```)|
+|2.10|[Ellipses, Lines, Text, and Color](ch_02/10/note.md)|Ellipses, Circles, Points, Lines, Texts, Colors <br> Example : [FaceComponent.java](ch_02/10/FaceComponent.java), [FaceViewer.java](ch_02/10/FaceViewer.java)|
 
 
 <br>
