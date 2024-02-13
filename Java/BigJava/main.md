@@ -28,7 +28,7 @@ Cay Horstmann
 |2.7|[Implementing a Test Program](ch_02/07/note.md)|Test Program|
 |2.8|[Object References](ch_02/08/note.md)|Object Reference, ```new```|
 |2.9|[Graphical Applications](ch_02/09/note.md)|Frame( ```javax.swing.JFrame```), Component(```javax.swing.JComponent```)|
-|2.10|[Ellipses, Lines, Text, and Color](ch_02/10/note.md)|Ellipses, Circles, Points, Lines, Texts, Colors <br> Example : [FaceComponent.java](ch_02/10/FaceComponent.java), [FaceViewer.java](ch_02/10/FaceViewer.java)|
+|2.10|[Ellipses, Lines, Text, and Color](ch_02/10/note.md)|Ellipses, Circles, Points, Lines, Texts, Colors <br> Example : [FaceComponent.java](ch_02/sub_10/FaceComponent.java), [FaceViewer.java](ch_02/sub_10/FaceViewer.java)|
 
 
 <br>
