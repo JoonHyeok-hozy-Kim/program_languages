@@ -13,6 +13,7 @@ Cay Horstmann
 |1.5|[Analyzing Your First Program](ch_01/05/note.md)||
 |1.6|[Errors](ch_01/06/note.md)|Compile-Time Error (Syntax Error), Run-Time Error (Logic Error)|
 |1.7|[Problem Solving: Algorithm Design](ch_01/07/note.md)|Algorithm|
+|-|[Exercise 01](ch_01/ex/PracticeExcercises.java)||
 
 <br>
 
@@ -29,6 +30,7 @@ Cay Horstmann
 |2.8|[Object References](ch_02/08/note.md)|Object Reference, ```new```|
 |2.9|[Graphical Applications](ch_02/09/note.md)|Frame( ```javax.swing.JFrame```), Component(```javax.swing.JComponent```)|
 |2.10|[Ellipses, Lines, Text, and Color](ch_02/10/note.md)|Ellipses, Circles, Points, Lines, Texts, Colors <br> Example : [FaceComponent.java](ch_02/sub_10/FaceComponent.java), [FaceViewer.java](ch_02/sub_10/FaceViewer.java)|
+|-|[Exercise 02](ch_02/Exercise02.java)||
 
 
 <br>

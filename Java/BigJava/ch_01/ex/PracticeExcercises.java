@@ -234,7 +234,7 @@ public class PracticeExcercises {
                     
             }
 
-            row.addLast("■");
+            row.add("■");
             tile.add(row);
         }
 
@@ -263,7 +263,7 @@ public class PracticeExcercises {
                     
             }
 
-            row.addLast("■");
+            row.add("■");
             B.add(row);
         }
 
