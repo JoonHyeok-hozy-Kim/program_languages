@@ -30,7 +30,15 @@ Cay Horstmann
 |2.8|[Object References](ch_02/08/note.md)|Object Reference, ```new```|
 |2.9|[Graphical Applications](ch_02/09/note.md)|Frame( ```javax.swing.JFrame```), Component(```javax.swing.JComponent```)|
 |2.10|[Ellipses, Lines, Text, and Color](ch_02/10/note.md)|Ellipses, Circles, Points, Lines, Texts, Colors <br> Example : [FaceComponent.java](ch_02/sub_10/FaceComponent.java), [FaceViewer.java](ch_02/sub_10/FaceViewer.java)|
-|-|[Exercise 02](ch_02/Exercise02.java)||
+|-|[Exercise 02](ch_02/Exercise02.java)|```Rectangle```, ```Random```, ```StringBuilder```, ```JFrame```, ```JOptionPane```, ```GregorianCalendar```, ```LocalDate```|
+
+<br>
+
+## 3. Implementing Classes
+|No.|Chapter|Keywords|
+|:-:|-|-|
+|3.1|[](ch_03/01/note.md)||
+|-|[Exercise 03](ch_03/exercise/Exercise03.java)||
 
 
 <br>

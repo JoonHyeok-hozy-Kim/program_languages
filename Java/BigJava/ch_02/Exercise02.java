@@ -3,11 +3,15 @@ import java.awt.Rectangle;
 import java.awt.geom.Line2D;
 import java.awt.geom.Point2D;
 import java.time.DayOfWeek;
+import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 import java.util.List;
 import java.util.Random;
 
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 public class Exercise02{
     public static void r0209(){
@@ -282,7 +286,68 @@ public class Exercise02{
 
     }
 
+    public static void p0205() {
+        JFrame frame = new JFrame();
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
+
+        Rectangle r = new Rectangle(100, 100, 200, 200);
+        frame.setBounds(r);
+
+        JOptionPane.showMessageDialog(frame, "Click ok to continue");
+        r.translate(300, 300);
+        frame.setBounds(r);
+    }
+
+    public static void p0206(){
+        Random r = new Random();
+        for (int i=0; i<6; i++){
+            System.out.println(r.nextInt(1,50));
+        }
+        System.out.println("Play this combination-it'll make you rich!");
+    }
+
+    public static void p0208(){
+        GregorianCalendar cal = new GregorianCalendar();
+        cal.add(Calendar.DAY_OF_MONTH, 100);
+        System.out.println(cal.get(Calendar.DAY_OF_MONTH));
+        System.out.println(cal.get(Calendar.DAY_OF_WEEK));
+
+        GregorianCalendar handonghoon = new GregorianCalendar(1973, Calendar.APRIL, 9);
+        System.out.println(handonghoon.get(Calendar.DAY_OF_WEEK));
+        handonghoon.add(Calendar.DAY_OF_MONTH, 10000);
+        System.out.println(handonghoon.get(Calendar.DAY_OF_MONTH));
+    }
+
+    public static void p0209(){
+        LocalDate today = LocalDate.now();
+        LocalDate eb = LocalDate.of(1919, 4, 9);
+
+        System.out.println(today.getYear());
+
+        LocalDate piDate = LocalDate.of(2024, 3, 14);
+        System.out.println(piDate.getDayOfMonth());
+
+        LocalDate pd = LocalDate.now();
+        pd.plusDays(255);
+        System.out.println(pd.getDayOfMonth());
+        System.out.println(pd.getDayOfWeek());
+    }
+
+    public static void p0210(){
+        Point2D.Double p1 = new Point2D.Double(100, 100);
+        Point2D.Double p2 = new Point2D.Double(200, 200);
+        Line2D.Double l1 = new Line2D.Double(p1, p2);
+
+        Point2D.Double p3 = new Point2D.Double(100, 200);
+        System.out.println(l1.ptSegDist(p3));
+        Point2D.Double p4 = new Point2D.Double(150, 150);
+        System.out.println(l1.ptSegDist(p4));
+        Point2D.Double p5 = new Point2D.Double(250, 50);
+        System.out.println(l1.ptSegDist(p5));
+    }
+
     public static void main(String[] args){
-        p0203();        
+        p0210();        
     }
 }

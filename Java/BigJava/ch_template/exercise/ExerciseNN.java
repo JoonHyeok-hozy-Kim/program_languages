@@ -1,3 +1,4 @@
+package exercise;
 public class ExerciseNN{
     public static void e0101(){
         System.out.println("Hi");
