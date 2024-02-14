@@ -1,4 +1,4 @@
-public class PracticeExercise{
+public class ExerciseNN{
     public static void e0101(){
         System.out.println("Hi");
     }
