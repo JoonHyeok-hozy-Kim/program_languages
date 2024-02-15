@@ -1,6 +1,6 @@
 [Back to Big Java main](../../main.md)
 
-# 3.6 Local Variables
+# 3.7 The ```this``` Reference
 ### Concept) 
 
 
