@@ -1,6 +1,6 @@
 [Back to Big Java main](../../main.md)
 
-# 1.3 The Java Programming Language
+# 3.6 Local Variables
 ### Concept) 
 
 

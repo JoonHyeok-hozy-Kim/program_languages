@@ -37,8 +37,13 @@ Cay Horstmann
 ## 3. Implementing Classes
 |No.|Chapter|Keywords|
 |:-:|-|-|
-|3.1|[Instance Variables and Encapsulation](ch_03/sub_01/note.md)||
+|3.1|[Instance Variables and Encapsulation](ch_03/sub_01/note.md)|- Instance Variable, Method, Encapsulation|
+|3.2|[Specifying the Public Interface of a Class](ch_03/sub_02/note.md)|- Constructor, Public Interface <br> - Commenting (javadoc)|
+|3.3|[Providing the Class Implementation](ch_03/sub_03/note.md)|- |
+|3.4|[Unit Testing](ch_03/sub_04/note.md)|- Unit Test|
+|3.6|[Local Variables](ch_03/sub_06/note.md)|- Local Variable|
 |-|[Exercise 03](ch_03/exercise/Exercise03.java)||
+
 
 
 <br>
