@@ -42,7 +42,7 @@ Cay Horstmann
 |3.3|[Providing the Class Implementation](ch_03/sub_03/note.md)|- |
 |3.4|[Unit Testing](ch_03/sub_04/note.md)|- Unit Test|
 |3.6|[Local Variables](ch_03/sub_06/note.md)|- Local Variable, Parameter Variable|
-|3.7|[The ```this``` Reference](ch_03/sub_07/note.md)|- ```this```|
+|3.7|[The ```this``` Reference](ch_03/sub_07/note.md)|- Implicit/Explicit Parameter<br>- ```this```|
 |-|[Exercise 03](ch_03/exercise/Exercise03.java)||
 
 
