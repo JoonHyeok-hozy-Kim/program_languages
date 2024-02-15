@@ -37,7 +37,7 @@ Cay Horstmann
 ## 3. Implementing Classes
 |No.|Chapter|Keywords|
 |:-:|-|-|
-|3.1|[](ch_03/01/note.md)||
+|3.1|[Instance Variables and Encapsulation](ch_03/01/note.md)||
 |-|[Exercise 03](ch_03/exercise/Exercise03.java)||
 
 
