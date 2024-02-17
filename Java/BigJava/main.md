@@ -43,6 +43,7 @@ Cay Horstmann
 |3.4|[Unit Testing](ch_03/sub_04/note.md)|- Unit Test|
 |3.6|[Local Variables](ch_03/sub_06/note.md)|- Local Variable, Parameter Variable|
 |3.7|[The ```this``` Reference](ch_03/sub_07/note.md)|- Implicit/Explicit Parameter<br>- ```this```|
+|3.8|[Shape Classes](ch_03/sub_08/note.md)|```JFrame```<br>- Car Example : [Car.java](ch_03/sub_08/Car.java), [CarComponent.java](CarComponent.java), [CarViewer.java](CarViewer.java)|
 |-|[Exercise 03](ch_03/exercise/Exercise03.java)||
 
 
