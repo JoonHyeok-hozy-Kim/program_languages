@@ -52,6 +52,7 @@ Cay Horstmann
 |No.|Chapter|Keywords|
 |:-:|-|-|
 |4.1|[Numbers](ch_04/sub_01/note.md)|- Eight Primitive Types in Java : int, byte, short, long, double, float, char, boolean <br> - ```Integer.MAX_VALUE```, ```Integer.MIN_VALUE``` <br> - Number Literal, Overflow, ```BigInteger```, ```BigDecimal```, Floating-Point Number <br>- Constants (```final```)|
+|4.2|[Arithmetic](ch_04/sub_02/note.md)|- Arithmetic Operators :```+-*/``` <br>- Increment(```++```) Decrement(```--```)<br>- Division(```/```), Modulus(```%```)<br>- Powers(```Math.pow()```), Roots(```Math.sqrt()```)<br>- Casting|
 |-|[Exercise 04](ch_04/exercise/Exercise04.java)||
 
 
