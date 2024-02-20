@@ -46,6 +46,14 @@ Cay Horstmann
 |3.8|[Shape Classes](ch_03/sub_08/note.md)|```JFrame```<br>- Car Example : [Car.java](ch_03/sub_08/Car.java), [CarComponent.java](CarComponent.java), [CarViewer.java](CarViewer.java)|
 |-|[Exercise 03](ch_03/exercise/Exercise03.java)||
 
+<br>
+
+## 4. Fundamental Data Types
+|No.|Chapter|Keywords|
+|:-:|-|-|
+|4.1|[Numbers](ch_04/sub_01/note.md)|- Eight Primitive Types in Java : int, byte, short, long, double, float, char, boolean <br> - ```Integer.MAX_VALUE```, ```Integer.MIN_VALUE``` <br> - Number Literal, Overflow, ```BigInteger```, ```BigDecimal```, Floating-Point Number <br>- Constants (```final```)|
+|-|[Exercise 04](ch_04/exercise/Exercise04.java)||
+
 
 
 <br>
