@@ -22,6 +22,15 @@
 <br>
 
 ## 4.3.2 Formatted Output
+### Concept) Decimal Format
+- Syntax
+  ```java
+  System.out.printf("[FORMAT_SPECIFIER1] [FORMAT_SPECIFIER2]", VARIABLE1, VARIABLE2);
+  ```
+  - Format Specifier   
+    ![](images/001.png)
+
+
 
 <br>
 
