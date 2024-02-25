@@ -8,6 +8,8 @@ import java.util.Scanner;
 import java.util.Stack;
 
 import javax.swing.text.PlainView;
+import exercise.Point;
+import exercise.Triangle;
 
 public class Exercise04{
     public static void r0401(){
@@ -374,10 +376,36 @@ public static double totalCost0401(double costOfCar, double milesPerYear, double
 }
 
 public static void p0403(){
-    Point p1 = Point(0.0, 0.0);
+    Point p1 = new Point(0, 0);
+    Point p2 = new Point(2, 0);
+    Point p3 = new Point(1, 1);
+
+    Triangle T = new Triangle(p1, p2, p3);
+    T.display();
+}
+
+public static void p0406(){
+    System.out.println(price0406(1000, 100));
+}
+
+public static double price0406(double totalBookPrice, int numberOfBooks){
+    double tax = totalBookPrice * 0.075;
+    int shippingCharge = numberOfBooks * 2;
+    return totalBookPrice + tax + shippingCharge;
+}
+
+public static void p0407(){
+    System.out.println(readable0407("4155551212"));
+}
+
+public static String readable0407(String phoneNumber){
+    String p1 = phoneNumber.substring(0, 3);
+    String p2 = phoneNumber.substring(3, 6);
+    String p3 = phoneNumber.substring(6, 10);
+    return "("+p1+")"+" "+p2+"-"+p3;
 }
 
     public static void main(String[] args){
-        e0420();
+        p0407();
     }
 }

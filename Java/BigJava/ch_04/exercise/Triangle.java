@@ -41,6 +41,10 @@ public class Triangle {
         System.out.printf("l1 : %f\n", l1);
         System.out.printf("l2 : %f\n", l2);
         System.out.printf("l3 : %f\n", l3);
-        // System.out.printf("\n", );
+        System.out.printf("a1 : %f\n", a1);
+        System.out.printf("a2 : %f\n", a2);
+        System.out.printf("a3 : %f\n", a3);
+        System.out.printf("Perimeter : %f\n", (l1+l2+l3));
+        System.out.printf("Area : %f\n", (l1 * l2 * Math.sin(a1))/2);
     }
 }
