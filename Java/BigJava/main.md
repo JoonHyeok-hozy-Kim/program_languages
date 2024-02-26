@@ -57,6 +57,15 @@ Cay Horstmann
 |4.5|[Strings](ch_04/sub_05/note.md)|- Concatenation(```+```) <br>- String Input : ```in.next()```<br>- Substring : ```substring(s, e)```|
 |-|[Exercise 04](ch_04/exercise/Exercise04.java)||
 
+<br>
+
+## 5. Decisions
+|No.|Chapter|Keywords|
+|:-:|-|-|
+|5.1|[The ```if``` Statement](ch_05/sub_01/note.md)|- Conditional Operator|
+|5.2|[Comparing Values](ch_05/sub_01/note.md)|- Relational Operators <br> - Comparing Floating-Point Numbers, ```String```s, and Objects <br> - ```null```|
+|-|[Exercise 05](ch_05/exercise/Exercise05.java)||
+
 
 
 <br>
