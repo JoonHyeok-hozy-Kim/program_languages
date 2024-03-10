@@ -1,0 +1,337 @@
+package exercise;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.Map.Entry;
+
+public class Exercise05{
+    public static void e0501(){
+        Scanner in = new Scanner(System.in);
+        System.out.print("Input a number: ");
+        int n = in.nextInt();
+        String s;
+        if (n > 0){
+            s = "positive";
+        } else if (n < 0){
+            s = "negative";
+        } else {
+            s = "zero";
+        }
+        System.out.println(s);
+    }
+
+    public static void e0502(){
+        Scanner in = new Scanner(System.in);
+        System.out.print("Input a number: ");
+        double n = in.nextDouble();
+        String s;
+        if (n == 0){
+            s = "zero";
+        } else{
+            if (n < 0){
+                s = "negative";
+            } else {
+                s = "positive";
+            }
+
+            if (Math.abs(n) < 1){
+                s += " small";
+            } else if (Math.abs(n) > 1000000){
+                s += " large";
+            }
+        }
+        System.out.println(s);
+    }
+
+    public static void e0503(){
+        Scanner in = new Scanner(System.in);
+        System.out.print("Input a number: ");
+        int n = in.nextInt();
+        int result = 0;
+
+        if (n < 0) n *= -1;
+
+        while (n != 0){
+            result += 1;
+            n /= 10;
+        }
+        System.out.println(result);
+    }
+
+    public static void e0504(){
+        Scanner in = new Scanner(System.in);
+        int[] A = new int[3];
+        System.out.print("Input the first number: ");
+        A[0] = in.nextInt();
+        System.out.print("Input the second number: ");
+        A[1] = in.nextInt();
+        System.out.print("Input the third number: ");
+        A[2] = in.nextInt();
+
+        if (A[0] == A[1]){
+            if (A[1] == A[2]){
+                System.out.println("all the same");
+            } else {
+                System.out.println("neither");
+            }
+        } else {
+            if (A[1] != A[2]){
+                if (A[0] != A[2]){
+                    System.out.println("all different");
+                } else {
+                    System.out.println("neither");
+                }
+            } else {
+                System.out.println("neither");
+            }
+        }
+    }
+
+    public static void e0505(){
+        Scanner in = new Scanner(System.in);
+        int[] A = new int[3];
+        System.out.print("Input the first number: ");
+        A[0] = in.nextInt();
+        System.out.print("Input the second number: ");
+        A[1] = in.nextInt();
+        System.out.print("Input the third number: ");
+        A[2] = in.nextInt();
+
+        if (A[0] < A[1]){
+            if (A[1] < A[2]){
+                System.out.println("increasing");
+            } else {
+                System.out.println("neither");
+            }
+        } else if (A[0] > A[1]){
+            if (A[1] > A[2]){
+                System.out.println("decreasing");
+            } else {
+                System.out.println("neither");
+            }
+        } else {
+            System.out.println("neither");
+        }
+    }
+
+    public static void e0506(){
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter 0 if you want the lenient mode: ");
+        if (in.nextInt() != 0) {
+            System.out.println("Strict Mode");
+            e0505();
+            return;
+        }
+        
+        System.out.println("Lenient Mode");
+        int[] A = new int[3];
+        System.out.print("Input the first number: ");
+        A[0] = in.nextInt();
+        System.out.print("Input the second number: ");
+        A[1] = in.nextInt();
+        System.out.print("Input the third number: ");
+        A[2] = in.nextInt();
+
+        if (A[0] == A[1]){
+            if (A[1] == A[2]){
+                System.out.println("increasing/decreasing");
+            } else if (A[1] > A[2]){
+                System.out.println("decreasing");
+            } else {
+                System.out.println("increasing");
+            }
+        } else if (A[0] > A[1]){
+            if (A[1] >= A[2]){
+                System.out.println("decreasing");
+            } else {
+                System.out.println("neither");
+            }
+        } else {
+            if (A[1] <= A[2]){
+                System.out.println("increasing");
+            } else {
+                System.out.println("neither");
+            }
+        }
+    }
+
+    public static void e0507(){
+        Scanner in = new Scanner(System.in);
+        int[] A = new int[3];
+        System.out.print("Input the first number: ");
+        A[0] = in.nextInt();
+        System.out.print("Input the second number: ");
+        A[1] = in.nextInt();
+        System.out.print("Input the third number: ");
+        A[2] = in.nextInt();
+
+        int t1 = A[0] - A[1];
+        int t2 = A[1] - A[2];
+
+        if (t1 * t2 < 0) {
+            System.out.println("not in order");
+        } else {
+            System.out.println("in order");
+        }
+    }
+
+    public static void e0508(){
+        HashMap<Integer, Integer> h = new HashMap<>();
+        Scanner in = new Scanner(System.in);
+        int curr;
+        for (int i=0; i<4; i++){
+            System.out.printf("Input the number %d: ", i+1);
+            curr = in.nextInt();
+            if (h.containsKey(curr)){
+                h.replace(curr, h.get(curr)+1);
+            } else {
+                h.put(curr, 1);
+            }
+        }
+
+        int cnt = 0;
+        Iterator<Entry<Integer, Integer>> entries = h.entrySet().iterator();
+        while (entries.hasNext()){
+            Map.Entry<Integer, Integer> entry = entries.next();
+            if (entry.getValue() == 2){
+                cnt += 1;
+            }
+        }
+        if (cnt == 2){
+            System.out.println("two pairs");
+        } else {
+            System.out.println("not two pairs");
+        }
+    }
+
+    public static void e0509(){
+        Scanner in = new Scanner(System.in);
+        System.out.print("Input the clockwise degree from North: ");
+        double degree = in.nextDouble();
+
+        while (degree < 0) degree += 360;
+        while (degree > 360) degree -= 360;
+
+        int temp = 0;
+        while (degree > 90) {
+            temp += 100;
+            degree -= 90;
+        }
+        if (degree > 45) {
+            temp += 10;
+            degree -= 45;
+        }
+
+        if (degree > 22.5){
+            temp += 1;
+        }
+
+        if (temp == 0 || temp == 311){
+            System.out.println("N");
+        } else if (temp == 11 || temp == 100){
+            System.out.println("E");
+        } else if (temp == 111 || temp == 200){
+            System.out.println("S");
+        } else if (temp == 211 || temp == 300){
+            System.out.println("W");
+        } else{
+            if (temp == 1 || temp == 10){
+                System.out.println("NE");
+            } else if (temp == 101 || temp == 110){
+                System.out.println("SE");
+            } else if (temp == 201 || temp == 210){
+                System.out.println("SW");
+            } else if (temp == 301 || temp == 310){
+                System.out.println("NW");
+            }
+        } 
+    }
+
+    public static void e0510(){
+        Scanner in = new Scanner(System.in);
+        System.out.print("Employee Name: ");
+        String name = in.nextLine();
+        System.out.print("Hourly Wage: ");
+        double salary = in.nextDouble();
+        System.out.print("Hours worked: ");
+        double work = in.nextDouble();
+
+        double pay = salary * work;
+        if (work > 40){
+            pay += (work-40) * salary * 0.5;
+        }
+
+        PayCheck(name, pay);
+    }
+
+    public static void PayCheck(String name, double pay){
+        System.out.println("----------------------");
+        System.out.printf("Name %s\n", name);
+        System.out.printf("Payment %.2f\n", pay);
+        System.out.println("----------------------");
+    }
+
+    public static void e0511(){
+        e0511Sub(0);
+    }
+
+    public static void e0511Sub(double altitude){
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter the temperature: ");
+        double temperature = in.nextDouble();
+        String type = "";
+        while (!(type.equals("C") || type.equals("F"))){
+            System.out.print("Enter C for Celsius / F for Fahrenheit: ");
+            type = in.nextLine();
+            if (type.equals("C")){
+                System.out.println("Celsius selected.");
+            } else if (type.equals("F")){
+                System.out.println("Fahrenheit selected.");
+            } else{
+                System.out.println("Invalid value");
+            }
+        }
+        
+        if (type.equals("F")){
+            temperature -= 32;
+            temperature /= 9/5;
+        }
+
+        double boil_point = 100 - altitude/300;
+        String result;
+        if (temperature < 0) {
+            result = "Solid";
+        } else if (temperature < boil_point ){
+            result = "Liquid";
+        } else {
+            result = "Gaseous";
+        }
+        System.out.printf("\n%s", result);
+
+    }
+
+    public static void e0512(){
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter the current altitude in meter(s): ");
+        double altitude = in.nextInt();
+        e0511Sub(altitude);
+    }
+
+    public static void e0514(){
+        Time05 t1 = new Time05(13, 50);
+        Time05 t2 = new Time05(20, 40);
+        Time05 t3 = new Time05(20, 40);
+        Time05 t4 = new Time05(20, 50);
+
+        System.out.println(t1.compareTo(t2));
+        System.out.println(t2.compareTo(t1));
+        System.out.println(t2.compareTo(t3));
+        System.out.println(t2.compareTo(t3));
+    }
+
+    public static void main(String[] args){
+        e0514();
+    }
+}
