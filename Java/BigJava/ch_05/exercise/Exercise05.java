@@ -1,9 +1,11 @@
 package exercise;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.PriorityQueue;
 import java.util.Scanner;
 import java.util.Map.Entry;
 import java.util.Scanner;
@@ -415,9 +417,80 @@ public class Exercise05{
         return afterTaxIncome;
     }
 
+    public static void e0520(){
+        Scanner in = new Scanner(System.in);
+        double curr = Double.MIN_VALUE;
+        for (int i=0; i<3; i++){
+            System.out.printf("Enter the number %d: ", i+1);
+            curr = Math.max(curr, in.nextDouble());
+        }
+        System.out.printf("The largest number is %f\n", curr);
+    }
+
+    public static void e0521(){
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter three strings: ");
+        String[] s = in.nextLine().split(" ");
+
+        PriorityQueue<String> pq = new PriorityQueue<>(1, new StringComparator());
+        
+        for (int i=0; i<s.length; i++){
+            pq.add(s[i]);
+        }
+
+        while (!pq.isEmpty()){
+            System.out.println(pq.poll());
+        }
+    }
+
+    public static void p0505() {
+        rectangleSpecifier(new Point(0,0), new Point(4,4));
+    }
+
+    public static void rectangleSpecifier(Point p1, Point p2){
+        double width = Math.abs(p1.getX() - p2.getX());
+        double height = Math.abs(p1.getY() - p2.getY());
+        String result;
+        if (width == height){
+            result = "Square";
+        } else if (width > height){
+            result = "Landscape";
+        } else {
+            result = "Portrait";
+        }
+        System.out.println(result);
+    }
+
 
     public static void main(String[] args){
-        e0518();
+        p0505();
     }
+
+}
+
+class StringComparator implements Comparator<String>{
+@Override
+public int compare(String s1, String s2){
+    return s1.compareTo(s2);
+}
+
+class Point{
+    double x;
+    double y;
+
+    public Point(double x, double y){
+        this.x = x;
+        this.y = y;
+    }
+
+    public double getX(){
+        return this.x;
+    }
+
+    public double getY(){
+        return this.y;
+    }
+}
+
 
 }
