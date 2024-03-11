@@ -1,5 +1,6 @@
 package exercise;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -353,8 +354,70 @@ public class Exercise05{
         System.out.println(t2.compareTo(t3));
     }
 
+    public static void e0515(){
+        Date05 d1 = new Date05(2, 1);
+        d1.getSeason();
+
+        Date05 d2 = new Date05(3, 10);
+        d2.getSeason();
+
+        Date05 d3 = new Date05(3, 30);
+        d3.getSeason();
+    }
+
+    public static void e0516(){
+        char a = 'A';
+        System.out.println((int)a);
+    }
+
+    public static void e0517(){
+        Grade05 g1 = new Grade05();
+        g1.getNumericGrade();
+    }
+
+    public static void e0518(){
+        ArrayList<Double> incomes = new ArrayList<>();
+        incomes.add(45000.0);
+        incomes.add(51000.0);
+        incomes.add(60000.0);
+        incomes.add(75000.0);
+        incomes.add(600000.0);
+
+        for (int i=0; i<incomes.size(); i++){
+            System.out.printf("%.2f -> %.2f\n", incomes.get(i), afterTaxIncome(incomes.get(i)));
+        }
+    }
+
+    public static double afterTaxIncome(double income){
+        ArrayList<Double> taxTable = new ArrayList<>();
+        ArrayList<Double> taxRate = new ArrayList<>();
+        
+        taxTable.add(50000.0);
+        taxTable.add(25000.0);
+        taxTable.add(25000.0);
+        taxTable.add(150000.0);
+        taxTable.add(250000.0);
+        taxTable.add(Double.MAX_VALUE);
+
+        for (int i=0; i<6; i++){
+            taxRate.add((double) (i+1));
+        }
+
+        double copy = income;
+        double afterTaxIncome = 0;
+        for (int i=0; i<taxTable.size(); i++){
+            if (copy > 0){
+                afterTaxIncome += Math.min(copy, taxTable.get(i)) * (1-taxRate.get(i)/100);
+                copy -= taxTable.get(i);
+            }
+        }
+
+        return afterTaxIncome;
+    }
+
+
     public static void main(String[] args){
-        e0514();
+        e0518();
     }
 
 }
