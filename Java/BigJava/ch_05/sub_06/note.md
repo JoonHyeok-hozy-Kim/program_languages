@@ -14,6 +14,7 @@
 ### Concept) Code Coverage
 - Each part of your program is exercised at least once by one of your test cases.
 
+<br>
 
 ### Tech) Logging in Java
 - Use ```Logger.getGlobal()```.
