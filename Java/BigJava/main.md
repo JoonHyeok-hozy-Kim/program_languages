@@ -72,6 +72,13 @@ Cay Horstmann
 |5.8|Input Validation|-|
 |-|[Exercise 05](ch_05/exercise/Exercise05.java)||
 
+<br>
+
+## 6. Loop
+|No.|Chapter|Keywords|
+|:-:|-|-|
+|6.1|[The ```while``` Loop](ch_06/sub_01/note.md)|- |
+
 
 
 <br>
