@@ -65,7 +65,7 @@ Cay Horstmann
 |5.1|[The ```if``` Statement](ch_05/sub_01/note.md)|- Conditional Operator|
 |5.2|[Comparing Values](ch_05/sub_02/note.md)|- Relational Operators <br> - Comparing Floating-Point Numbers, ```String```s, and Objects <br> - ```null```|
 |5.3|Multiple Alternatives|-|
-|5.4|[Nested Branches](ch_05/sub_03/note.md)|- Block Scope <br>- Enumeration Type (```enum```)|
+|5.4|[Nested Branches](ch_05/sub_04/note.md)|- Block Scope <br>- Enumeration Type (```enum```)|
 |5.5|Problem Solving: Flowcharts|-|
 |5.6|[Problem Solving: Selecting Test Cases](ch_05/sub_06/note.md)|- Black-Box Testing, White-Box Testing, Code Coverage <br> - ```Logger.getGlobal()```|
 |5.7|Boolean Variables and Operators|- ```true```, ```false```, ```&&```, ```\|\|```, ```!```|
