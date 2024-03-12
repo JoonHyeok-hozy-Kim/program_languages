@@ -1,11 +1,10 @@
 [Back to Big Java main](../../main.md)
 
-# 6.1 The while Loop
-### Concept) while
+# 6.3 The for Loop
+### Concept) for Loop
 - Syntax)
   ```java
-  while ([CONDITION]){
-    // Body Part
+  for ([[INITIALIZATION]; [CONDITION]; [UPDATE]]){
     [STATEMENTS]
   }
   ```

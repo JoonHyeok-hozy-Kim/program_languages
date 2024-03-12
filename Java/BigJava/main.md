@@ -77,7 +77,10 @@ Cay Horstmann
 ## 6. Loop
 |No.|Chapter|Keywords|
 |:-:|-|-|
-|6.1|[The ```while``` Loop](ch_06/sub_01/note.md)|- |
+|6.1|[The ```while``` Loop](ch_06/sub_01/note.md)|- ```while```|
+|6.2|Problem Solving: Hand-Tracing|- |
+|6.3|[The ```for``` Loop](ch_06/sub_03/note.md)|- ```for```|
+|6.4|[The ```do``` Loop](ch_06/sub_03/note.md)|- ```do```|
 
 
 
