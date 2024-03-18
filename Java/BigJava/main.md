@@ -80,8 +80,13 @@ Cay Horstmann
 |6.1|[The ```while``` Loop](ch_06/sub_01/note.md)|- ```while```|
 |6.2|Problem Solving: Hand-Tracing|- |
 |6.3|[The ```for``` Loop](ch_06/sub_03/note.md)|- ```for```|
-|6.4|[The ```do``` Loop](ch_06/sub_03/note.md)|- ```do```|
-
+|6.4|[The ```do``` Loop](ch_06/sub_04/note.md)|- ```do```|
+|6.5|[Application: Processing Sentinel Values](ch_06/sub_05/note.md)|- Sentinel|
+|6.6|Problem Solving: Storyboards|- |
+|6.7|Common Loop Algorithms|-|
+|6.8|Nested Loops|-|
+|6.9|[Application: Random Numbers and Simulations](ch_06/sub_05/note.md)|- ```Random```|
+|6.10|Using a Debugger|-|
 
 
 <br>
