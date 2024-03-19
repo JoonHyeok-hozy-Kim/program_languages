@@ -87,6 +87,7 @@ Cay Horstmann
 |6.8|Nested Loops|-|
 |6.9|[Application: Random Numbers and Simulations](ch_06/sub_05/note.md)|- ```Random```|
 |6.10|Using a Debugger|-|
+|-|[Exercise 06](ch_06/exercise/Exercise06.java)||
 
 
 <br>
