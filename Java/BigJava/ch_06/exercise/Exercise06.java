@@ -297,10 +297,55 @@ public class Exercise06{
         }
     }
 
+    public static void e0617(){
+        for (int i=1; i<=10; i++){
+            for (int j=1; j<=10; j++){
+                System.out.printf("%4d", i*j);
+            }
+            System.out.println();
+        }
+    }
+
+    public static void e0618(int n){
+        for (int i=0; i<n; i++){
+            for (int j=0; j<n; j++){
+                System.out.print("*");
+            }
+
+            System.out.print(" ");
+
+            for (int j=0; j<n; j++){
+                if (1<=i && i < n-1 && 1<=j && j < n-1) {
+                    System.out.print(" ");
+                } else {
+                    System.out.print("*");
+                }
+            }
+
+            System.out.println();
+        }
+    }
+
+    public static void e0619(int n){
+        for (int i=0; i<2*n-1; i++){
+            int k = Math.abs(n-1-i);
+            for (int j=k; j>=1; j--){
+                System.out.print(" ");
+            }
+            
+            for (int j=0; j<2*n-1-2*k; j++){
+                System.out.print("*");
+            }
+
+            for (int j=k; j>=1; j--){
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+
 
     public static void main(String[] args){
-        // e0603("1 3 3 4 5 5 6 6 6 2");
-        // System.out.println((int)'Z');
-        e0614(1);
+        e0619(5);
     }
 }
