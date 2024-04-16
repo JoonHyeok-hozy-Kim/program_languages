@@ -344,8 +344,32 @@ public class Exercise06{
         }
     }
 
+    public static void p0604(){
+        FactorGenerator f = new FactorGenerator(150);
+        while (f.hasMoreFactors()){
+            System.out.println(f.nextFactor());
+        }
+    }
+
+    public static void p0605(){
+        int next;
+        PrimeGenerator g = new PrimeGenerator(20);
+        while (true){
+            next = g.nextPrime();
+            if (next == -1) break;
+            System.out.println(next);
+        }
+    }
+
+    public static void p0608(){
+        RandomGenerator rg = new RandomGenerator(100, 32310901, 1729, 5);
+        for (int i=0; i<10; i++){
+            System.out.println(rg.generate());
+        }
+    }
+
 
     public static void main(String[] args){
-        e0619(5);
+        p0608();
     }
 }
