@@ -128,11 +128,8 @@
 
 <br>
 
-## 7.3.10 
-- e.g.) 
-  ```java
-  
-  ```
+## 7.3.10 Reading Input
+- e.g.) [LargestInArray.java](scripts/LargestInArray.java)
 
 
 <br>
