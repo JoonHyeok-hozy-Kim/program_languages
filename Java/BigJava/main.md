@@ -94,7 +94,7 @@ Cay Horstmann
 ## 7. Arrays and Array Lists
 |No.|Chapter|Keywords|
 |:-:|-|-|
-|7.1|[Arrays](ch_07/sub_01/note.md)|- |
+|7.1|[Arrays](ch_07/sub_01/note.md)|- Declaration, Referencing, Usage in Methods, Partially Filled Array|
 |7.2|[The Enhanced ```for``` Loop](ch_07/sub_02/note.md)|- |
 |7.3|[Common Array Algorithms](ch_07/sub_03/note.md)|- |
 |7.5|Problem Solving: Discovering Algorithms by Manipulating Physical Objects|- |

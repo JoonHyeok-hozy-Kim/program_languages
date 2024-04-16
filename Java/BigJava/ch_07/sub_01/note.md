@@ -13,7 +13,10 @@
         doubleArray[i] = (double) i;
     }
     ```
-- Concept) Array Reference
+
+<br>
+
+#### Concept) Array Reference
   - Assigning and referencing values
     ```java
     int[] scores = new int[3];
@@ -21,6 +24,23 @@
     System.out.println(scores[1]);
     ```
 
+<br>
+
+#### Concept) Using Arrays with Methods
+  - Input Parameter of a function
+    - e.g.)
+      ```java
+      public void addScores(int[] values){
+        for (int i=0; i<values.length; i++){
+          totalScore += values[i];
+        }
+      }
+      ```
+
+<br>
+
+#### Concept) Partially Filled Array
+![](images/001.png)
 
 <br>
 
