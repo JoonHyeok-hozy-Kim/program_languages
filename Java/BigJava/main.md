@@ -98,6 +98,9 @@ Cay Horstmann
 |7.2|[The Enhanced ```for``` Loop](ch_07/sub_02/note.md)|- |
 |7.3|[Common Array Algorithms](ch_07/sub_03/note.md)|- |
 |7.5|Problem Solving: Discovering Algorithms by Manipulating Physical Objects|- |
+|7.6|[Two-Dimensional Arrays](ch_07/sub_06/note.md)|- |
+|7.7|[Array Lists](ch_07/sub_07/note.md)|- Generic Class <br> - Wrapper Class, Auto-Boxing <br> - The Diamond Syntax|
+|7.8|[Regression Testing](ch_07/sub_06/note.md)|- |
 
 
 <br>

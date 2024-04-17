@@ -131,6 +131,15 @@
 ## 7.3.10 Reading Input
 - e.g.) [LargestInArray.java](scripts/LargestInArray.java)
 
+<br>
+
+## 7.3.11 Sorting an Array
+- Use ```Arrays.sort``` method.
+  ```java
+  import java.util.Arrays;
+  Arrays.sort(values);
+  ```
+
 
 <br>
 
