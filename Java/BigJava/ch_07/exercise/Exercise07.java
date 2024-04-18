@@ -1,11 +1,12 @@
 package exercise;
+
 public class Exercise07{
-    public static void e0101(){
+    public static void r0701(){
         System.out.println("Hi");
     }
 
 
     public static void main(String[] args){
-        e0101();
+        r0701();
     }
 }
