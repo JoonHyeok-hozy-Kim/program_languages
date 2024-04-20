@@ -101,6 +101,7 @@ Cay Horstmann
 |7.6|[Two-Dimensional Arrays](ch_07/sub_06/note.md)|- |
 |7.7|[Array Lists](ch_07/sub_07/note.md)|- Generic Class <br> - Wrapper Class, Auto-Boxing <br> - The Diamond Syntax|
 |7.8|[Regression Testing](ch_07/sub_06/note.md)|- |
+|-|[Exercise 07](ch_07/exercise/Exercise07.java)||
 
 
 <br>
