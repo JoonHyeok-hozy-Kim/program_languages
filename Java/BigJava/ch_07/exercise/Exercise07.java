@@ -157,15 +157,42 @@ public class Exercise07{
     }
 
     public static void r0720(){
-        Integer[] a1 = new Integer[10];
+        int[] a1 = new int[10];
         for (int i=0; i<a1.length; i++) a1[i] = (i+1) * (i%2 * 2 - 1);
 
-        Arrays.sort(a1, Collections.reverseOrder());
         System.out.println(Arrays.toString(a1));
+        r0720Rotator(a1);
+        System.out.println(Arrays.toString(a1));
+    }   
+
+    public static void r0720Rotator(int[] arr){
+        int starter = arr[0];
+
+        for (int i=1; i<arr.length; i++) arr[i-1] = arr[i];
+
+        arr[arr.length-1] = starter;
+    }
+
+    public static void r0721(){
 
     }
 
+    public static void r0721NegEliminator(int[] arr){
+        int initialLength = arr.length;
+        int idx = 0;
+        int jdx = 0;
+
+        while (idx < initialLength){
+            if (arr[idx] > 0){
+                idx++;
+                jdx++;
+            } else {
+                
+            }
+        }
+    }
+
     public static void main(String[] args){
-        r0715();
+        r0720();
     }
 }
