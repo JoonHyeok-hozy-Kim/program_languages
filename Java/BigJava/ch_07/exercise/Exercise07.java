@@ -174,7 +174,11 @@ public class Exercise07{
     }
 
     public static void r0721(){
-
+        int[] a1 = new int[10];
+        for (int i=0; i<a1.length; i++) a1[i] = (i+1) * (i%2 * 2 - 1);
+        System.out.println(Arrays.toString(a1));
+        r0721NegEliminator(a1);
+        System.out.println(Arrays.toString(a1));
     }
 
     public static void r0721NegEliminator(int[] arr){
@@ -183,16 +187,65 @@ public class Exercise07{
         int jdx = 0;
 
         while (idx < initialLength){
-            if (arr[idx] > 0){
+            if (arr[idx] < 0){
+                idx++;
+            } else {
+                arr[jdx] = arr[idx];
                 idx++;
                 jdx++;
-            } else {
-                
             }
+        }
+
+        while (jdx < idx) {
+            arr[jdx] = 0;
+            jdx++;
         }
     }
 
+    public static void r0722(){
+        int[] a1 = new int[10];
+        int insertNum = 5;
+        for (int i=0; i<insertNum; i++) a1[i] = i*3+1;
+        System.out.println(Arrays.toString(a1));
+        r0722Insert(a1, insertNum, 5);
+        System.out.println(Arrays.toString(a1));
+    }
+
+    public static void r0722Insert(int[] arr, int lastIdx, int num){
+        int temp1;
+        int temp2 = num;
+        for (int i=0; i<lastIdx; i++){
+            if (arr[i] < num) continue;
+            temp1 = arr[i];
+            arr[i] = temp2;
+            temp2 = temp1;
+        }
+        arr[lastIdx] = temp2;
+    }
+
+    public static void r0723(){
+
+    }
+
+    public static int r0723LongestRun(int[] arr){
+        int runCnt = 0;
+        int currCnt = 1;
+        int currVal = arr[0];
+
+        for (int i=1; i<arr.length; i++){
+            if (arr[i] == currVal){
+                currCnt++;
+            } else {
+                runCnt = Math.max(runCnt, currCnt);
+                currCnt = 1;
+                currVal = arr[i];
+            }
+        }
+        
+        return Math.max(runCnt, currCnt);
+    }
+
     public static void main(String[] args){
-        r0720();
+        r0722();
     }
 }
