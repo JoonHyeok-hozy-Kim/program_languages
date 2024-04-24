@@ -1,4 +1,4 @@
-package exercise;
+package exercise07;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -513,7 +513,291 @@ public class Exercise07{
         System.out.println();
     }
 
+    public static int sumWithoutSmallest(int[] arr){
+        int sum = arr[0];
+        int smallest = arr[0];
+
+        for (int i=1; i<arr.length; i++){
+            sum += arr[i];
+            smallest = Math.min(smallest, arr[i]);
+        }
+
+        return sum - smallest;
+    }
+
+    public static void e0703(){
+        int[] a = {1,2,3,4,5};
+        System.out.println(sumWithoutSmallest(a));
+    }
+
+    public static int alteringSum(int[] arr){
+        int sum = 0;
+        for (int i=0; i<arr.length; i++){
+            sum += arr[i] * ((((i+1)%2) * 2) - 1);
+            /*if (i%2 == 0) sum += arr[i];
+            else sum -= arr[i];*/
+        }
+        return sum;
+    }
+
+    public static void e0705(){
+        int[] a = {1, 4, 9, 16, 9, 7, 4, 9, 11};
+        System.out.println(alteringSum(a));
+    }
+
+    public static void arrayReverse(int[] arr){
+        int temp;
+        for (int i=0; i<arr.length/2; i++){
+            temp = arr[i];
+            arr[i] = arr[arr.length-1-i];
+            arr[arr.length-1-i] = temp;
+        }
+    }
+
+    public static void e0706(){
+        int[] a = {1, 4, 9, 16, 9, 7, 4, 9, 11};
+        arrayReverse(a);
+        System.out.println(Arrays.toString(a));
+    }
+
+    public static int[] randomPermutationOneToTen(){
+        int[] result = new int[10];
+        ArrayList<Integer> pocket = new ArrayList<>();
+        Random r = new Random();
+        for (int i=1; i<=10; i++) pocket.add(i);
+
+        int idx = 0;
+        int jdx;
+        while (! pocket.isEmpty()){
+            jdx = r.nextInt(0, pocket.size());
+            result[idx] = pocket.get(jdx);
+            pocket.remove(jdx);
+            idx++;
+        }
+        return result;
+    }
+
+    public static void e0707(){
+        for (int i=0; i<5;i ++){
+            System.out.println(Arrays.toString(randomPermutationOneToTen()));
+        }
+    }
+
+    public static class DataSetEx07 {
+        private int maximumNumberOfValues;
+        private double[] data;
+        private int currIdx=0;
+    
+        public DataSetEx07(int maximumNumberOfValues){
+            this.maximumNumberOfValues = maximumNumberOfValues;
+            this.data = new double[this.maximumNumberOfValues];
+        }
+    
+        public void add(double value){
+            if (this.currIdx < this.maximumNumberOfValues){
+                this.data[this.currIdx] = value;
+                this.currIdx++;
+            }
+        }
+
+        public double sum(){
+            double result = 0;
+            for (int i=0; i<this.currIdx; i++){
+                result += this.data[i];
+            }
+            return result;
+        }
+
+        public double average(){
+            return this.sum() / this.currIdx;
+        }
+
+        public double maximum(){
+            double result = this.data[0];
+            for (int i=1; i<this.currIdx; i++) {
+                if (this.data[i] > result) result = this.data[i];
+            }
+            return result;
+        }
+
+        public double minimum(){
+            double result = this.data[0];
+            for (int i=1; i<this.currIdx; i++) {
+                if (this.data[i] < result) result = this.data[i];
+            }
+            return result;
+        }
+    }
+
+    public static void e0708(){
+        DataSetEx07 dt = new DataSetEx07(20);
+        for (int i=0; i<10; i++){
+            dt.add(i+1);
+            
+        }
+        System.out.println(dt.sum());
+        System.out.println(dt.average());
+        System.out.println(dt.maximum());
+        System.out.println(dt.minimum());
+    }
+
+    public static class ArrayMethods{
+        private int[] values;
+        
+        public ArrayMethods(int[] initialValues) {this.values = initialValues;}
+
+        public void printArray() {
+            System.out.println(Arrays.toString(this.values));
+        }
+
+        public void swapFirstAndLast(){
+            int temp = this.values[0];
+            this.values[0] = this.values[this.values.length-1];
+            this.values[this.values.length-1] = temp;
+            this.printArray();
+        }
+
+        public void shiftRight(){
+            int temp = this.values[this.values.length-1];
+            for (int i=this.values.length-1; i>=1; i--) this.values[i] = this.values[i-1];
+            this.values[0] = temp;
+            this.printArray();
+        }
+
+        public void replaceEvenToZero(){
+            for (int i=0; i<this.values.length; i++){
+                if (this.values[i] % 2 == 0) this.values[i] = 0;
+            }
+            this.printArray();
+        }
+
+        public void replaceWithLargerNeighbor(){
+            int[] modified = new int[this.values.length];
+            modified[0] = this.values[0];
+            modified[this.values.length-1] = this.values[this.values.length-1];
+
+            for (int i=1; i<this.values.length-1; i++){
+                modified[i] = Math.max(this.values[i], Math.max(this.values[i-1], this.values[i+1]));
+            }
+            this.values = modified;
+            this.printArray();
+        }
+
+        public void removeMiddle() {
+            int new_size = this.values.length - 1;
+            if (this.values.length % 2 == 0) new_size -= 1;
+            int[] new_array = new int[new_size];
+            int idx = 0;
+            for (int i=0; i<this.values.length; i++){
+                if (this.values.length/2 == i || (this.values.length % 2 == 0 && this.values.length/2 == i+1)) continue;
+                new_array[idx] = this.values[i];
+                idx++;
+            }
+            this.values = new_array;
+            this.printArray();
+        }
+
+        // 0 1 2 3 4 5  : 6
+        //     v v      : 2, 3
+        // 0 1 2 3 4    : 5
+        //     v        : 2
+
+        public void moveEvensFront(){
+            int[] temp_arr = new int[this.values.length];
+            int idx = 0;
+            for (int i=0; i<this.values.length; i++){
+                if (this.values[i] %2 == 0){
+                    temp_arr[idx] = this.values[i];
+                    this.values[i] = 0;
+                    idx++;
+                }
+            }
+            for (int i=0; i<this.values.length; i++){
+                if (this.values[i] %2 != 0){
+                    temp_arr[idx] = this.values[i];
+                    idx++;
+                }
+            }
+            this.values = temp_arr;
+            this.printArray();
+        }
+
+        public int secondLargestElement(){
+            int n1 = Math.max(this.values[0], this.values[1]);
+            int n2 = Math.min(this.values[0], this.values[1]);
+
+            for (int e : this.values){
+                if (e > n1){
+                    n2 = n1;
+                    n1 = e;
+                } else if (e > n2){
+                    n2 = e;
+                }
+            }
+            return n2;
+        }
+
+        public boolean isSorted(){
+            int curr = this.values[0];
+            for (int e: this.values){
+                if (curr > e) return false;
+                curr = e;
+            }
+            return true;
+        }
+
+        public boolean adjacentDuplicate() {
+            if (this.values.length <= 1) return false;
+            int n1;
+            int n2;
+
+            for (int i=1; i<this.values.length; i++){
+                if (this.values[i-1] == this.values[i]) return true;
+            }
+            return false;
+        }
+
+        public boolean containsDuplicate(){
+            for (int i=0; i<this.values.length; i++){
+                for (int j=i+1; j<this.values.length; j++){
+                    if (this.values[i] == this.values[j]) return true;
+                }
+            }
+            return false;
+        }
+    }
+
+    public static void e0710(){
+        int[] arr = {1, 4, 9 ,16, 25};
+        ArrayMethods a = new ArrayMethods(arr);
+        // a.printArray();
+        // a.swapFirstAndLast();
+        // a.shiftRight();
+        // a.replaceEvenToZero();
+        // a.replaceWithLargerNeighbor();
+        // a.removeMiddle();
+        // a.removeMiddle();
+        // a.moveEvensFront();
+        // a.secondLargestElement();
+        // System.out.println(a.secondLargestElement());
+        // System.out.println(a.isSorted());
+        // a.moveEvensFront();
+        // System.out.println(a.isSorted());
+
+        System.out.println(a.adjacentDuplicate());
+        int[] brr = {1,2,3,3,4,5};
+        ArrayMethods b = new ArrayMethods(brr);
+        System.out.println(b.adjacentDuplicate());
+
+        
+        int[] crr = {1,2,3,4,3,5};
+        ArrayMethods c = new ArrayMethods(crr);
+        System.out.println(a.containsDuplicate());
+        System.out.println(b.containsDuplicate());
+        System.out.println(c.containsDuplicate());
+    }
+
     public static void main(String[] args){
-        e0701();
+        e0710();
     }
 }
