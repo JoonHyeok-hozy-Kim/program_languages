@@ -1,5 +1,6 @@
 package exercise07;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -797,7 +798,398 @@ public class Exercise07{
         System.out.println(c.containsDuplicate());
     }
 
+    public static class Sequence
+    {
+        private int[] values;
+        public Sequence(int size) { values = new int[size]; }
+        public Sequence(String s, String delimiter) {
+            String[] ss = s.split(delimiter);
+            this.values = new int[ss.length];
+            for (int i=0; i<ss.length; i++){
+                this.set(i, Integer.valueOf(ss[i]));
+            }
+        }
+        public void set(int i, int n) { values[i] = n; }
+        public int get(int i) { return values[i]; }
+        public int size() { return values.length; }
+
+        public boolean equals(Sequence other){
+            if (this.size() != other.size()) return false;
+
+            for (int i=0; i<this.size(); i++){
+                if (this.get(i) != other.get(i)) return false;
+            }
+            return true;
+        }
+
+        public boolean sameValues(Sequence other){
+            int[] copy = new int[Math.max(this.size(), other.size())];
+            int copiedCnt = 0;
+            boolean pass;
+            boolean found;
+            for (int i=0; i<this.size(); i++){
+                pass = false;
+                for (int j=0; j<copiedCnt; j++){
+                    if (this.get(i) == copy[j]){
+                        pass = true;
+                        break;
+                    }
+                }
+                if (pass) continue;
+                copy[copiedCnt] = this.get(i);
+                copiedCnt++;
+            }
+            // System.out.println(Arrays.toString(copy));
+
+            for (int i=0; i<other.size(); i++){
+                found = false;
+                for (int j=0; j<copiedCnt; j++){
+                    if (other.get(i) == copy[j]){
+                        found = true;
+                        break;
+                    }
+                }
+                if (!found) return false;
+            }
+            return true;
+        }
+
+        public boolean isPermutationOf(Sequence other){
+            ArrayList<Integer> thisCopy = new ArrayList<>();
+            for (int i=0; i<this.size(); i++){
+                thisCopy.add(this.get(i));
+            }
+            for (int j=0; j<other.size(); j++){
+                if (thisCopy.isEmpty()) return false;
+                if (!thisCopy.contains(other.get(j))) return false;
+                thisCopy.remove(thisCopy.indexOf(other.get(j)));
+            }
+            if (thisCopy.isEmpty()) return true;
+            return false;
+        }
+
+        public void printValues(){
+            for (int i=0; i<this.size(); i++){
+                System.out.printf("%d ", this.get(i));
+            }
+            System.out.println();
+        }
+
+        public Sequence sum(Sequence other){
+            int maxLength = Math.max(this.size(), other.size());
+            Sequence result = new Sequence(maxLength);
+            int tempSum;
+            for (int i=0; i<maxLength; i++){
+                tempSum = 0;
+                if (i < this.size()) tempSum += this.get(i);
+                if (i < other.size()) tempSum += other.get(i);
+                result.set(i, tempSum);
+            }
+            return result;
+        }
+
+        public void sortValues(){
+            int[] copied = new int[this.size()];
+            for (int i=0; i<this.size(); i++) copied[i] = this.get(i);
+            Arrays.sort(copied);
+            for (int i=0; i<this.size(); i++) this.set(i, copied[i]);
+        }
+    }
+
+    public static void e0711(){
+        Sequence[] s = new Sequence[4];
+        s[0] = new Sequence(3);
+        for (int i=0; i<s[0].size(); i++){
+            s[0].set(i, i);
+        }
+        s[1] = new Sequence(1);
+        for (int i=0; i<s[1].size(); i++){
+            s[1].set(i, i);
+        }
+        System.out.println(s[0].equals(s[1]));
+        s[2] = new Sequence(3);
+        for (int i=0; i<s[2].size(); i++){
+            s[2].set(i, i+1);
+        }
+        System.out.println(s[0].equals(s[2]));
+        s[3] = new Sequence(3);
+        for (int i=0; i<s[3].size(); i++){
+            s[3].set(i, i);
+        }
+        System.out.println(s[0].equals(s[3]));
+    }
+
+    public static void e0712(){
+        Sequence s1 = new Sequence(9);
+        Sequence s2 = new Sequence(7);
+
+        String str1 = "1 4 9 16 9 7 4 9 11";
+        String str2 = "11 11 7 9 16 4 1";
+
+        int idx = 0;
+        for (String s: str1.split(" ")){
+            s1.set(idx, Integer.valueOf(s));
+            idx++;
+        }
+        idx = 0;
+        for (String s: str2.split(" ")){
+            s2.set(idx, Integer.valueOf(s));
+            idx++;
+        }
+
+        System.out.println(s1.sameValues(s2));
+    }
+
+    public static void e0713(){
+        String[] S = {
+            "1 4 9 16 9 7 4 9 11",
+            "11 1 4 9 16 9 7 4 9",
+            "11 11 7 9 16 4 1 4 9"
+        };
+
+        Sequence[] SQ = new Sequence[S.length];
+        for (int i=0; i<S.length; i++){
+            SQ[i] = new Sequence(S[i], " ");
+            SQ[i].printValues();
+        }
+
+        System.out.println(SQ[0].isPermutationOf(SQ[1]));
+        System.out.println(SQ[0].isPermutationOf(SQ[2]));
+    }
+
+    public static void e0714(){
+        Sequence s1 = new Sequence("1 4 9 16 9 7 4 9 11", " ");
+        Sequence s2 = new Sequence("11 11 7 9 16 4 1", " ");
+
+        s1.sum(s2).printValues();
+    }
+
+    public static void e0715(){
+        Sequence s2 = new Sequence("11 11 7 9 16 4 1", " ");
+        s2.printValues();
+        s2.sortValues();
+        s2.printValues();
+    }
+
+
+    public static class Table
+    {
+        private int[][] values;
+        public Table(int rows, int columns) { values = new int[rows][columns]; }
+        public void set(int i, int j, int n) { values[i][j] = n; }
+        public int get(int i, int j) { return this.values[i][j]; }
+
+        private boolean validateIndex(int i, int j){
+            if (i < 0 || i >= this.values.length) return false;
+            if (j < 0 || j >= this.values[0].length) return false;
+            return true;
+        }
+
+        private ArrayList<Integer> getNeighbors(int row, int column){
+            int[][] directions = {
+                {-1, -1}, {-1, 0}, {-1, 1},
+                {0, -1}, {0, 0}, {0, 1},
+                {1, -1}, {1, 0}, {1, 1},
+            };
+
+            ArrayList<Integer> result = new ArrayList<>();
+            for (int[] dir: directions){
+                if (!validateIndex(dir[0]+row, dir[1]+column)) continue;
+                result.add(this.get(dir[0]+row, dir[1]+column));
+            }
+
+            return result;
+        }
+
+        public double neighborAverage(int row, int column){
+            double result = 0;
+            ArrayList<Integer> neighbors = getNeighbors(row, column);
+
+            if (neighbors.isEmpty()) return 0;
+            for (int v: neighbors){
+                result += v;
+            }
+            return result / neighbors.size();
+        }
+
+        public double sum(int i, boolean horizontal){
+            double result = 0;
+            if (horizontal){
+                while (i < 0) i += this.values.length;
+                for (int j=0; j<this.values[0].length; j++){
+                    result += this.get(i, j);
+                }
+            } else {
+                while (i < 0) i += this.values[0].length;
+                for (int j=0; j<this.values.length; j++){
+                    result += this.get(j, i);
+                }
+            }
+            return result;
+        }
+    }
+
+    public static void e0716(){
+        int rowNum = 10;
+        int colNum = 10;
+        Table t = new Table(rowNum, colNum);
+        int cnt = 1;
+        for (int i=0; i<rowNum; i++){
+            for (int j=0; j<colNum; j++){
+                t.set(i, j, cnt++);
+            }
+        }
+        for (int i=0; i<rowNum; i++){
+            for (int j=0; j<colNum; j++){
+                System.out.printf("%d ", t.get(i, j));
+            }
+            System.out.println();
+        }
+        System.out.println(t.neighborAverage(8, 8));
+        System.out.println(t.neighborAverage(0, 0));
+
+        System.out.println(t.sum(0, true));
+        System.out.println(t.sum(0, false));
+    }
+
+    public static class AsteriskBarChart{
+        private ArrayList<Integer> values = new ArrayList<>();
+        private int maxVal = -1;
+        final private int horizontalMax = 40;
+        final private int verticalMax = 20;
+
+        public AsteriskBarChart(){
+            Scanner scanner = new Scanner(System.in);
+            int curr;
+            while (true){
+                System.out.print("Enter an integer value: ");
+                if (! scanner.hasNextInt()) break;
+                curr = scanner.nextInt();
+                values.add(curr);
+                maxVal = Math.max(maxVal, curr);
+            }
+        }
+
+        public void drawBarChart(){
+            if (this.values.isEmpty()) return;
+            for (int v: this.values){
+                // System.out.println((int) (v * 40 / maxVal));
+                for (int i=0; i<v * horizontalMax / maxVal; i++){
+                    System.out.print("*");
+                }
+                System.out.println();
+            }
+        }
+
+        public void drawVerticalBarChart(){
+            if (this.values.isEmpty()) return;
+            int[] blanks = new int[this.values.size()];
+
+            for (int j=verticalMax; j>0; j--){
+                for (int i=0; i<this.values.size(); i++){
+                    if (j <= this.values.get(i) * verticalMax / this.maxVal) System.out.print("*");
+                    else System.out.print(" ");
+                }
+                System.out.println();
+            }
+
+        }
+    }
+
+    public static void e0718(){
+        AsteriskBarChart a = new AsteriskBarChart();
+        //a.drawBarChart();
+        a.drawVerticalBarChart();
+    }
+
+    public static void e0720(){        
+        int rowNum = 3;
+        int colNum = 3;
+        Table t = new Table(rowNum, colNum);
+        int cnt = 1;
+        for (int i=0; i<rowNum; i++){
+            for (int j=0; j<colNum; j++){
+                t.set(i, j, cnt++);
+            }
+        }
+        for (int i=0; i<rowNum; i++){
+            for (int j=0; j<colNum; j++){
+                System.out.printf("%d ", t.get(i, j));
+            }
+            System.out.println();
+        }
+
+        System.out.println(t.sum(-1, true));
+        System.out.println(t.sum(-1, false));
+    }
+
+    public static class ALSequence
+    {
+        private ArrayList<Integer> values;
+        public ALSequence() { values = new ArrayList<Integer>(); }
+        public ALSequence(String S, String delimiter) { 
+            values = new ArrayList<Integer>();
+            for (String s: S.split(" ")){
+                values.add(Integer.valueOf(s));
+            }
+        }
+        public void add(int n) { values.add(n); }
+        public String toString() { return values.toString(); }
+        public void printALSequence() { System.out.println(this.toString()); }
+
+        public ALSequence append(ALSequence other){            
+            ALSequence result = new ALSequence();
+            for (int e: this.values){
+                result.add(e);
+            }
+            for (int f: other.values){
+                result.add(f);
+            }
+            return result;
+        }
+
+        public ALSequence merge(ALSequence other){
+            ALSequence result = new ALSequence();
+            int i = 0;
+            int j = 0;
+
+            while (i < this.values.size() || j < this.values.size()){
+                if (j == this.values.size() || (i+j)%2 == 0) {
+                    result.add(this.values.get(i++));
+                } else {
+                    result.add(other.values.get(j++));
+                }
+            }
+            return result;
+        }
+
+        public ALSequence mergeSorted(ALSequence other){
+            ALSequence result = new ALSequence();
+            int i = 0;
+            int j = 0;
+            while (i + j < this.values.size() + other.values.size()){
+                if (j == other.values.size() || (i < this.values.size() && this.values.get(i) < other.values.get(j))){
+                    result.add(this.values.get(i++));
+                } else {
+                    result.add(other.values.get(j++));
+                }
+            }
+            return result;
+        }
+    }
+
+    public static void e0722(){
+        ALSequence a = new ALSequence("1 4 9 16", " ");
+        ALSequence b = new ALSequence("9 7 4 9 11", " ");
+        a.append(b).printALSequence();
+        a.merge(b).printALSequence();
+
+        ALSequence c = new ALSequence("4 7 9 9 11", " ");
+        a.mergeSorted(c).printALSequence();
+    }
+
+
     public static void main(String[] args){
-        e0710();
+        e0722();
     }
 }
