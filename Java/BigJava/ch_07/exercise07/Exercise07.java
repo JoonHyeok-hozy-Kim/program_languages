@@ -1188,8 +1188,168 @@ public class Exercise07{
         a.mergeSorted(c).printALSequence();
     }
 
+    public static class RunP0707{
+        private int[] numbers = new int[20];
+
+        public RunP0707(){
+            Random r = new Random();
+            for (int i=0; i<20; i++){
+                numbers[i] = r.nextInt(1, 7);
+            }
+        }
+
+        public void showRun(){
+            boolean inRun = false;
+            for (int i=0; i<this.numbers.length; i++){
+                if (!inRun) {
+                    if (i < this.numbers.length -1 && this.numbers[i] == this.numbers[i+1]) {
+                        System.out.print("(");
+                        inRun = true;
+                    }
+                }
+
+                System.out.print(this.numbers[i]);
+
+                if (inRun){
+                    if (i == this.numbers.length -1 || this.numbers[i] != this.numbers[i+1]) {
+                        System.out.print(")");
+                        inRun = false;
+                    }
+                }
+                
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+
+        public void showLongestRun(){
+            int runStart = -1;
+            int runCnt = 0;
+
+            boolean inRun = false;
+            int currStart = -1;
+            int currCnt = 0;
+            for (int i=0; i<this.numbers.length; i++){
+                if (!inRun) {
+                    if (i < this.numbers.length -1 && this.numbers[i] == this.numbers[i+1]) {
+                        currStart = i;
+                        inRun = true;
+                    }
+                }
+
+                if (inRun){
+                    currCnt++;
+                    if (i == this.numbers.length -1 || this.numbers[i] != this.numbers[i+1]) {
+                        if (currCnt > 1 && currCnt > runCnt){
+                            runStart = currStart;
+                            runCnt = currCnt;
+                        }
+                        inRun = false;
+                        currCnt = 0;
+                    }
+                }
+            }
+
+            for (int i=0; i<this.numbers.length; i++){
+                if (i == runStart) System.out.print("(");
+
+                System.out.print(this.numbers[i]);
+
+                if (i == runStart + runCnt - 1) System.out.print(")");
+
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void p0701(){
+        RunP0707 r = new RunP0707();
+        r.showRun();
+    }
+
+    public static void p0702(){
+        RunP0707 r = new RunP0707();
+        r.showRun();
+        r.showLongestRun();
+    }
+
+    public static class StallSimulator{
+        private boolean[] stalls;
+
+        public StallSimulator(int numStalls){
+            this.stalls = new boolean[numStalls];
+            for (int i=0; i<numStalls; i++) this.stalls[i] = false;
+        }
+
+        public void showStalls(){
+            for (boolean e: this.stalls){
+                if (e) System.out.print("X");
+                else System.out.print("_");
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+
+        public boolean occupy(){
+            int s = -1;
+            int length = 0;
+            for (int i=0; i<this.stalls.length; i++){
+                if (this.stalls[i]) continue;
+                s = i;
+                break;
+            }
+            if (s == -1) return false;
+
+            int currS = s;
+            int currLength = 0;
+            for (int i=s; i<this.stalls.length; i++){
+                if (this.stalls[i]) {
+                    if (currLength > length) {
+                        s = currS;
+                        length = currLength;
+                    }
+                    currS = i+1;
+                    currLength = 0;
+                } else {
+                    currLength++;
+                }
+            }
+            if (currLength > length){
+                s = currS;
+                length = currLength;
+            }
+            // System.out.printf("%d, %d\n", s, length);
+            this.stalls[s + length/2] = true;
+            this.showStalls();
+            return true;
+        }
+    }
+
+    public static void p0703(){
+        StallSimulator s = new StallSimulator(27);
+        s.showStalls();
+        for (int i=0; i<28; i++) s.occupy();        
+    }
+
+    public static class BulgarianSolitaire{
+        private ArrayList<ArrayList<Integer>> piles = new ArrayList<>();
+
+        public BulgarianSolitaire(){
+            Random r = new Random();
+            ArrayList<Integer> cardDeck = new ArrayList<>();
+            for (int i=0; i<45; i++) cardDeck.add(i+1);
+            
+            int numPiles = r.nextInt(1, 10);
+            for (int i=0; i<numPiles; i++){
+                ArrayList<Integer> pile = new ArrayList<>();
+                piles.add(pile);
+            }
+        }
+    }
+
 
     public static void main(String[] args){
-        e0722();
+        p0703();
     }
 }
