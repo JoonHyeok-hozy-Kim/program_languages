@@ -103,6 +103,14 @@ Cay Horstmann
 |7.8|[Regression Testing](ch_07/sub_06/note.md)|- |
 |-|[Exercise 07](ch_07/exercise/Exercise07.java)||
 
+<br>
+
+## 8. Designing Classes
+|No.|Chapter|Keywords|
+|:-:|-|-|
+|8.1|Discovering Classes|- |
+|8.2|[Designing Good Methods](ch_08/sub_02/note.md)|- |
+
 
 <br>
 

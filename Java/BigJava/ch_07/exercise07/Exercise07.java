@@ -1335,21 +1335,62 @@ public class Exercise07{
     public static class BulgarianSolitaire{
         private ArrayList<ArrayList<Integer>> piles = new ArrayList<>();
 
-        public BulgarianSolitaire(){
+        public int[] shuffle(int[] arr){
             Random r = new Random();
-            ArrayList<Integer> cardDeck = new ArrayList<>();
-            for (int i=0; i<45; i++) cardDeck.add(i+1);
+            int[] result = new int[arr.length];
+            ArrayList<Integer> q = new ArrayList<>();
+            for (int i=0; i<arr.length; i++) q.add(i);
+            int idx;
+            int jdx=0;
+            while (!q.isEmpty()){
+                idx = r.nextInt(q.size());
+                result[jdx++] = q.get(idx);
+                q.remove(idx);
+            }
+            for (int i=0; i<result.length; i++){
+                result[i] = arr[result[i]];
+            }
+            return result;
+        }
+
+        public BulgarianSolitaire(int shuffleCnt){
+            Random r = new Random();
+            int[] cardDeck = new int[45];
+            for (int i=0; i<45; i++) cardDeck[i] = i+1;
+            for (int i=0; i<shuffleCnt; i++){
+                cardDeck = this.shuffle(cardDeck);
+                System.out.println("[Shuffled] " + Arrays.toString(cardDeck));                
+            }
             
             int numPiles = r.nextInt(1, 10);
+            System.out.printf("Number of Piles: %d\n", numPiles);
+            ArrayList<ArrayList<Integer>> piles = new ArrayList<>();
             for (int i=0; i<numPiles; i++){
                 ArrayList<Integer> pile = new ArrayList<>();
                 piles.add(pile);
             }
+
+            int idx = 0;
+            for (int i=0; i<numPiles; i++){
+                piles.get(i).add(cardDeck[idx++]);
+            }
+            
+            while (idx < cardDeck.length){
+                piles.get(r.nextInt(piles.size())).add(cardDeck[idx++]);
+            }
+
+            for (ArrayList p: piles){
+                System.out.println(p);
+            }
         }
+    }
+
+    public static void p0704(){
+        BulgarianSolitaire b = new BulgarianSolitaire(3);
     }
 
 
     public static void main(String[] args){
-        p0703();
+        p0704();
     }
 }
