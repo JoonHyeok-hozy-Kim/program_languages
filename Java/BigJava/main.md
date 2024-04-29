@@ -109,7 +109,7 @@ Cay Horstmann
 |No.|Chapter|Keywords|
 |:-:|-|-|
 |8.1|Discovering Classes|- |
-|8.2|[Designing Good Methods](ch_08/sub_02/note.md)|- |
+|8.2|[Designing Good Methods](ch_08/sub_02/note.md)|- Cohesive Public Interface <br> - Minimizing Dependencies <br> - Unified Modeling Language (UML) <br> - Mutator Method / Accessor Method <br> - Immutable Class <br> - Side Effect, Consistency, Call by Value, Call by Reference |
 
 
 <br>

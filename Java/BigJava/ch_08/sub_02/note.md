@@ -1,7 +1,7 @@
 [Back to Big Java main](../../main.md)
 
 # 8.2 Designing Good Methods
-### 8.2.1) Providing a Cohesive Public Interface
+### 8.2.1 Providing a Cohesive Public Interface
 #### Concept) Cohesiveness
 - A class should represent a single concept. 
 - All interface features should be closely related to the single concept that the class represents. 
@@ -9,7 +9,7 @@
 
 <br>
 
-### 8.2.2) Minimizing Dependencies
+### 8.2.2 Minimizing Dependencies
 #### Concept) Dependency
 - Many methods need other classes in order to do their jobs.
 
@@ -25,7 +25,7 @@
 
 <br>
 
-### 8.2.3) Separating Accessors and Mutators
+### 8.2.3 Separating Accessors and Mutators
 #### Concept) Mutator Method
 - A mutator method changes the state of an object.
 
@@ -46,10 +46,70 @@
 
 <br>
 
-#### Concept) 
+### 8.2.4 Minimizing Side Effects
+#### Concept) Side Effect
+- Desc.)
+  - A side effect of a method is any kind of **modification** of data that is observable outside the method. 
+  - Mutator methods have a side effect, namely the modification of the implicit parameter. 
+- e.g.) Mutining other objects
+  - ```System.out``` object
+    ```java
+    public void printBalance(){
+      System.out.println("The balance is now $" + balance); // This mutates the System.out object!
+    }
+    ```
+    - Instead, keep classes free from input and output operations.
+    - Concentrate input/output in one place such as the ```main``` method.
 
+<br><br>
 
+#### Concept) Consistency
+- Desc.)
+  - When you have a set of methods, follow a consistent scheme for their names and parameter variables. 
 
+<br>
+
+#### Concept) Call by Value
+- In Java, parameter variables are initialized with the values of the argument expressions. 
+- When the method exits, the parameter variables are removed. Computer scientists refer to this call mechanism as “call by value”. 
+```java
+public class BankAccount
+{
+ public void transfer(double amount, double otherBalance) 
+ {
+ balance = balance - amount;
+ otherBalance = otherBalance + amount; 
+ // Won’t update the argument
+ } 
+}
+```
+
+<br>
+
+#### Concept) Call by Reference
+- A Java method can mutate an object when it receives an object reference as an argument.
+```java
+public class BankAccount
+{
+  public void transfer(double amount, BankAccount otherAccount)
+  {
+    balance = balance - amount;
+    otherAccount.deposit(amount); 
+  }
+}
+```
+- However, a method cannot replace an object reference that is passed as an argument.
+```java
+public class BankAccount
+{
+  public void transfer(double amount, BankAccount otherAccount)
+  { 
+    balance = balance - amount;
+    double newBalance = otherAccount.balance + amount;
+    otherAccount = new BankAccount(newBalance); // Won’t work
+  } 
+}
+```
 
 
 <br>
