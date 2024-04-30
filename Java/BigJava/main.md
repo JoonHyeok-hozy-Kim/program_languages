@@ -110,6 +110,10 @@ Cay Horstmann
 |:-:|-|-|
 |8.1|Discovering Classes|- |
 |8.2|[Designing Good Methods](ch_08/sub_02/note.md)|- Cohesive Public Interface <br> - Minimizing Dependencies <br> - Unified Modeling Language (UML) <br> - Mutator Method / Accessor Method <br> - Immutable Class <br> - Side Effect, Consistency, Call by Value, Call by Reference |
+|8.3|Patterns for Object Data|- |
+|8.4|[Static Variables and Methods](ch_08/sub_04/note.md)|- Static Variable, Static Block, Static Constant <br> - Static Method <br> - Static Import|
+|8.5|Problem Solving: Solve a Simpler Problem First|- |
+|8.6|[Packages](ch_08/sub_06/note.md)|- |
 
 
 <br>

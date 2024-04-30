@@ -1,5 +1,5 @@
 package exercise;
-public class ExerciseNN{
+public class Exercise08{
     public static void e0101(){
         System.out.println("Hi");
     }
