@@ -114,6 +114,7 @@ Cay Horstmann
 |8.4|[Static Variables and Methods](ch_08/sub_04/note.md)|- Static Variable, Static Block, Static Constant <br> - Static Method <br> - Static Import|
 |8.5|Problem Solving: Solve a Simpler Problem First|- |
 |8.6|[Packages](ch_08/sub_06/note.md)|- |
+|8.7|Unit Test Frameworks|- JUnit|
 
 
 <br>
