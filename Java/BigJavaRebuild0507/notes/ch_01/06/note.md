@@ -1,4 +1,4 @@
-[Back to Big Java main](../../main.md)
+[Back to Big Java main](../../../main.md)
 
 # 1.6 Errors
 ### Concept) Compile-Time Error (Syntax Error)
@@ -43,4 +43,4 @@
 
 <br>
 
-[Back to Big Java main](../../main.md)
+[Back to Big Java main](../../../main.md)

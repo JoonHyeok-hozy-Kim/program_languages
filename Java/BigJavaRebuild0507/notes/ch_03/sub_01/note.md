@@ -1,4 +1,4 @@
-[Back to Big Java main](../../main.md)
+[Back to Big Java main](../../../main.md)
 
 # 3.1 Instance Variables and Encapsulation
 ### Concept) Instance Variable
@@ -47,4 +47,4 @@
 
 <br>
 
-[Back to Big Java main](../../main.md)
+[Back to Big Java main](../../../main.md)

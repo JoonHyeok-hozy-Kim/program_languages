@@ -1,4 +1,4 @@
-[Back to Big Java main](../../main.md)
+[Back to Big Java main](../../../main.md)
 
 # 8.4 Static Variables and Methods
 ### Concept) Static Variable
@@ -80,4 +80,4 @@
 
 <br>
 
-[Back to Big Java main](../../main.md)
+[Back to Big Java main](../../../main.md)

@@ -1,4 +1,4 @@
-[Back to Big Java main](../../main.md)
+[Back to Big Java main](../../../main.md)
 
 # 3.6 Local Variables
 ### Concept) Local Variable
@@ -40,4 +40,4 @@
 
 <br>
 
-[Back to Big Java main](../../main.md)
+[Back to Big Java main](../../../main.md)

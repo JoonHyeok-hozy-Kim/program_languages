@@ -1,4 +1,4 @@
-[Back to Big Java main](../../main.md)
+[Back to Big Java main](../../../main.md)
 
 # 2.9 Graphical Applications
 ### Concept) Graphical Applications
@@ -39,4 +39,4 @@ Combining a [frame](#concept-frame) with a [component](#concept-component).
 
 <br>
 
-[Back to Big Java main](../../main.md)
+[Back to Big Java main](../../../main.md)

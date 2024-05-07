@@ -1,4 +1,4 @@
-[Back to Big Java main](../../main.md)
+[Back to Big Java main](../../../main.md)
 
 # 4.2 Arithmetic
 ## 4.2.1 Arithmetic Operators
@@ -70,4 +70,4 @@ counter--;
 
 <br>
 
-[Back to Big Java main](../../main.md)
+[Back to Big Java main](../../../main.md)

@@ -1,4 +1,4 @@
-[Back to Big Java main](../../main.md)
+[Back to Big Java main](../../../main.md)
 
 # 6.5 Application: Processing Sentinel Values
 ### Concept) Sentinel
@@ -8,4 +8,4 @@
 
 <br>
 
-[Back to Big Java main](../../main.md)
+[Back to Big Java main](../../../main.md)

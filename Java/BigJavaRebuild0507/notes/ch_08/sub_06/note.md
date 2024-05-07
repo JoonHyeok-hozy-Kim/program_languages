@@ -1,4 +1,4 @@
-[Back to Big Java main](../../main.md)
+[Back to Big Java main](../../../main.md)
 
 # 8.6 Packages
 ### Concept) Packages
@@ -71,4 +71,4 @@ package PACKAGE_NAME;
 
 <br>
 
-[Back to Big Java main](../../main.md)
+[Back to Big Java main](../../../main.md)

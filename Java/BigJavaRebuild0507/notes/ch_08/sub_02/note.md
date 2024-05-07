@@ -1,4 +1,4 @@
-[Back to Big Java main](../../main.md)
+[Back to Big Java main](../../../main.md)
 
 # 8.2 Designing Good Methods
 ### 8.2.1 Providing a Cohesive Public Interface
@@ -114,4 +114,4 @@ public class BankAccount
 
 <br>
 
-[Back to Big Java main](../../main.md)
+[Back to Big Java main](../../../main.md)

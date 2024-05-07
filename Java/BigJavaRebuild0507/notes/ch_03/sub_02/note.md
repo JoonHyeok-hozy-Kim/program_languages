@@ -1,4 +1,4 @@
-[Back to Big Java main](../../main.md)
+[Back to Big Java main](../../../main.md)
 
 # 3.2 Specifying the Public Interface of a Class
 ### Concept) Constructor
@@ -62,4 +62,4 @@ public class BankAccount{
 
 <br>
 
-[Back to Big Java main](../../main.md)
+[Back to Big Java main](../../../main.md)

@@ -1,4 +1,4 @@
-[Back to Big Java main](../../main.md)
+[Back to Big Java main](../../../main.md)
 
 # 3.7 The ```this``` Reference
 ### Concept) Implicit Parameter
@@ -49,4 +49,4 @@ public class BankAccount{
 
 <br>
 
-[Back to Big Java main](../../main.md)
+[Back to Big Java main](../../../main.md)

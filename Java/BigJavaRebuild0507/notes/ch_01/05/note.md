@@ -1,4 +1,4 @@
-[Back to Big Java main](../../main.md)
+[Back to Big Java main](../../../main.md)
 
 # 1.5 Analyzing Your First Program
 #### A Sample Java Source Code
@@ -41,4 +41,4 @@ public class HelloPrinter
 
 <br>
 
-[Back to Big Java main](../../main.md)
+[Back to Big Java main](../../../main.md)
