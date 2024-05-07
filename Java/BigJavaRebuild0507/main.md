@@ -115,6 +115,7 @@ Cay Horstmann
 |8.5|Problem Solving: Solve a Simpler Problem First|- |
 |8.6|[Packages](notes/ch_08/sub_06/note.md)|- |
 |8.7|Unit Test Frameworks|- JUnit|
+|-|[Exercise 08](src/ch_08/)||
 
 
 <br>
