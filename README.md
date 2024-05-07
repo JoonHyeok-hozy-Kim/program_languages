@@ -13,4 +13,4 @@ Learning and reviewing various programming languages
 2. [**Learn-JS** Study Record](JavaScript/learn_js/note.md)
 
 ## Java
-1. [**Big Java, Early Objects**](Java/BigJava/main.md)
+1. [**Big Java, Early Objects**](Java/BigJavaRebuild0507/main.md)
