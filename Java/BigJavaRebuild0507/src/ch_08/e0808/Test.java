@@ -7,7 +7,6 @@ public class Test {
         // ArrayList<Integer> N = ScoreAnalyzer.readIntegerInputs();
         // System.out.println(N);
         
-        ArrayList<String> S = ScoreAnalyzer.readStringInputs();
-        System.out.println(S);
+        ScoreAnalyzer.display(ScoreAnalyzer.createHashMap(ScoreAnalyzer.readNameInputs()));
     }
 }
