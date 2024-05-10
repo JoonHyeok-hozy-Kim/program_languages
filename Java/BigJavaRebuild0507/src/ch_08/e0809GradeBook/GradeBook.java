@@ -1,4 +1,4 @@
-package ch_08.e0809;
+package ch_08.e0809GradeBook;
 
 import java.util.ArrayList;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package ch_08.e0810;
+package ch_08.e0810Geometry;
 
 import java.awt.geom.Point2D;
 import java.awt.geom.Ellipse2D;
@@ -15,11 +15,20 @@ public class Geometry {
     }    
 
     public static double angle(Point2D.Double p, Point2D.Double q){
-        if (p.y == q.y) return 0;
-        
+        return Math.atan(slope(p, q));
     }
 
     public static double slope(Point2D.Double p, Point2D.Double q){
+        if (p.y == q.y) return 0;
+        else if (p.x == q.x) return Double.POSITIVE_INFINITY;
+        return (q.y - p.y) / (q.x - p.x);
+    }
 
+    public static boolean isInside(Point2D.Double p, Ellipse2D.Double e){
+        return (Math.pow((p.x - e.x), 2) / e.width + Math.pow((p.y - e.y), 2) / e.height) < 1;
+    }
+
+    public static boolean isOnBoundary(Point2D.Double p, Ellipse2D.Double e){
+        return (Math.pow((p.x - e.x), 2) / e.width + Math.pow((p.y - e.y), 2) / e.height) == 1;
     }
 }
