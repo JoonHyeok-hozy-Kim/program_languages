@@ -21,14 +21,14 @@ public class ComboLock {
     }
 
     public void turnLeft(int ticks) { 
-        this.currDial -= ticks;
-        while (this.currDial < 0) this.currDial += this.NUMBEROFVAL;
+        this.currDial = (this.currDial + ticks) % this.NUMBEROFVAL;
         if (this.currDial == this.password[this.currCnt] && this.currCnt < 3) this.currCnt++;
     }
 
     public void turnRight(int ticks) { 
-        this.currDial = (this.currDial + ticks) % this.NUMBEROFVAL;
-        if (this.currDial == this.password[this.currCnt]) this.currCnt++;
+        this.currDial -= ticks;
+        while (this.currDial < 0) this.currDial += this.NUMBEROFVAL;
+        if (this.currDial == this.password[this.currCnt] && this.currCnt < 3) this.currCnt++;
     }
 
     public boolean open() { 

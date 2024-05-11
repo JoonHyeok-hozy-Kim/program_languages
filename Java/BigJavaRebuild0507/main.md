@@ -117,6 +117,13 @@ Cay Horstmann
 |8.7|Unit Test Frameworks|- JUnit|
 |-|[Exercise 08](src/ch_08/)||
 
+<br>
+
+## 9. Inheritance
+|No.|Chapter|Keywords|
+|:-:|-|-|
+|9.1|Inheritance Hierarchies|- |
+
 
 <br>
 
