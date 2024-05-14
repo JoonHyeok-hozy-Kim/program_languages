@@ -123,6 +123,7 @@ Cay Horstmann
 |No.|Chapter|Keywords|
 |:-:|-|-|
 |9.1|Inheritance Hierarchies|- |
+|9.2|[Implementing Subclasses](notes/ch_09/sub_02/note.md)|- |
 
 
 <br>
