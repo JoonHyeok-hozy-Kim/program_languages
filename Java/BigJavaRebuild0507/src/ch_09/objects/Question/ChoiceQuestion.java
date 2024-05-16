@@ -5,8 +5,12 @@ import java.util.ArrayList;
 public class ChoiceQuestion extends Question {
     private ArrayList<String> choices;
 
+    public ChoiceQuestion(){
+        this.choices = new ArrayList<>();
+    }
+
     // Newly added method
-    public void addChoices(String choice, boolean correct) {
+    public void addChoice(String choice, boolean correct) {
         this.choices.add(choice);
 
         if (correct){
@@ -17,6 +21,10 @@ public class ChoiceQuestion extends Question {
 
     // Overridden method
     public void display(){
-
+        super.display();
+        
+        for (int i=0; i<this.choices.size(); i++){
+            System.out.println((i+1) + ": " + choices.get(i));
+        }
     }
 }

@@ -123,7 +123,13 @@ Cay Horstmann
 |No.|Chapter|Keywords|
 |:-:|-|-|
 |9.1|Inheritance Hierarchies|- |
-|9.2|[Implementing Subclasses](notes/ch_09/sub_02/note.md)|- |
+|9.2|[Implementing Subclasses](notes/ch_09/sub_02/note.md)|- `super` vs `this`|
+|9.3|[Overriding Methods](notes/ch_09/sub_03/note.md)|- Method Overriding <br> - Method Overloading|
+|9.4|[Polymorphism](notes/ch_09/sub_04/note.md)|- Dynamic Method Lookup <br> - `abstract` : Abstract Class / Abstract Method <br> - `final` : Final Class / Final Method <br> - `protected` : Protected Access|
+
+
+
+
 
 
 <br>
