@@ -124,6 +124,7 @@ Cay Horstmann
 |:-:|-|-|
 |9.1|Inheritance Hierarchies|- |
 |9.2|[Implementing Subclasses](notes/ch_09/sub_02/note.md)|- |
+|9.3|[Overriding Methods](notes/ch_09/sub_03/note.md)|- |
 
 
 <br>

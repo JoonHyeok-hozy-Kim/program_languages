@@ -17,6 +17,10 @@ public class ChoiceQuestion extends Question {
 
     // Overridden method
     public void display(){
-
+        super.display();
+        
+        for (int i=0; i<this.choices.size(); i++){
+            System.out.println((i+1) + ": " + choices.get(i));
+        }
     }
 }
