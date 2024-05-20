@@ -25,12 +25,31 @@
      - Why?)
        - Every class extends the Object class, and that class declares `toString`.
   - If not overridden, the target object's [hashcode](#concept-the-hashcode-method) will be returned.
+    - Useful metadata can be found from the `getClass` method, which is also inherited from the `Object` class.
+      - e.g.)
+        ```java
+        public String toString(){
+            return getClass().getName() + " [Other Stuffs] ";
+        }
+        ```
 
 <br>
 
 #### Concept) The equals Method
 - Desc.)
   - It checks whether two objects have the same contents.
+- How to customize)
+  - Use the `getClass` method of the `Object` class.
+  - Consider the case that the object is `null`.
+    ```java
+    public boolean equals(Object other){
+        if (other == null) return false;
+        if (getClass() == other.getClass()) return false;
+
+        TargetObjectType otherObjForTest = (TargetObjectType) other;
+        // Implement the customized equality checking logics below!
+    }
+    ```
 
 <br>
 
