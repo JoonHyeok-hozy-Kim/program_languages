@@ -11,12 +11,22 @@ public class ChoiceQuestion extends Question {
 
     // Newly added method
     public void addChoice(String choice, boolean correct) {
-        this.choices.add(choice);
+        this._addCoice(choice);
 
         if (correct){
-            String choiceString = "" + this.choices.size();
-            this.setAnswer(choiceString);
+            this._setAnswer();
         }
+    }
+
+    public void _addCoice(String choice){
+        System.out.println(this.getClass().getName() + "_addCoice");
+        this.choices.add(choice);
+    }
+
+    public void _setAnswer(){
+        // System.out.println(this.getClass().getName() + "_setAnswer");
+        String choiceString = "" + this.choices.size();
+        this.setAnswer(choiceString);
     }
 
     // Overridden method
@@ -24,7 +34,7 @@ public class ChoiceQuestion extends Question {
         super.display();
         
         for (int i=0; i<this.choices.size(); i++){
-            System.out.println((i+1) + ": " + choices.get(i));
+            System.out.println((i+1) + ": " + this.choices.get(i));
         }
     }
 }

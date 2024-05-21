@@ -13,12 +13,21 @@ public class Question {
         this.text = questionText;
     }
 
+    public String getText(){
+        return this.text;
+    }
+
     public void setAnswer(String correctResponse){
         this.answer = correctResponse;
     }
 
+    public String getAnswer(){
+        return this.answer;
+    }
+
     public boolean checkAnswer(String response){
-        return this.answer.equals(response);
+        String answerCapitalized = this.answer.toUpperCase();
+        return answerCapitalized.equals(response.toUpperCase());
     }
 
     public void display(){
