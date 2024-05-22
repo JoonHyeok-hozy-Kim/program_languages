@@ -1,18 +1,16 @@
 package ch_09.objects.Question;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class AnyCorrectChoicesQuestion extends ChoiceQuestion {
-    private ArrayList<String> choices;
 
-    public AnyCorrectChoicesQuestion(){
-        this.choices = new ArrayList<>();
-    }
+    public AnyCorrectChoicesQuestion(){}
 
-    public void _setAnswer(){
-        System.out.println(this.getClass().getName() + "_setAnswer");
+    public void setChoiceAnswer(String choiceAnswer){
         String prevAnswer = this.getAnswer();
-        prevAnswer += " " + this.choices.size();
+        if (prevAnswer.length() > 0) prevAnswer += " ";
+        prevAnswer += choiceAnswer;
         this.setAnswer(prevAnswer);
     }
 

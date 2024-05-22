@@ -3,38 +3,26 @@ package ch_09.objects.Question;
 import java.util.ArrayList;
 
 public class ChoiceQuestion extends Question {
-    private ArrayList<String> choices;
+    private int CHOICECNT = 1;
 
-    public ChoiceQuestion(){
-        this.choices = new ArrayList<>();
+    public ChoiceQuestion(){}
+
+    public int sizeOfChoices(){
+        return this.CHOICECNT;
     }
 
     // Newly added method
-    public void addChoice(String choice, boolean correct) {
-        this._addCoice(choice);
+    public void addChoice(String choice, boolean correct) {        
+        this.addText("\n" + this.sizeOfChoices() + ". " + choice);
 
         if (correct){
-            this._setAnswer();
+            this.setChoiceAnswer(Integer.toString(this.sizeOfChoices()));
         }
+
+        this.CHOICECNT++;
     }
 
-    public void _addCoice(String choice){
-        System.out.println(this.getClass().getName() + "_addCoice");
-        this.choices.add(choice);
-    }
-
-    public void _setAnswer(){
-        // System.out.println(this.getClass().getName() + "_setAnswer");
-        String choiceString = "" + this.choices.size();
-        this.setAnswer(choiceString);
-    }
-
-    // Overridden method
-    public void display(){
-        super.display();
-        
-        for (int i=0; i<this.choices.size(); i++){
-            System.out.println((i+1) + ": " + this.choices.get(i));
-        }
+    public void setChoiceAnswer(String choiceAnswer){
+        this.setAnswer(choiceAnswer);
     }
 }

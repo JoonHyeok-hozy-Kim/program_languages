@@ -1,21 +1,22 @@
 package ch_09.objects.Question;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
-public class MultiChoiceQuestion extends ChoiceQuestion {
-    private ArrayList<String> choices;
+public class MultiChoiceQuestion extends AnyCorrectChoicesQuestion {
+    public MultiChoiceQuestion(){}
 
-    public MultiChoiceQuestion(){
-        this.choices = new ArrayList<>();
-    }
+    public boolean checkAnswer(String response){
+        String[] answerArray = this.getAnswer().split(" ");
+        String[] responseArray = response.split(" ");
 
-    public void addChoice(String choice, boolean correct){
-        this.choices.add(choice);
-
-        if (correct){
-
+        if (answerArray.length != responseArray.length) return false;
+        Arrays.sort(answerArray);
+        Arrays.sort(responseArray);
+        for (int i=0; i<answerArray.length; i++){
+            if (! answerArray[i].equals(responseArray[i])) return false;
         }
+        return true;
     }
-
 
 }

@@ -13,6 +13,10 @@ public class Question {
         this.text = questionText;
     }
 
+    public void addText(String addingText){
+        this.text += addingText;
+    }
+
     public String getText(){
         return this.text;
     }
@@ -32,5 +36,11 @@ public class Question {
 
     public void display(){
         System.out.println(this.text);
+    }
+
+    public String toString(){
+        String result = getClass().getName() + "\n[Question]\n";
+        result += this.text;
+        return result;
     }
 }
