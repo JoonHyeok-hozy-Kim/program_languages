@@ -128,6 +128,13 @@ Cay Horstmann
 |9.4|[Polymorphism](notes/ch_09/sub_04/note.md)|- Dynamic Method Lookup <br> - `abstract` : Abstract Class / Abstract Method <br> - `final` : Final Class / Final Method <br> - `protected` : Protected Access|
 |9.5|[`Object`: The Cosmic Superclass](notes/ch_09/sub_05/note.md)|- `Object` : `toString`, `equals`, `hashCode`|
 
+<br>
+
+## 10. Interfaces
+|No.|Chapter|Keywords|
+|:-:|-|-|
+|10.1|[Using Interfaces for Algorithm Reuse](notes/ch_10/sub_01/note.md)|- |
+
 
 
 
