@@ -97,10 +97,15 @@ A `class` implements an interface type if it declares the `interface` in an impl
 <br>
 
 #### E.g.) Data, Measurable, BankAccount, and Country
-- [Data](../../../src/ch_10/objects/Measurable/Data.java)
-- [Measurable](../../../src/ch_10/objects/Measurable/Measurable.java)
-- [BankAccount](../../../src/ch_10/objects/Measurable/BankAccount.java)
-- [Country](../../../src/ch_10/objects/Measurable/Country.java)
+- Structure   
+  ![](images/001.png)
+- Objects
+  - [Data](../../../src/ch_10/objects/Measurable/Data.java)
+  - [Measurable](../../../src/ch_10/objects/Measurable/Measurable.java)
+  - [BankAccount](../../../src/ch_10/objects/Measurable/BankAccount.java)
+  - [Country](../../../src/ch_10/objects/Measurable/Country.java)
+- Test
+  - [MeasurableTest](../../../src/ch_10/objects/Measurable/MeasurableTest.java)
 
 <br>
 
