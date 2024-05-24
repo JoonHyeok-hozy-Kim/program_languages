@@ -134,7 +134,7 @@ Cay Horstmann
 |No.|Chapter|Keywords|
 |:-:|-|-|
 |10.1|[Using Interfaces for Algorithm Reuse](notes/ch_10/sub_01/note.md)|- `interface`, `implements` <br> - Default Method : `default`|
-|10.2|[Working with Interface Types](notes/ch_10/sub_02/note.md)|- |
+|10.2|[Working with Interface Types](notes/ch_10/sub_02/note.md)|- Converting from Classes to Interfaces <br> - Invoking Methods on Interface Variables <br> - Casting from Interfaces to Classes|
 
 
 
