@@ -17,5 +17,7 @@ public class MeasurableTest {
 
         double averageArea = Data.average(countries);
         System.out.println("Average area: " + averageArea);
+
+        String a = "";
     }
 }
