@@ -136,6 +136,7 @@ Cay Horstmann
 |10.1|[Using Interfaces for Algorithm Reuse](notes/ch_10/sub_01/note.md)|- `interface`, `implements` <br> - Default Method : `default`|
 |10.2|[Working with Interface Types](notes/ch_10/sub_02/note.md)|- Converting from Classes to Interfaces <br> - Invoking Methods on Interface Variables <br> - Casting from Interfaces to Classes|
 |10.3|[The Comparable Interface](notes/ch_10/sub_03/note.md)|- Standard Java Interfaces : `Comparable`, `Cloneable`|
+|10.4|[Using Interfaces for Callbacks](notes/ch_10/sub_04/note.md)|- Callback Mechanism <br> - Lambda Expression, Generic Interface Type|
 
 
 
