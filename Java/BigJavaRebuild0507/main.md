@@ -127,6 +127,8 @@ Cay Horstmann
 |9.3|[Overriding Methods](notes/ch_09/sub_03/note.md)|- Method Overriding <br> - Method Overloading|
 |9.4|[Polymorphism](notes/ch_09/sub_04/note.md)|- Dynamic Method Lookup <br> - `abstract` : Abstract Class / Abstract Method <br> - `final` : Final Class / Final Method <br> - `protected` : Protected Access|
 |9.5|[`Object`: The Cosmic Superclass](notes/ch_09/sub_05/note.md)|- `Object` : `toString`, `equals`, `hashCode`|
+|-|[Exercise 09](src/ch_09/exercises/)||
+
 
 <br>
 
@@ -137,8 +139,7 @@ Cay Horstmann
 |10.2|[Working with Interface Types](notes/ch_10/sub_02/note.md)|- Converting from Classes to Interfaces <br> - Invoking Methods on Interface Variables <br> - Casting from Interfaces to Classes|
 |10.3|[The Comparable Interface](notes/ch_10/sub_03/note.md)|- Standard Java Interfaces : `Comparable`, `Cloneable`|
 |10.4|[Using Interfaces for Callbacks](notes/ch_10/sub_04/note.md)|- Callback Mechanism <br> - Lambda Expression, Generic Interface Type|
-
-
+|10.5|[Inner Classes](notes/ch_10/sub_05/note.md)|- Anonymous Class|
 
 
 
