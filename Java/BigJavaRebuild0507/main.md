@@ -140,7 +140,8 @@ Cay Horstmann
 |10.3|[The Comparable Interface](notes/ch_10/sub_03/note.md)|- Standard Java Interfaces : `Comparable`, `Cloneable`|
 |10.4|[Using Interfaces for Callbacks](notes/ch_10/sub_04/note.md)|- Callback Mechanism <br> - Lambda Expression, Generic Interface Type|
 |10.5|[Inner Classes](notes/ch_10/sub_05/note.md)|- Anonymous Class|
-|10.6|[Mock Objects](notes/ch_10/sub_06/note.md)|- Event Listener, Event Source|
+|10.6|[Mock Objects](notes/ch_10/sub_06/note.md)|- |
+|10.7|[Event Handling](notes/ch_10/sub_07/note.md)|- Event Listener, Event Source <br> - Lambda Expression for Event Handling|
 
 
 

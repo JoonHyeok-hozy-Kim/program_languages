@@ -41,6 +41,14 @@ It is common to implement listener classes.
 
 ### Concept) Lambda Expressions for Event Handling
 - Recall that [lambda expressions](../sub_04/note.md#concept-lambda-expression) can be used to instantiate classes that implement functional interfaces.
+  - i.e.) interfaces with a single abstract method
+- This includes event handlers such as the `ActionListener` objects.
+- e.g.)
+  ```java
+  button.addActionListener(
+    (ActionEvent event) -> System.out.println("I was clicked!")
+  );
+  ```
 
 <br>
 
