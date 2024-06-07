@@ -16,7 +16,7 @@
   - [Measurer](../../../src/ch_10/objects/Measurer/Measurer.java) `interface`
     - The measure method measures an object and returns its measurement.
     - Here we use the fact that all objects can be converted to the type `Object`.
-  - The `average` method in [Data](../../../src/ch_10/objects/Measurer/AverageTest.java)
+  - The `average` method in [Data](../../../src/ch_10/objects/Measurer/Data.java)
     - The code that makes the call to the **callback** receives an object of a class that implements this interface.
     - Use the `static` method!
   - [AreaMeasurer](../../../src/ch_10/objects/Measurer/AreaMeasurer.java)

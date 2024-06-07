@@ -37,6 +37,10 @@ It is common to implement listener classes.
   - `AddInterestListener` class is implemented as an inner class of the `InvestmentViewer` class.
   - The `AddInterestListener` object accesses the methods of `InvestmentViewer`'s `account` object.
 
+<br>
+
+### Concept) Lambda Expressions for Event Handling
+- Recall that [lambda expressions](../sub_04/note.md#concept-lambda-expression) can be used to instantiate classes that implement functional interfaces.
 
 <br>
 
