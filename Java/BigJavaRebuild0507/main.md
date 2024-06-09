@@ -143,6 +143,7 @@ Cay Horstmann
 |10.6|[Mock Objects](notes/ch_10/sub_06/note.md)|- |
 |10.7|[Event Handling](notes/ch_10/sub_07/note.md)|- Event Listener, Event Source <br> - Lambda Expression for Event Handling|
 |10.8|[Building Applicationis with Buttons](notes/ch_10/sub_08/note.md)|- `JPanel`|
+|10.9|[Processing Timer Events](notes/ch_10/sub_09/note.md)|- `Timer`|
 
 
 
