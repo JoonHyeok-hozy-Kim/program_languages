@@ -132,8 +132,56 @@ public class RSeries {
         r10092();
     }
 
+    public static void r1010(){
+        String[] S = {"a", "b", "c"};
+        // double average = ch_10.objects.Measurable.Data.average(S);
+    }
+
+    public static class StringMeasurer implements Measurer{
+        public double measure(Object object){
+            String s = (String) object;
+            return s.length();
+        }
+    }
+
+    public static void r1011(){
+        String[] S = {"a", "bbb", "cc"};
+        double average = ch_10.objects.Measurer.Data.average(S, new StringMeasurer());
+        System.out.println(average);
+    }
+
+    public static class T{
+        private int t = 1;
+
+        public void m(final int x, int y){
+            int a = 2;
+            final int b = 3;
+
+            class C implements I{
+                public void i1(){
+                    System.out.println(t);
+                    System.out.println(x);
+                    System.out.println(y);
+                    System.out.println(a);
+                    System.out.println(b);
+                    // System.out.println(c);
+                }
+            }
+
+            final int c = 4;
+
+            I ic = new C();
+            ic.i1();
+        }
+    }
+
+    public static void r1013(){
+        T t = new T();
+        t.m(11, 12);
+    }
+
     public static void main(String[] args){
-        r1009();
+        r1013();
     }
     
 }

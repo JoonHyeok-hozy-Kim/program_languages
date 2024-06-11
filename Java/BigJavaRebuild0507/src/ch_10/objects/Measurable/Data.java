@@ -13,4 +13,15 @@ public class Data{
 
         return sum / objects.length;
     }
+
+    public static Measurable max(Measurable[] objects){
+        if (objects.length == 0) return null;
+
+        Measurable result = objects[0];
+        for (Measurable obj: objects){
+            if (obj.getMeasure() > result.getMeasure()) result = obj;
+        }
+
+        return result;
+    }
 }
