@@ -182,6 +182,10 @@ public class RSeries {
 
     public static void main(String[] args){
         r1013();
+
+        // for (int i=1; i<=10; i++){
+        //     System.out.println(fiboTest(i));
+        // }
     }
     
 }

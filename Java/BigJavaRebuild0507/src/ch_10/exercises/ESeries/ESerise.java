@@ -1,6 +1,7 @@
 package ch_10.exercises.ESeries;
 
 import java.util.Random;
+import java.awt.Rectangle;
 
 public class ESerise {
     public static void e1001(){
@@ -28,7 +29,30 @@ public class ESerise {
         System.out.println(ch_10.objects.Measurable.Data.max(people).toString());
     }
 
+    public static int fiboTest(int n){
+        if (n == 1 || n == 2) return 1;
+        return fiboTest(n-2) + fiboTest(n-1);
+    }
+
+    public static class AreaMeasurer2 implements ch_10.exercises.Measurer.Measurer{
+        public double measure(Object obj){
+            Rectangle r = (Rectangle) obj;
+            return r.getWidth() * r.getHeight();
+        }
+    }
+
+    public static void e1008(){
+        Rectangle[] R = new Rectangle[5];
+        Random r = new Random();
+        for (int i=0; i<5; i++){
+            R[i] = new Rectangle(r.nextInt(5), r.nextInt(5), r.nextInt(5),r.nextInt(5));
+            System.out.println(R[i]);
+        }
+
+        System.out.println(ch_10.exercises.Measurer.Data.max(R, new AreaMeasurer2()));
+    }
+
     public static void main(String[] args){
-        e1002();
+        e1008();
     }
 }
